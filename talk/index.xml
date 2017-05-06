@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</title>
+    <link>https://scferrada.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Query Planning and Optimization [in Spanish]</title>
+      <link>https://scferrada.github.io/talk/optimization-cc3201-17-1/</link>
+      <pubDate>Tue, 04 Apr 2017 10:15:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/talk/optimization-cc3201-17-1/</guid>
+      <description>&lt;p&gt;Lecture of CC3201-Databases. About Planning and Optimization of queries in SQL: filter and join strategies, and indexing methods.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
