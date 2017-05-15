@@ -1,0 +1,20 @@
+@base <http://scferrada.github.io/rdf/foaf.ttl> .
+
+@prefix foaf: <xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<#me> a foaf:Person; 
+	foaf:name "Sebastián Ferrada"@es-CL;
+	foaf:mbox <mailto:example@example.com>;
+	foaf:based_near <http://sws.geonames.org/3871336/>;
+	foaf:age 23;
+	foaf:gender 'male';
+	foaf:img <http://users.dcc.uchile.cl/~sferrada/me.jpg>;
+	foaf:birthday '03-30';
+	foaf:homepage <http://users.dcc.uchile.cl/~sferrada/>;
+	foaf:schoolHomepage <http://dcc.uchile.cl>;
+	foaf:interest <http://www.dbpedia.org/resource/A_Song_of_Ice_and_Fire>, <http://dbpedia.org/resource/Hearthstone>, <http://dbpedia.org/resource/Harry_Potter>;
+	
+	foaf:knows <http://users.dcc.uchile.cl/~pisbej/foaf.ttl#pato>, 
+		<http://anakena.dcc.uchile.cl/~mtomic/linkeddata/foaf.ttl#yo>,
+		<http://users.dcc.uchile.cl/~fhernand/foaf.ttl#me>.
