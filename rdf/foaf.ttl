@@ -5,13 +5,13 @@
 
 <#me> a foaf:Person; 
 	foaf:name "Sebastián Ferrada"@es-CL;
-	foaf:mbox <mailto:example@example.com>;
+	foaf:mbox <mailto:sferrada@dcc.uchile.cl>;
 	foaf:based_near <http://sws.geonames.org/3871336/>;
-	foaf:age 23;
+	foaf:age 25;
 	foaf:gender 'male';
-	foaf:img <http://users.dcc.uchile.cl/~sferrada/me.jpg>;
+	foaf:img <http://scferrada.github.io/img/yo.jpg>;
 	foaf:birthday '03-30';
-	foaf:homepage <http://users.dcc.uchile.cl/~sferrada/>;
+	foaf:homepage <http://scferrada.github.io>;
 	foaf:schoolHomepage <http://dcc.uchile.cl>;
 	foaf:interest <http://www.dbpedia.org/resource/A_Song_of_Ice_and_Fire>, <http://dbpedia.org/resource/Hearthstone>, <http://dbpedia.org/resource/Harry_Potter>;
 	
