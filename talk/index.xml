@@ -11,6 +11,15 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
+      <link>https://scferrada.github.io/talk/msc-defense/</link>
+      <pubDate>Mon, 05 Jun 2017 17:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/talk/msc-defense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia: a linked dataset to perform visuo-semantic queries</title>
       <link>https://scferrada.github.io/talk/poster-amw-17/</link>
       <pubDate>Mon, 05 Jun 2017 17:00:00 +0000</pubDate>
