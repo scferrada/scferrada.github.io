@@ -30,15 +30,6 @@
     </item>
     
     <item>
-      <title>IMGpedia: a Knowledge-base with Content-based Analysis from the Wikimedia Commons Images</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
-      <pubDate>Fri, 05 May 2017 18:04:13 -0300</pubDate>
-      
-      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Query Planning and Optimization [in Spanish]</title>
       <link>https://scferrada.github.io/talk/optimization-cc3201-17-1/</link>
       <pubDate>Tue, 04 Apr 2017 10:15:00 +0000</pubDate>
@@ -83,6 +74,15 @@
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: a Knowledge-base with Content-based Analysis from the Wikimedia Commons Images</title>
+      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <description></description>
     </item>
     
   </channel>
