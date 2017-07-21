@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>IMGpedia: a Linked Dataset with Content-based Analysis from the Wikimedia Commons Images</title>
+      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
       <link>https://scferrada.github.io/talk/msc-defense/</link>
       <pubDate>Mon, 05 Jun 2017 17:00:00 +0000</pubDate>
@@ -27,15 +36,6 @@
       <guid>https://scferrada.github.io/talk/poster-amw-17/</guid>
       <description>&lt;p&gt;I will show my MSc. thesis work and main results at the poster session on AMW School.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>IMGpedia: a Linked Dataset with Content-based Analysis from the Wikimedia Commons Images</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
-      <pubDate>Fri, 05 May 2017 18:04:13 -0300</pubDate>
-      
-      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
-      <description></description>
     </item>
     
     <item>
