@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Answering Visuo-semantic Queries with IMGpedia</title>
+      <link>https://scferrada.github.io/publication/imgpediaiswc17demo/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
       <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
