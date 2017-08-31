@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>.Conf</title>
+      <link>https://scferrada.github.io/tags/.conf/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/tags/.conf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linked Data</title>
       <link>https://scferrada.github.io/tags/linked-data/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -39,11 +48,29 @@
     </item>
     
     <item>
+      <title>Pyd</title>
+      <link>https://scferrada.github.io/tags/pyd/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/tags/pyd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Visualization</title>
       <link>https://scferrada.github.io/tags/visualization/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://scferrada.github.io/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ws</title>
+      <link>https://scferrada.github.io/tags/ws/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/tags/ws/</guid>
       <description></description>
     </item>
     

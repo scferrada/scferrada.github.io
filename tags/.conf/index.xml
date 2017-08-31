@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Conf on Sebastián&#39;s academic website</title>
+    <link>https://scferrada.github.io/tags/.conf/</link>
+    <description>Recent content in .Conf on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <lastBuildDate>Sat, 21 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/.conf/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
+      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
