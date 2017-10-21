@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
+      <link>https://scferrada.github.io/talk/iswc2017/</link>
+      <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
+      
+      <guid>https://scferrada.github.io/talk/iswc2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Answering Visuo-semantic Queries with IMGpedia</title>
       <link>https://scferrada.github.io/publication/imgpediaiswc17demo/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
@@ -26,6 +35,16 @@
       
       <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://scferrada.github.io/post/test/</link>
+      <pubDate>Sat, 30 Sep 2017 18:43:23 -0300</pubDate>
+      
+      <guid>https://scferrada.github.io/post/test/</guid>
+      <description>&lt;p&gt;oli musho testto&lt;/p&gt;
+</description>
     </item>
     
     <item>

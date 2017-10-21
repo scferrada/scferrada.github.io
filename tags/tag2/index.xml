@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on Sebastián&#39;s academic website</title>
+    <link>https://scferrada.github.io/tags/tag2/</link>
+    <description>Recent content in Tag2 on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <lastBuildDate>Sat, 30 Sep 2017 18:43:23 -0300</lastBuildDate>
+    <atom:link href="/tags/tag2/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>test</title>
+      <link>https://scferrada.github.io/post/test/</link>
+      <pubDate>Sat, 30 Sep 2017 18:43:23 -0300</pubDate>
+      
+      <guid>https://scferrada.github.io/post/test/</guid>
+      <description>&lt;p&gt;oli musho testto&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
