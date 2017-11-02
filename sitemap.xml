@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://scferrada.github.io/post/imgpediaiswc/</loc>
+      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://scferrada.github.io/talk/iswc2017/</loc>
       <lastmod>2017-10-23T14:00:01+02:00</lastmod>
     </url>
@@ -25,15 +34,6 @@
     
       <loc>https://scferrada.github.io/publication/imgpediaiswc/</loc>
       <lastmod>2017-10-21T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://scferrada.github.io/post/test/</loc>
-      <lastmod>2017-09-30T18:43:23-03:00</lastmod>
     </url>
     
   
@@ -180,8 +180,28 @@
     
     <url>
     
+      <loc>https://scferrada.github.io/tags/imgpedia/</loc>
+      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://scferrada.github.io/tags/iswc/</loc>
+      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://scferrada.github.io/tags/linked-data/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -191,7 +211,7 @@
     <url>
     
       <loc>https://scferrada.github.io/tags/multimedia/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -232,16 +252,6 @@
     
       <loc>https://scferrada.github.io/</loc>
       <lastmod>2017-05-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://scferrada.github.io/tags/tag2/</loc>
-      <lastmod>2017-09-30T18:43:23-03:00</lastmod>
       <priority>0</priority>
     </url>
     
