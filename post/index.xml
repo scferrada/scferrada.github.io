@@ -51,7 +51,7 @@ al respecto al final del post.&lt;/p&gt;
 &lt;center&gt;&lt;strong&gt;Figura 1:&lt;/strong&gt; Similitud entre imágenes&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
-Para esto, usamos un &lt;a href=&#34;http://en.dumps.wikipedia.org&#34; target=&#34;_blank&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
+Para esto, usamos un &lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
 de modo que la imagen aparece en la wiki. Entonces enlazamos la imagen con el recurso de DBpedia relacionado al articulo de Wikipedia correspondiente.
 Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la que está relacionada, pero sí podemos
 decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
