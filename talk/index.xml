@@ -11,6 +11,16 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Transactions in Databases [in Spanish]</title>
+      <link>https://scferrada.github.io/talk/transactions-cc3201-17-2/</link>
+      <pubDate>Fri, 10 Nov 2017 10:15:00 +0000</pubDate>
+      
+      <guid>https://scferrada.github.io/talk/transactions-cc3201-17-2/</guid>
+      <description>&lt;p&gt;Lecture of CC3201-Databases. About Transactions on databases: conflicts, serializability and recoverability.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
       <link>https://scferrada.github.io/talk/iswc2017/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
