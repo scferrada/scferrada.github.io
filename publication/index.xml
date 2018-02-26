@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/publication/</link>
+    <link>http://scferrada.github.io/publication/</link>
     <description>Recent content in Publications on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Answering Visuo-semantic Queries with IMGpedia</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc17demo/</link>
+      <link>http://scferrada.github.io/publication/imgpediaiswc17demo/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/publication/imgpediaiswc/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaiswc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analisys</title>
-      <link>https://scferrada.github.io/publication/imgpediaamw/</link>
+      <link>http://scferrada.github.io/publication/imgpediaamw/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaamw/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaamw/</guid>
       <description></description>
     </item>
     

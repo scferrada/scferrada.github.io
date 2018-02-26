@@ -2,60 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/talk/</link>
+    <link>http://scferrada.github.io/talk/</link>
     <description>Recent content in Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Transactions in Databases [in Spanish]</title>
-      <link>https://scferrada.github.io/talk/transactions-cc3201-17-2/</link>
-      <pubDate>Fri, 10 Nov 2017 10:15:00 +0000</pubDate>
-      
-      <guid>https://scferrada.github.io/talk/transactions-cc3201-17-2/</guid>
-      <description>&lt;p&gt;Lecture of CC3201-Databases. About Transactions on databases: conflicts, serializability and recoverability.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
-      <link>https://scferrada.github.io/talk/iswc2017/</link>
+      <title>IMGpedia at ISWC</title>
+      <link>http://scferrada.github.io/talk/imgpediaiswc17/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
       
-      <guid>https://scferrada.github.io/talk/iswc2017/</guid>
+      <guid>http://scferrada.github.io/talk/imgpediaiswc17/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
-      <link>https://scferrada.github.io/talk/msc-defense/</link>
-      <pubDate>Fri, 07 Jul 2017 10:00:00 +0000</pubDate>
+      <link>http://scferrada.github.io/talk/mscdefense/</link>
+      <pubDate>Fri, 07 Jul 2017 10:00:00 -0300</pubDate>
       
-      <guid>https://scferrada.github.io/talk/msc-defense/</guid>
+      <guid>http://scferrada.github.io/talk/mscdefense/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IMGpedia: a linked dataset to perform visuo-semantic queries</title>
-      <link>https://scferrada.github.io/talk/poster-amw-17/</link>
-      <pubDate>Mon, 05 Jun 2017 17:00:00 +0000</pubDate>
+      <title>Test</title>
+      <link>http://scferrada.github.io/talk/amw17-poster/</link>
+      <pubDate>Mon, 05 Jun 2017 17:00:00 -0200</pubDate>
       
-      <guid>https://scferrada.github.io/talk/poster-amw-17/</guid>
-      <description>&lt;p&gt;I will show my MSc. thesis work and main results at the poster session on AMW School.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Query Planning and Optimization [in Spanish]</title>
-      <link>https://scferrada.github.io/talk/optimization-cc3201-17-1/</link>
-      <pubDate>Tue, 04 Apr 2017 10:15:00 +0000</pubDate>
-      
-      <guid>https://scferrada.github.io/talk/optimization-cc3201-17-1/</guid>
-      <description>&lt;p&gt;Lecture of CC3201-Databases. About Planning and Optimization of queries in SQL: filter and join strategies, and indexing methods.&lt;/p&gt;
-</description>
+      <guid>http://scferrada.github.io/talk/amw17-poster/</guid>
+      <description></description>
     </item>
     
   </channel>

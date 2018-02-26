@@ -2,30 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sebastián&#39;s academic website on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/</link>
+    <link>http://scferrada.github.io/</link>
     <description>Recent content in Sebastián&#39;s academic website on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Transactions in Databases [in Spanish]</title>
-      <link>https://scferrada.github.io/talk/transactions-cc3201-17-2/</link>
-      <pubDate>Fri, 10 Nov 2017 10:15:00 +0000</pubDate>
-      
-      <guid>https://scferrada.github.io/talk/transactions-cc3201-17-2/</guid>
-      <description>&lt;p&gt;Lecture of CC3201-Databases. About Transactions on databases: conflicts, serializability and recoverability.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>https://scferrada.github.io/post/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/post/imgpediaiswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
       
-      <guid>https://scferrada.github.io/post/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/post/imgpediaiswc/</guid>
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
 fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
@@ -57,7 +47,7 @@ tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos 
 similares. Esta decisión de tomar los &lt;em&gt;k&lt;/em&gt; vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
 al respecto al final del post.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 1:&lt;/strong&gt; Similitud entre imágenes&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
@@ -67,7 +57,7 @@ Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la
 decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
 si una imagen aparece en la &lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el &lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 2:&lt;/strong&gt; Obtener contexto de la imagen&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Finalmente, publicamos todo en formato &lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de &lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34;&gt;SPARQL&lt;/a&gt;.
@@ -84,7 +74,7 @@ WHERE {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 3:&lt;/strong&gt; Resultados de la consulta a&lt;/center&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -104,7 +94,7 @@ WHERE {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 4:&lt;/strong&gt; Resultados de la consulta b&lt;/center&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -126,12 +116,12 @@ WHERE {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 5:&lt;/strong&gt; Resultados de la consulta c&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
-a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;https://scferrada.github.io/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
-de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster &lt;a href=&#34;https://scferrada.github.io/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
+a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;http://scferrada.github.io/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
+de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster &lt;a href=&#34;http://scferrada.github.io/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
 Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
 y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:&lt;/p&gt;
 
@@ -149,7 +139,7 @@ y darle mayor expresividad a las consultas de IMGpedia.&lt;/li&gt;
 
 &lt;p&gt;¡Gracias a todos los que nos fueron a ver al stand!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 6:&lt;/strong&gt; Sesión de pósters&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
@@ -166,7 +156,7 @@ por la &lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34
 de investigación de la Web Semántica&lt;/a&gt;, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
 para Jorge Pérez).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 7:&lt;/strong&gt; Aidan y yo recibiendo el premio a mejor paper de estudiante&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
@@ -186,86 +176,75 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     </item>
     
     <item>
-      <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
-      <link>https://scferrada.github.io/talk/iswc2017/</link>
+      <title>IMGpedia at ISWC</title>
+      <link>http://scferrada.github.io/talk/imgpediaiswc17/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
       
-      <guid>https://scferrada.github.io/talk/iswc2017/</guid>
+      <guid>http://scferrada.github.io/talk/imgpediaiswc17/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Answering Visuo-semantic Queries with IMGpedia</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc17demo/</link>
+      <link>http://scferrada.github.io/publication/imgpediaiswc17demo/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/publication/imgpediaiswc/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaiswc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
-      <link>https://scferrada.github.io/talk/msc-defense/</link>
-      <pubDate>Fri, 07 Jul 2017 10:00:00 +0000</pubDate>
+      <link>http://scferrada.github.io/talk/mscdefense/</link>
+      <pubDate>Fri, 07 Jul 2017 10:00:00 -0300</pubDate>
       
-      <guid>https://scferrada.github.io/talk/msc-defense/</guid>
+      <guid>http://scferrada.github.io/talk/mscdefense/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IMGpedia: a linked dataset to perform visuo-semantic queries</title>
-      <link>https://scferrada.github.io/talk/poster-amw-17/</link>
-      <pubDate>Mon, 05 Jun 2017 17:00:00 +0000</pubDate>
+      <title>Test</title>
+      <link>http://scferrada.github.io/talk/amw17-poster/</link>
+      <pubDate>Mon, 05 Jun 2017 17:00:00 -0200</pubDate>
       
-      <guid>https://scferrada.github.io/talk/poster-amw-17/</guid>
-      <description>&lt;p&gt;I will show my MSc. thesis work and main results at the poster session on AMW School.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Query Planning and Optimization [in Spanish]</title>
-      <link>https://scferrada.github.io/talk/optimization-cc3201-17-1/</link>
-      <pubDate>Tue, 04 Apr 2017 10:15:00 +0000</pubDate>
-      
-      <guid>https://scferrada.github.io/talk/optimization-cc3201-17-1/</guid>
-      <description>&lt;p&gt;Lecture of CC3201-Databases. About Planning and Optimization of queries in SQL: filter and join strategies, and indexing methods.&lt;/p&gt;
-</description>
+      <guid>http://scferrada.github.io/talk/amw17-poster/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analisys</title>
-      <link>https://scferrada.github.io/publication/imgpediaamw/</link>
+      <link>http://scferrada.github.io/publication/imgpediaamw/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaamw/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaamw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Constitución Abierta</title>
-      <link>https://scferrada.github.io/project/constitucion-abierta/</link>
+      <link>http://scferrada.github.io/project/constitucion-abierta/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/project/constitucion-abierta/</guid>
+      <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
       <description>&lt;p&gt;Project Managed by Jorge Perez.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>IMGpedia project</title>
-      <link>https://scferrada.github.io/project/imgpedia-project/</link>
+      <link>http://scferrada.github.io/project/imgpedia-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/project/imgpedia-project/</guid>
+      <guid>http://scferrada.github.io/project/imgpedia-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
