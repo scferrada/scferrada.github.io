@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Querying Wikimedia Images using Wikidata Facts</title>
+      <link>http://scferrada.github.io/publication/wikiworkshop18/</link>
+      <pubDate>Wed, 24 Jan 2018 19:01:03 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/wikiworkshop18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
       <link>http://scferrada.github.io/post/imgpediaiswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
