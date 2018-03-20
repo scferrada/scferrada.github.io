@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
 <#me> a foaf:Person; 
-	foaf:name "Sebastián Ferrada"@es-CL;
+	foaf:name "Sebasti&aacute;n Ferrada"@es-CL;
 	foaf:mbox <mailto:sferrada@dcc.uchile.cl>;
 	foaf:based_near <http://sws.geonames.org/3871336/>;
 	foaf:age 25;
