@@ -11,6 +11,15 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>IMGpedia at CLTM-CLEI</title>
+      <link>http://scferrada.github.io/talk/clei-cltm18/</link>
+      <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/talk/clei-cltm18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia at ISWC</title>
       <link>http://scferrada.github.io/talk/imgpediaiswc17/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>

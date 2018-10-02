@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://scferrada.github.io/talk/clei-cltm18/</loc>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://scferrada.github.io/publication/amw18/</loc>
       <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     </url>
@@ -190,7 +199,7 @@
     <url>
     
       <loc>http://scferrada.github.io/tags/imgpedia/</loc>
-      <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -211,6 +220,16 @@
     
       <loc>http://scferrada.github.io/tags/linked-data/</loc>
       <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://scferrada.github.io/tags/masters-thesis/</loc>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -269,6 +288,16 @@
     
     <url>
     
+      <loc>http://scferrada.github.io/tags/semantic-web/</loc>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://scferrada.github.io/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -281,6 +310,26 @@
     
       <loc>http://scferrada.github.io/tags/visualization/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://scferrada.github.io/tags/visuo-semantic-queries/</loc>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://scferrada.github.io/tags/web-image-retrieval/</loc>
+      <lastmod>2018-10-02T09:00:01-03:00</lastmod>
       <priority>0</priority>
     </url>
     
