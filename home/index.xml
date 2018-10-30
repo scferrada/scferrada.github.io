@@ -8,7 +8,83 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://scferrada.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://scferrada.github.io/home/about/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/about/</guid>
+      <description>Biography I&amp;rsquo;m Sebastián Ferrada, a Doctoral Candidate at the Foundations of Data Institute at Universidad de Chile. My research interests include Information Retrieval, Data Mining &amp;amp; Visualization, Multimedia Databases and Linked Data. I&amp;rsquo;m currently developing my PhD thesis regarding the combination of semantic and visual similarity queries using Semantic Web technologies, you can learn more by visiting the IMGpedia project site.
+Besides research I really enjoy teaching. Currently I&amp;rsquo;m teaching the Relational Databases Course of the Data Science Diploma at the Department of Computer Science (DCC) and I&amp;rsquo;m a teaching assistant in the Databases course for undergrads.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://scferrada.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>http://scferrada.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>http://scferrada.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://scferrada.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://scferrada.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self Promotion</title>
+      <link>http://scferrada.github.io/home/promotion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/promotion/</guid>
+      <description>Here I list official awards and recognitions that I have received
+ Best Student Paper, Resources Track. In ISWC 2017 for &amp;ldquo;IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images&amp;rdquo; Best Poster. In ISWC 2017 for &amp;ldquo;Answering Visuo-semantic queries with IMGpedia&amp;rdquo; 1st Place. In the Latin American Contest of Master Thesis 2018 for &amp;ldquo;IMGpedia: a Large-scale Knowledge-base to Perform Visuo-semantic Queries over Wikimedia Commons Images&amp;rdquo; Mejor Titulado. For graduating as the best engineer in 2017 at Universidad de Chile.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://scferrada.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

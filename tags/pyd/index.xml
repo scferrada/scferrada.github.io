@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pyd on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/tags/pyd/</link>
-    <description>Recent content in Pyd on Sebastián&#39;s academic website</description>
+    <title>pyd on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/tags/pyd/</link>
+    <description>Recent content in pyd on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 21 Oct 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/pyd/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://scferrada.github.io/tags/pyd/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Answering Visuo-semantic Queries with IMGpedia</title>
-      <link>https://scferrada.github.io/publication/imgpediaiswc17demo/</link>
+      <link>http://scferrada.github.io/publication/imgpediaiswc17demo/</link>
       <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
       <description></description>
     </item>
     

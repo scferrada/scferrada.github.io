@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="author" content="Sebastián Ferrada">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.
+Llaves En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://scferrada.github.io/post/functionaldependencies/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-98676305-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="http://scferrada.github.io/index.xml" type="application/rss+xml" title="Sebastián&#39;s academic website">
+  <link rel="feed" href="http://scferrada.github.io/index.xml" type="application/rss+xml" title="Sebastián&#39;s academic website">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://scferrada.github.io/post/functionaldependencies/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ferradest">
+  <meta property="twitter:creator" content="@ferradest">
+  
+  <meta property="og:site_name" content="Sebastián&#39;s academic website">
+  <meta property="og:url" content="http://scferrada.github.io/post/functionaldependencies/">
+  <meta property="og:title" content="Llaves y Dependencias Funcionales | Sebastián&#39;s academic website">
+  <meta property="og:description" content="Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.
+Llaves En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-10-29T13:43:23-03:00">
+  
+  <meta property="article:modified_time" content="2018-10-29T13:43:23-03:00">
+  
+
+  
+
+  <title>Llaves y Dependencias Funcionales | Sebastián&#39;s academic website</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Sebastián&#39;s academic website</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#promotion">
+            
+            <span>Self Promotion</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Llaves y Dependencias Funcionales</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-10-29 13:43:23 -0300 -03" itemprop="datePublished dateModified">
+      Oct 29, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Sebastián Ferrada">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="http://scferrada.github.io/post/functionaldependencies/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Llaves%20y%20Dependencias%20Funcionales&amp;url=http%3a%2f%2fscferrada.github.io%2fpost%2ffunctionaldependencies%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fscferrada.github.io%2fpost%2ffunctionaldependencies%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fscferrada.github.io%2fpost%2ffunctionaldependencies%2f&amp;title=Llaves%20y%20Dependencias%20Funcionales"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fscferrada.github.io%2fpost%2ffunctionaldependencies%2f&amp;title=Llaves%20y%20Dependencias%20Funcionales"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Llaves%20y%20Dependencias%20Funcionales&amp;body=http%3a%2f%2fscferrada.github.io%2fpost%2ffunctionaldependencies%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
+relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
+o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.</p>
+
+<h1 id="llaves">Llaves</h1>
+
+<p>En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada. Como en un conjunto no se permiten
+elementos repetidos es necesario que cada tupla tenga una forma de identificarse y diferenciarse de las otras. La forma de identificar
+tuplas es utilizando el concepto de llave:</p>
+
+<ul>
+<li><strong>Una llave es un conjunto de atributos de una relación, tal que ningún par de tuplas de la relación tiene los mismos valores en dichos
+atributos</strong></li>
+</ul>
+
+<p>Por ejemplo, consideremos los datos de la Tabla 1. Una llave trivial para cualquier relación es el conjunto de todos los atributos. En
+este caso {vino, año, cepa, presentación}. Una llave más pequeña puede ser {vino, cepa} o {año, presentación} (considerando solo estos datos).
+Dicho lo anterior, es conveniente recalcar que las llaves no deben seleccionarse condicionadas a los datos, sino que considerando la semántica
+de las relaciones y atributos.</p>
+
+<table>
+<thead>
+<tr>
+<th>Vino</th>
+<th>año</th>
+<th>cepa</th>
+<th>presentación</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>130</td>
+<td>2018</td>
+<td>Cabernet</td>
+<td>750cc</td>
+</tr>
+
+<tr>
+<td>Clos de Paine</td>
+<td>2014</td>
+<td>Cabernet</td>
+<td>750cc</td>
+</tr>
+
+<tr>
+<td>Santelena</td>
+<td>2018</td>
+<td>Sauvignon Blanc</td>
+<td>2000cc</td>
+</tr>
+</tbody>
+</table>
+
+<p>Ahora vamos con un par de definiciones. Una <strong>superllave</strong> es cualquier llave de una relación. Todas las mencionadas en el ejemplo son superllaves.
+Muchas veces se prefiere contar con una llave lo más pequeña posible, pues es necesario que podamos comparar rápidamente un par de tuplas
+para determinar si son idénticas o no. Para esto, introducimos la noción de <strong>llave candidata</strong>. Una llave candidata es una superllave tal que
+ningún subconjunto propio de ella también sea superllave, es decir, es minimal. Por ejemplo {vino, año, cepa, presentación} es una superllave pero no una llave
+candidata, pues {vino, cepa} también es una superllave. Esta última tampoco es llave candidata porque {nombre} también es superllave.
+Finalmente, {nombre} si es llave candidata, debido a que no hay subconjuntos propios posibles que sean también llave.</p>
+
+<p>Un atributo que pertenece a una llave candidata se llama atributo primo.</p>
+
+<p>Para terminar, una <strong>llave primaria</strong> es alguna de las llaves candidatas que se selecciona como la forma estándar de determinarla igualdad
+entre tuplas.</p>
+
+<p>Es necesario notar en este punto, que una relación puede entonces tener más de una llave candidata y estas llaves pueden tener distinta
+cantidad de atributos. Consideremos el siguiente esquema para almacenar datos de personas:</p>
+
+<ul>
+<li><strong>Persona</strong>(RUT, nombre, fecha_hora_nacimiento, RUT_padre, RUT_madre)</li>
+</ul>
+
+<p>Las llaves candidatas son {RUT} y {RUT_madre, fecha_hora_nacimiento}. <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>  Como podemos apreciar, la segunda llave es minimal en el sentido
+de que no hay un subconjunto de esos atributos que también sea llave, por lo que es una llave candidata a pesar de tener una cantidad de atributos
+más grande que {RUT}. Sin embargo, probablemente se prefiera utilizar simplemente el RUT como llave primaria porque en este caso es lo más
+&ldquo;natural&rdquo; además que siempre es mejor tener menos elementos que comparar.</p>
+
+<h1 id="dependencias-funcionales">Dependencias Funcionales</h1>
+
+<p>Dados dos conjuntos de atributos de un esquema relacional $X$ e $Y$, se dice que $Y$ depende funcionalmente de $X$ si para todo
+par de tuplas $t_1, t_2$ del esquema se cumple que si $t_1[X]=t_2[X]$ entonces $t_1[Y]=t_2[Y]$. <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> Es decir, para cada valor de $X$
+hay un único valor de $Y$ posible. Cuando $X$ determina funcionalmente a Y se escribe $X \rightarrow Y$. Cuando $Y$ es un subconjunto de $X$ se dice que la dependencia funcional es trivial.</p>
+
+<p>Conocer las dependencias funcionales de un esquema es importante para el diseño relacional, pues nos ayudan a determinar si las
+relaciones propuestas por un modelo pueden o no presentar anomalías.</p>
+
+<p>Inicialmente, se sabe que una llave candidata determina funcionalmente a todos los atributos. Sin embargo, es posible que otros atributos
+se determinen entre ellos. Supongamos que contamos con la siguiente información de contacto:</p>
+
+<ul>
+<li><strong>Contacto</strong>(RUT, email, dirección, comuna, región)</li>
+</ul>
+
+<p>Claramente el RUT e email son llaves candidatas y, por lo tanto, determinan funcionalmente a todo el resto de los atributos. Por otro lado
+también sabemos que una comuna se encuentra en una sola región y entonces dos contactos de la misma comuna van a estar necesariamente
+en la misma región. Entonces sabemos que {comuna} $\rightarrow$ {región}. Como los nombres de calles pueden repetirse entre comunas,
+podemos descartar la dependencia {dirección} $\rightarrow$ {comuna}.</p>
+
+<p>Cuando un esquema cuenta con varias dependencias funcionales, podemos razonar lógicamente sobre ellas y concluir otras dependencias nuevas
+y coherentes con el esquema. Existe un conjunto de reglas de razonamiento que nos permite obtener el conjunto completo de dependencias funcionales
+de un esquema, a partir de un conjunto inicial. Estas reglas se conocen como los axiomas de Armstrong. Sea $(R, F)$ un esquema de relación $R$ y dependencias funcionales $F$.
+Se puede obtener el conjunto de todas las dependencias funcionales deducibles desde $F$, es decir, su clausura $F^+$ aplicando las siguientes reglas:</p>
+
+<p>Sean $X$, $Y$, $Z$, $A$ y $B$ conjuntos de atributos de $R$:</p>
+
+<ul>
+<li>Reflexión: Si $Y\subseteq X$, entonces $X\rightarrow Y$</li>
+<li>Aumento: Si $X\rightarrow Y$, entonces $XZ\rightarrow YZ$ para cualquier $Z$</li>
+<li>Transitividad: Si $X\rightarrow Y$ e $Y\rightarrow Z$, entonces $X\rightarrow Z$</li>
+<li>Descomposición: Si $X\rightarrow YZ$, entonces $X\rightarrow Y$ y $X\rightarrow Z$</li>
+<li>Composición: Si $X\rightarrow Y$ y $A\rightarrow B$, entonces $XA\rightarrow YB$</li>
+<li>Pseudo transitividad: Si $X\rightarrow Y$ y $YZ\rightarrow A$, entonces $XZ\rightarrow A$</li>
+<li>Autodeterminación: $X\rightarrow X$</li>
+<li>Extensión: Si $X\rightarrow Y$, entonces $X\rightarrow XY$</li>
+</ul>
+
+<p>Los axiomas de Armstrong son especialmente útiles para encontrar las llaves candidatas de las relaciones, pues basta con encontrar
+aquellos conjuntos de atributos que determinan funcionalmente a todos los demás. Por ejemplo consideremos $R(A,B,C,D,E)$ y las siguientes
+dependencias:</p>
+
+<ul>
+<li>$A\rightarrow E$</li>
+<li>$BC\rightarrow D$</li>
+<li>$E\rightarrow B$</li>
+</ul>
+
+<p>Por transitividad, sabemos que $A\rightarrow B$ y por aumento que $AC\rightarrow CE$ y $AC\rightarrow BC$. Nuevamente la transitividad nos indica que
+$AC\rightarrow D$. Finalmente, uniendo todos los resultados, tenemos que $AC\rightarrow ABCDE$, por lo que
+$AC$ es la llave de $R$. Este proceso de aplicar reglas exhaustivamente a un conjunto de atributos para encontrar todos los otros que
+son determinados funcionalmente por ellos, se llama calcular la clausura de ese conjunto de atributos. En este caso $AC^+$.</p>
+
+<p>Tal vez haya parecido un procedimiento antojadizo, pero la intuición detrás del éste es seleccionar los atributos que no aparecen
+en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<ol>
+<li>Armstrong, William. Dependency Structures of Data Base Relationships, page 580-583. IFIP Congress, 1974.</li>
+<li>Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.</li>
+</ol>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora.
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:2">En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$
+ <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/databases">Databases</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/relational-design">Relational Design</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/functional-dependencies">Functional Dependencies</a>
+  
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "scferrada-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//scferrada-github-io.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

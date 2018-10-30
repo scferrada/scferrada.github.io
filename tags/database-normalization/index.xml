@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Normalization on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/tags/database-normalization/</link>
+    <description>Recent content in Database Normalization on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    
+	<atom:link href="http://scferrada.github.io/tags/database-normalization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formas Pokenormales</title>
+      <link>http://scferrada.github.io/post/normalforms/</link>
+      <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/post/normalforms/</guid>
+      <description>Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables.</description>
+    </item>
+    
+  </channel>
+</rss>

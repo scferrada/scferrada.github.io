@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/tags/visualization/</link>
+    <link>http://scferrada.github.io/tags/visualization/</link>
     <description>Recent content in Visualization on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/visualization/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://scferrada.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Constitución Abierta</title>
-      <link>https://scferrada.github.io/project/constitucion-abierta/</link>
+      <link>http://scferrada.github.io/project/constitucion-abierta/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/project/constitucion-abierta/</guid>
-      <description>&lt;p&gt;Project Managed by Jorge Perez.&lt;/p&gt;
-</description>
+      <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
+      <description>Project Managed by Jorge Perez.</description>
     </item>
     
   </channel>

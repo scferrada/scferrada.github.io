@@ -2,20 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>7 on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/publication_types/7/</link>
+    <link>http://scferrada.github.io/publication_types/7/</link>
     <description>Recent content in 7 on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
-    <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/7/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://scferrada.github.io/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors</title>
+      <link>http://scferrada.github.io/publication/amw18/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/amw18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Querying Wikimedia Images using Wikidata Facts</title>
+      <link>http://scferrada.github.io/publication/wikiworkshop18/</link>
+      <pubDate>Wed, 24 Jan 2018 19:01:03 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/wikiworkshop18/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analisys</title>
-      <link>https://scferrada.github.io/publication/imgpediaamw/</link>
+      <link>http://scferrada.github.io/publication/imgpediaamw/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaamw/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaamw/</guid>
       <description></description>
     </item>
     

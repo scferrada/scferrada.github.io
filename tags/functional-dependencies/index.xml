@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functional Dependencies on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/tags/functional-dependencies/</link>
+    <description>Recent content in Functional Dependencies on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 13:43:23 -0300</lastBuildDate>
+    
+	<atom:link href="http://scferrada.github.io/tags/functional-dependencies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Llaves y Dependencias Funcionales</title>
+      <link>http://scferrada.github.io/post/functionaldependencies/</link>
+      <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/post/functionaldependencies/</guid>
+      <description>Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.
+Llaves En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada.</description>
+    </item>
+    
+  </channel>
+</rss>

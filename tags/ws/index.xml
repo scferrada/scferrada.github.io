@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ws on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/tags/ws/</link>
-    <description>Recent content in Ws on Sebastián&#39;s academic website</description>
+    <title>ws on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/tags/ws/</link>
+    <description>Recent content in ws on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/ws/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://scferrada.github.io/tags/ws/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analisys</title>
-      <link>https://scferrada.github.io/publication/imgpediaamw/</link>
+      <link>http://scferrada.github.io/publication/imgpediaamw/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/publication/imgpediaamw/</guid>
+      <guid>http://scferrada.github.io/publication/imgpediaamw/</guid>
       <description></description>
     </item>
     

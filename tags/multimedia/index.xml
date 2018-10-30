@@ -2,195 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multimedia on Sebastián&#39;s academic website</title>
-    <link>https://scferrada.github.io/tags/multimedia/</link>
+    <link>http://scferrada.github.io/tags/multimedia/</link>
     <description>Recent content in Multimedia on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sebastián Ferrada</copyright>
+    <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Thu, 26 Oct 2017 18:43:23 -0300</lastBuildDate>
-    <atom:link href="/tags/multimedia/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://scferrada.github.io/tags/multimedia/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>https://scferrada.github.io/post/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/post/imgpediaiswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
       
-      <guid>https://scferrada.github.io/post/imgpediaiswc/</guid>
-      <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
-que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
-fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
-En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en &lt;a href=&#34;https://iswc2017.semanticweb.org&#34; target=&#34;_blank&#34;&gt;ISWC 2017&lt;/a&gt; en Viena, Austria.&lt;/p&gt;
-
-&lt;p&gt;La idea que motiva el trabajo es incluir fuertemente el análisis de contenido multimedia en la Web de Datos, tomando
-en cuenta que la información multimedia es parte fundamental para la experiencia de los usuarios en la Web. IMGpedia
-nos permitiría poder hacer consultas de similitud visual entre imágenes, obtener imágenes que cumplan un cierto predicado
-y mezclar ambos enfoques, lo que llamamos una consulta &lt;em&gt;visuo-semántica&lt;/em&gt;. Por ejemplo, nos permitiría responder
-la siguiente consulta: &lt;em&gt;dada una imagen de la catedral de Cusco, obtener imágenes similares de catedrales europeas&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para lograr el objetivo, debemos seguir la siguiente metodología:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Obtener las imágenes para procesarlas localmente.&lt;/li&gt;
-&lt;li&gt;Calcular los descriptores visuales (vectores de características) de las imágenes.&lt;/li&gt;
-&lt;li&gt;Obtener estáticamente relaciones de similitud entre las imágenes.&lt;/li&gt;
-&lt;li&gt;Enlazar las imágenes con otras fuentes de información (&lt;a href=&#34;http://dbpedia.org&#34; target=&#34;_blank&#34;&gt;DBpedia&lt;/a&gt;, &lt;a href=&#34;https://www.wikidata.org&#34; target=&#34;_blank&#34;&gt;Wikidata&lt;/a&gt;, &lt;a href=&#34;http://freebase.com&#34; target=&#34;_blank&#34;&gt;Freebase&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Publicar todo como RDF, a través de un terminal SPARQL.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Descargar los 14,7 millones de imágenes nos tomó 40 días con múltiples conexiones. El tamaño total de las imágenes es de
-22 Terabytes. Una vez descargadas, calculamos los descriptores visuales, en particular calculamos histogramas de grises,
-histogramas de la orientación de los bordes y un descriptor basado en color. Puedes encontrar más detalles sobre los descriptores y código visitando
-el &lt;a href=&#34;https://github.com/scferrada/imgpedia&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; del proyecto (en inglés).&lt;/p&gt;
-
-&lt;p&gt;Como se puede ver en la Figura 1, nuestro objetivo es enlazar las imágenes que sean visualmente similares. Para hacer esto,
-tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos que si dos vectores están cerca, es por que son
-similares. Esta decisión de tomar los &lt;em&gt;k&lt;/em&gt; vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
-al respecto al final del post.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 1:&lt;/strong&gt; Similitud entre imágenes&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
-Para esto, usamos un &lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
-de modo que la imagen aparece en la wiki. Entonces enlazamos la imagen con el recurso de DBpedia relacionado al articulo de Wikipedia correspondiente.
-Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la que está relacionada, pero sí podemos
-decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
-si una imagen aparece en la &lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el &lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 2:&lt;/strong&gt; Obtener contexto de la imagen&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Finalmente, publicamos todo en formato &lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de &lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34;&gt;SPARQL&lt;/a&gt;.
-Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/ontology&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;
-En &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34;&gt;este terminal&lt;/a&gt;, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?Target
-WHERE {
-    im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 3:&lt;/strong&gt; Resultados de la consulta a&lt;/center&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
-podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
-WHERE {
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?res a yago:Wikicat16th-centuryPaintings ;
-      dcterms:subject dbc:Paintings_of_the_Louvre ;
-      rdfs:label ?label .
-    FILTER(LANG(?label)=&amp;quot;en&amp;quot;)  }
-  ?img imo:associatedWith ?res ;
-      imo:fileURL ?url .  
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 4:&lt;/strong&gt; Resultados de la consulta b&lt;/center&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
-entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
-WHERE {
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
-  ?source imo:associatedWith ?sres ;
-          imo:similar ?target .
-  ?target imo:associatedWith ?tres ;
-          imo:fileURL ?urlt .
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?tres dcterms:subject ?subject .
-    FILTER(CONTAINS(STR(?sub), “Museum”))} 
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 5:&lt;/strong&gt; Resultados de la consulta c&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
-a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;https://scferrada.github.io/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
-de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster &lt;a href=&#34;https://scferrada.github.io/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
-Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
-y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Redes Neuronales: el 90% de las personas que pasaron por mi póster me dijeron que no podían faltar. Ya sea para
-clasificar el contenido, como para obtener otros descriptores visuales o incluso para predecir triples con hechos sobre las imágenes.&lt;/li&gt;
-&lt;li&gt;Consultas por rango: muchos, al igual que yo, notan que el tener &lt;em&gt;k&lt;/em&gt; vecinos más cercanos por imagen es bastante restrictivo:
-hay relaciones interesantes que se pierden y forzamos a otras imágenes a ser similares a &lt;em&gt;k&lt;/em&gt; otras. Sin embargo,
-hacerlo de esta forma en la primera versión nos ayudó a comprender cómo se comporta la distribución de distancias entre
-imágenes similares, por lo que podemos proponer un umbral más ajustado en una próxima versión.&lt;/li&gt;
-&lt;li&gt;Enlazar a otas bases de conocimiento: DBpedia es una fuente de información muy útil, pero ha resultado ser poco flexible
-para nuestros propósitos. Muchos piensan que enlazar con otras bases de conocimiento como Wikidata o Yago, puede enriquecer
-y darle mayor expresividad a las consultas de IMGpedia.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;¡Gracias a todos los que nos fueron a ver al stand!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 6:&lt;/strong&gt; Sesión de pósters&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
-¡&lt;a href=&#34;https://iswc2017.semanticweb.org/program/awards/&#34; target=&#34;_blank&#34;&gt;IMGpedia ganó dos premios&lt;/a&gt;! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
-Este reconocimiento significa mucho para mi y para mi carrera de científico, ¡vaya forma de comenzar! Y más aún, porque los otros nominados
-son varios estudiantes de doctorado de centros y universidades reconocidos a nivel mundial, como la Universidad de Standford.
-Más aún cuando mi trabajo es una tesis de magíster, es increíble que haya competido contra otros trabajos de tan alto nivel.
-Además este premio, como el &lt;a href=&#34;https://iswc2017.semanticweb.org/paper-359/&#34; target=&#34;_blank&#34;&gt;mejor paper de estudiantes del track de investigación de ISWC&lt;/a&gt; es un claro mensaje de que
-tenemos que seguir trabajando en multimedia, no podemos seguir dejando estos datos de lado.
-Ahora queda seguir trabajando y mejorando IMGpedia, para que se convierta en la base de conocimiento estándar para las imágenes de la Web.&lt;/p&gt;
-
-&lt;p&gt;Quiero destacar también el nivel de ciencia que se desarrolla en los institutos y centros de investigación chilenos financiados
-por la &lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34;_blank&#34;&gt;Iniciativa Científica Milenio&lt;/a&gt;, en particular en el Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34;&gt;Centro
-de investigación de la Web Semántica&lt;/a&gt;, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
-para Jorge Pérez).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://scferrada.github.io/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
-&lt;center&gt;&lt;strong&gt;Figura 7:&lt;/strong&gt; Aidan y yo recibiendo el premio a mejor paper de estudiante&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
-Sergio Aguilera por ayudarme tanto con la mantención del servidor; a Camila Faúndez por el trabajo enlazando las imágenes a sus respectivos
-artículos; al Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34;&gt;Centro de Investigación de la Web Semántica&lt;/a&gt;, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Sobre los 10 vecinos más cercanos&lt;/em&gt;: Es cierto que al tomar esta decisión suceden dos cosas indeseables. Primero, es posible que
-se pierdan relaciones de similitud relevantes, es decir que el 11mo, 12mo, etc. sean muy similares también. Segundo,
-estamos forzando que si hay imágenes que no se parecen a nada, se parezcan a al menos 10. La justificación detrás de esta decisión tiene dos partes.
-Por un lado lo que pretendemos es mantener una cantidad acotada de triples RDF, después de todo, esta es la primera versión de
-IMGpedia y necesitábamos probar el concepto primero. Por otro lado, tener estas relaciones de los 10 vecinos más cercanos y sus distancias
-en los diferentes espacios vectoriales nos dan una visión más amplia sobre la distribuciónde las distancias, permitiéndonos en el
-futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y un umbral de distancia apropiado para cada descriptor.&lt;/p&gt;
-</description>
+      <guid>http://scferrada.github.io/post/imgpediaiswc/</guid>
+      <description>IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también. En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en ISWC 2017 en Viena, Austria.</description>
     </item>
     
     <item>
       <title>IMGpedia project</title>
-      <link>https://scferrada.github.io/project/imgpedia-project/</link>
+      <link>http://scferrada.github.io/project/imgpedia-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scferrada.github.io/project/imgpedia-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
+      <guid>http://scferrada.github.io/project/imgpedia-project/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
   </channel>
