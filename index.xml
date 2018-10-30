@@ -25,7 +25,7 @@ que todas las tablas de un esquema deben cumplir para así garantizar ciertas pr
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
-dependencia funcional en el modelo relacional. En &lt;a href=&#34;&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+dependencia funcional en el modelo relacional. En &lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
