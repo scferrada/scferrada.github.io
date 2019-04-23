@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/authors/</link>
+    <description>Recent content in Authors on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year}</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    
+	<atom:link href="http://scferrada.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>admin</title>
+      <link>http://scferrada.github.io/authors/admin/</link>
+      <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benjamin Bustos</title>
+      <link>http://scferrada.github.io/authors/benjamin-bustos/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/benjamin-bustos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nora Reyes</title>
+      <link>http://scferrada.github.io/authors/nora-reyes/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/nora-reyes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sebastián Ferrada</title>
+      <link>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aidan Hogan</title>
+      <link>http://scferrada.github.io/authors/aidan-hogan/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/aidan-hogan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicolás Bravo</title>
+      <link>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

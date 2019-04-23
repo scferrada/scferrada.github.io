@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/authors/admin/</link>
+    <description>Recent content in admin on Sebastián&#39;s academic website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year}</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    
+	<atom:link href="http://scferrada.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formas Pokenormales</title>
+      <link>http://scferrada.github.io/post/normal-forms/</link>
+      <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/post/normal-forms/</guid>
+      <description>Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables.</description>
+    </item>
+    
+    <item>
+      <title>Llaves y Dependencias Funcionales</title>
+      <link>http://scferrada.github.io/post/functional-dependencies/</link>
+      <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
+      <description>Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.
+Llaves En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada.</description>
+    </item>
+    
+    <item>
+      <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
+      <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
+      <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
+      <description>IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también. En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en ISWC 2017 en Viena, Austria.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://scferrada.github.io/author/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://scferrada.github.io/author/admin/</guid>
+      <description>I&amp;rsquo;m Sebastián Ferrada, a Doctoral Candidate at the Millenium Institute for Foundational Research on Data at Universidad de Chile. My research interests include Information Retrieval, Data Mining &amp;amp; Visualization, Multimedia Databases and Linked Data. I&amp;rsquo;m currently developing my PhD thesis regarding the combination of semantic and visual similarity queries using Semantic Web technologies, you can learn more by visiting the IMGpedia project site.
+Besides research I really enjoy teaching. Currently I&amp;rsquo;m teaching the Relational Databases Course of the Data Science Diploma at the Department of Computer Science (DCC) and I&amp;rsquo;ve been teaching assistant in the Databases course for undergrads for over three years.</description>
+    </item>
+    
+  </channel>
+</rss>

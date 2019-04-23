@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.5">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Sebastián Ferrada Aliaga">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también. En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en ISWC 2017 en Viena, Austria.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://scferrada.github.io/post/imgpedia-iswc/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-98676305-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://scferrada.github.io/post/imgpedia-iswc/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ferradest">
+  <meta property="twitter:creator" content="@ferradest">
+  
+  <meta property="og:site_name" content="Sebastián&#39;s academic website">
+  <meta property="og:url" content="http://scferrada.github.io/post/imgpedia-iswc/">
+  <meta property="og:title" content="IMGpedia, la importancia de incluir multimedia en la Web de Datos | Sebastián&#39;s academic website">
+  <meta property="og:description" content="IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también. En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en ISWC 2017 en Viena, Austria."><meta property="og:image" content="http://scferrada.github.io/img/yo.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-10-26T18:43:23-03:00">
+  
+  <meta property="article:modified_time" content="2017-10-26T18:43:23-03:00">
+  
+
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3f51b5",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#3f51b5"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://cookies.insites.com"
+      }
+    })});
+</script>
+
+
+  
+
+  <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos | Sebastián&#39;s academic website</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Sebastián&#39;s academic website</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#promotion">
+            
+            <span>Self Promotion</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pdf/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">IMGpedia, la importancia de incluir multimedia en la Web de Datos</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2017-10-26 18:43:23 -0300 -03" itemprop="datePublished">
+<meta content="2017-10-26 18:43:23 -0300 -03" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Oct 26, 2017</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/imgpedia-iswc/#disqus_thread"></a>
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
+que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
+fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
+En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en <a href="https://iswc2017.semanticweb.org" target="_blank">ISWC 2017</a> en Viena, Austria.</p>
+
+<p>La idea que motiva el trabajo es incluir fuertemente el análisis de contenido multimedia en la Web de Datos, tomando
+en cuenta que la información multimedia es parte fundamental para la experiencia de los usuarios en la Web. IMGpedia
+nos permitiría poder hacer consultas de similitud visual entre imágenes, obtener imágenes que cumplan un cierto predicado
+y mezclar ambos enfoques, lo que llamamos una consulta <em>visuo-semántica</em>. Por ejemplo, nos permitiría responder
+la siguiente consulta: <em>dada una imagen de la catedral de Cusco, obtener imágenes similares de catedrales europeas</em>.</p>
+
+<p>Para lograr el objetivo, debemos seguir la siguiente metodología:</p>
+
+<ul>
+<li>Obtener las imágenes para procesarlas localmente.</li>
+<li>Calcular los descriptores visuales (vectores de características) de las imágenes.</li>
+<li>Obtener estáticamente relaciones de similitud entre las imágenes.</li>
+<li>Enlazar las imágenes con otras fuentes de información (<a href="http://dbpedia.org" target="_blank">DBpedia</a>, <a href="https://www.wikidata.org" target="_blank">Wikidata</a>, <a href="http://freebase.com" target="_blank">Freebase</a>).</li>
+<li>Publicar todo como RDF, a través de un terminal SPARQL.</li>
+</ul>
+
+<p>Descargar los 14,7 millones de imágenes nos tomó 40 días con múltiples conexiones. El tamaño total de las imágenes es de
+22 Terabytes. Una vez descargadas, calculamos los descriptores visuales, en particular calculamos histogramas de grises,
+histogramas de la orientación de los bordes y un descriptor basado en color. Puedes encontrar más detalles sobre los descriptores y código visitando
+el <a href="https://github.com/scferrada/imgpedia" target="_blank">GitHub</a> del proyecto (en inglés).</p>
+
+<p>Como se puede ver en la Figura 1, nuestro objetivo es enlazar las imágenes que sean visualmente similares. Para hacer esto,
+tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos que si dos vectores están cerca, es por que son
+similares. Esta decisión de tomar los <em>k</em> vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
+al respecto al final del post.</p>
+
+<p><img src="/img/similarity.PNG" alt="Figura 1: Similitud entre imágenes" width="90%"/>
+<center><strong>Figura 1:</strong> Similitud entre imágenes</center></p>
+
+<p>Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
+Para esto, usamos un <a href="https://dumps.wikimedia.org/" target="_blank">dump</a> de la Wikipedia en inglés para reunir los pares <code>(nombre_img, nombre_wiki)</code>
+de modo que la imagen aparece en la wiki. Entonces enlazamos la imagen con el recurso de DBpedia relacionado al articulo de Wikipedia correspondiente.
+Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la que está relacionada, pero sí podemos
+decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
+si una imagen aparece en la <a href="http://en.wikipedia.org/wiki/Quentin_Tarantino" target="_blank">wiki de Quentin Tarantino</a>, entonces enlazamos la imagen con el <a href="http://dbpedia.org/resource/Quentin_Tarantino" target="_blank">recurso de Tarantino en DBpedia</a>.</p>
+
+<p><img src="/img/context.PNG" alt="Figura 2: Obtener contexto de la imagen" width="90%"/>
+<center><strong>Figura 2:</strong> Obtener contexto de la imagen</center></p>
+
+<p>Finalmente, publicamos todo en formato <a href="https://www.w3.org/2001/sw/wiki/RDF" target="_blank">RDF</a> que puede ser consultado a través de un terminal público de <a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a>.
+Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado <a href="http://imgpedia.dcc.uchile.cl/ontology" target="_blank">aquí</a>
+En <a href="http://imgpedia.dcc.uchile.cl/sparql" target="_blank">este terminal</a>, podemos hacer por ejemplo las siguientes consultas:</p>
+
+<ul>
+<li>Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:</li>
+</ul>
+
+<pre><code>SELECT DISTINCT ?Target
+WHERE {
+    im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
+}
+</code></pre>
+
+<p><img src="/img/q1.PNG" alt="Figura 3: Resultados de la consulta a" width="90%"/>
+<center><strong>Figura 3:</strong> Resultados de la consulta a</center></p>
+
+<ul>
+<li>Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
+podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):</li>
+</ul>
+
+<pre><code>SELECT DISTINCT ?url ?label
+WHERE {
+  SERVICE &lt;https://dbpedia.org/sparql&gt; {
+    ?res a yago:Wikicat16th-centuryPaintings ;
+      dcterms:subject dbc:Paintings_of_the_Louvre ;
+      rdfs:label ?label .
+    FILTER(LANG(?label)=&quot;en&quot;)  }
+  ?img imo:associatedWith ?res ;
+      imo:fileURL ?url .  
+}
+</code></pre>
+
+<p><img src="/img/q2.PNG" alt="Figura 4: Resultados de la consulta b" width="90%"/>
+<center><strong>Figura 4:</strong> Resultados de la consulta b</center></p>
+
+<ul>
+<li>Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos <em>visuo-semántica</em>, por ejemplo
+entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:</li>
+</ul>
+
+<pre><code>SELECT DISTINCT ?source ?target
+WHERE {
+  SERVICE &lt;https://dbpedia.org/sparql&gt; {
+    ?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
+  ?source imo:associatedWith ?sres ;
+          imo:similar ?target .
+  ?target imo:associatedWith ?tres ;
+          imo:fileURL ?urlt .
+  SERVICE &lt;https://dbpedia.org/sparql&gt; {
+    ?tres dcterms:subject ?subject .
+    FILTER(CONTAINS(STR(?sub), “Museum”))} 
+}
+</code></pre>
+
+<p><img src="/img/q3.PNG" alt="Figura 5: Resultados de la consulta c" width="90%"/>
+<center><strong>Figura 5:</strong> Resultados de la consulta c</center></p>
+
+<p>Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
+a Viena a presentarlo, puedes encontrar las diapositivas <a href="/pptx/iswc2017.pptx">aquí</a>. También participamos en la sesión
+de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster <a href="/pdf/imgpediaISWCposter.pdf">aquí</a>.
+Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
+y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:</p>
+
+<ul>
+<li>Redes Neuronales: el 90% de las personas que pasaron por mi póster me dijeron que no podían faltar. Ya sea para
+clasificar el contenido, como para obtener otros descriptores visuales o incluso para predecir triples con hechos sobre las imágenes.</li>
+<li>Consultas por rango: muchos, al igual que yo, notan que el tener <em>k</em> vecinos más cercanos por imagen es bastante restrictivo:
+hay relaciones interesantes que se pierden y forzamos a otras imágenes a ser similares a <em>k</em> otras. Sin embargo,
+hacerlo de esta forma en la primera versión nos ayudó a comprender cómo se comporta la distribución de distancias entre
+imágenes similares, por lo que podemos proponer un umbral más ajustado en una próxima versión.</li>
+<li>Enlazar a otas bases de conocimiento: DBpedia es una fuente de información muy útil, pero ha resultado ser poco flexible
+para nuestros propósitos. Muchos piensan que enlazar con otras bases de conocimiento como Wikidata o Yago, puede enriquecer
+y darle mayor expresividad a las consultas de IMGpedia.</li>
+</ul>
+
+<p>¡Gracias a todos los que nos fueron a ver al stand!</p>
+
+<p><img src="/img/posteriswc17.jpg" alt="Figura 6: Sesión de pósters" width="90%"/>
+<center><strong>Figura 6:</strong> Sesión de pósters</center></p>
+
+<p>Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
+¡<a href="https://iswc2017.semanticweb.org/program/awards/" target="_blank">IMGpedia ganó dos premios</a>! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
+Este reconocimiento significa mucho para mi y para mi carrera de científico, ¡vaya forma de comenzar! Y más aún, porque los otros nominados
+son varios estudiantes de doctorado de centros y universidades reconocidos a nivel mundial, como la Universidad de Standford.
+Más aún cuando mi trabajo es una tesis de magíster, es increíble que haya competido contra otros trabajos de tan alto nivel.
+Además este premio, como el <a href="https://iswc2017.semanticweb.org/paper-359/" target="_blank">mejor paper de estudiantes del track de investigación de ISWC</a> es un claro mensaje de que
+tenemos que seguir trabajando en multimedia, no podemos seguir dejando estos datos de lado.
+Ahora queda seguir trabajando y mejorando IMGpedia, para que se convierta en la base de conocimiento estándar para las imágenes de la Web.</p>
+
+<p>Quiero destacar también el nivel de ciencia que se desarrolla en los institutos y centros de investigación chilenos financiados
+por la <a href="http://www.iniciativamilenio.cl/en/home/" target="_blank">Iniciativa Científica Milenio</a>, en particular en el Núcleo Milenio <a href="http://ciws.cl" target="_blank">Centro
+de investigación de la Web Semántica</a>, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
+para Jorge Pérez).</p>
+
+<p><img src="/img/awards.jpg" alt="Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante" width="90%"/>
+<center><strong>Figura 7:</strong> Aidan y yo recibiendo el premio a mejor paper de estudiante</center></p>
+
+<p>Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
+Sergio Aguilera por ayudarme tanto con la mantención del servidor; a Camila Faúndez por el trabajo enlazando las imágenes a sus respectivos
+artículos; al Núcleo Milenio <a href="http://ciws.cl" target="_blank">Centro de Investigación de la Web Semántica</a>, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.</p>
+
+<hr />
+
+<p><em>Sobre los 10 vecinos más cercanos</em>: Es cierto que al tomar esta decisión suceden dos cosas indeseables. Primero, es posible que
+se pierdan relaciones de similitud relevantes, es decir que el 11mo, 12mo, etc. sean muy similares también. Segundo,
+estamos forzando que si hay imágenes que no se parecen a nada, se parezcan a al menos 10. La justificación detrás de esta decisión tiene dos partes.
+Por un lado lo que pretendemos es mantener una cantidad acotada de triples RDF, después de todo, esta es la primera versión de
+IMGpedia y necesitábamos probar el concepto primero. Por otro lado, tener estas relaciones de los 10 vecinos más cercanos y sus distancias
+en los diferentes espacios vectoriales nos dan una visión más amplia sobre la distribuciónde las distancias, permitiéndonos en el
+futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y un umbral de distancia apropiado para cada descriptor.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/imgpedia/">IMGpedia</a>
+  
+  <a class="badge badge-light" href="/tags/iswc/">ISWC</a>
+  
+  <a class="badge badge-light" href="">Linked Data</a>
+  
+  <a class="badge badge-light" href="/tags/multimedia/">Multimedia</a>
+  
+</div>
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu305f0fea01dbb13c8f9563947a3cca4d_497289_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Sebastián Ferrada Aliaga</a></h5>
+    <h6 class="card-subtitle">PhD (c) in Computer Science</h6>
+    <p class="card-text" itemprop="description">Chilean PhD. Student in CS. Love to read, dance and drink coffee.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:sferrada@dcc.uchile.cl" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/ferradest" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.cl/citations?user=7GM_30gAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/scferrada" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/pdf/cv.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/publication/ferrada-imgpedia-2017/">IMGpedia: a linked dataset with content-based analysis of Wikimedia images</a></li>
+          
+          <li><a href="/publication/ferrada-answering-2017/">Answering Visuo-Semantic Queries with IMGpedia.</a></li>
+          
+          <li><a href="/project/imgpedia-project/">IMGpedia project</a></li>
+          
+          <li><a href="/publication/ferrada-imgpedia-2016/">IMGpedia: Enriching the Web of Data with Image Content Analysis.</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "scferrada-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//scferrada-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.eeda67bb2d1f96265d85659d1edc7a5e.js"></script>
+
+  </body>
+</html>
+

@@ -6,7 +6,7 @@
     <description>Recent content in IMGpedia on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; {year}</copyright>
     <lastBuildDate>Tue, 02 Oct 2018 09:00:01 -0300</lastBuildDate>
     
 	<atom:link href="http://scferrada.github.io/tags/imgpedia/index.xml" rel="self" type="application/rss+xml" />
@@ -22,12 +22,48 @@
     </item>
     
     <item>
+      <title>Querying Wikimedia Images using Wikidata Facts</title>
+      <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>http://scferrada.github.io/post/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/post/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
       <description>IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también. En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en ISWC 2017 en Viena, Austria.</description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
+      <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
+      <description></description>
     </item>
     
   </channel>

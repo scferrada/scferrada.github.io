@@ -6,8 +6,8 @@
     <description>Recent content in Publication_types on Sebastián&#39;s academic website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 21 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; {year}</copyright>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://scferrada.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,27 +15,9 @@
     <item>
       <title>1</title>
       <link>http://scferrada.github.io/publication_types/1/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
       
       <guid>http://scferrada.github.io/publication_types/1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>7</title>
-      <link>http://scferrada.github.io/publication_types/7/</link>
-      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://scferrada.github.io/publication_types/7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>8</title>
-      <link>http://scferrada.github.io/publication_types/8/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://scferrada.github.io/publication_types/8/</guid>
       <description></description>
     </item>
     

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sebastián&#39;s academic website on Sebastián&#39;s academic website</title>
+    <title>Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/</link>
-    <description>Recent content in Sebastián&#39;s academic website on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content on Sebastián&#39;s academic website</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; {year}</copyright>
+    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    
+	    <atom:link href="http://scferrada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Formas Pokenormales</title>
-      <link>http://scferrada.github.io/post/normalforms/</link>
+      <link>http://scferrada.github.io/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/post/normalforms/</guid>
+      <guid>http://scferrada.github.io/post/normal-forms/</guid>
       <description>
 
 &lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
@@ -501,10 +503,10 @@ se prefiere lo contrario.&lt;/p&gt;
     
     <item>
       <title>Llaves y Dependencias Funcionales</title>
-      <link>http://scferrada.github.io/post/functionaldependencies/</link>
+      <link>http://scferrada.github.io/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/post/functionaldependencies/</guid>
+      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
       <description>
 
 &lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
@@ -672,29 +674,29 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
     </item>
     
     <item>
-      <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors</title>
-      <link>http://scferrada.github.io/publication/amw18/</link>
-      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
+      <link>http://scferrada.github.io/publication/ferrada-simple-2018/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
       
-      <guid>http://scferrada.github.io/publication/amw18/</guid>
+      <guid>http://scferrada.github.io/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
-      <link>http://scferrada.github.io/publication/wikiworkshop18/</link>
-      <pubDate>Wed, 24 Jan 2018 19:01:03 -0300</pubDate>
+      <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       
-      <guid>http://scferrada.github.io/publication/wikiworkshop18/</guid>
+      <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>http://scferrada.github.io/post/imgpediaiswc/</link>
+      <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/post/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
 fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
@@ -864,20 +866,11 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     </item>
     
     <item>
-      <title>Answering Visuo-semantic Queries with IMGpedia</title>
-      <link>http://scferrada.github.io/publication/imgpediaiswc17demo/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/publication/imgpediaiswc17demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IMGpedia: a Linked Dataset with Content-based Analysis of Wikimedia Images</title>
-      <link>http://scferrada.github.io/publication/imgpediaiswc/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://scferrada.github.io/publication/imgpediaiswc/</guid>
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
     
@@ -900,11 +893,11 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     </item>
     
     <item>
-      <title>IMGpedia: Enriching the Web of Data with Image Content Analisys</title>
-      <link>http://scferrada.github.io/publication/imgpediaamw/</link>
-      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
+      <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
       
-      <guid>http://scferrada.github.io/publication/imgpediaamw/</guid>
+      <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
     
@@ -914,8 +907,7 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
-      <description>&lt;p&gt;Project Managed by Jorge Perez.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -924,16 +916,16 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://scferrada.github.io/project/imgpedia-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
+      
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
+      <description></description>
     </item>
     
   </channel>
