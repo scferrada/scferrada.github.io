@@ -3,20 +3,19 @@
   <channel>
     <title>Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/</link>
-    <description>Recent content on Sebastián&#39;s academic website</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
-    
-	    <atom:link href="http://scferrada.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sebastián&#39;s academic website</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Sebastián&#39;s academic website</title>
+      <link>http://scferrada.github.io/</link>
+    </image>
     
     <item>
       <title>Formas Pokenormales</title>
       <link>http://scferrada.github.io/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/post/normal-forms/</guid>
       <description>
 
@@ -505,7 +504,6 @@ se prefiere lo contrario.&lt;/p&gt;
       <title>Llaves y Dependencias Funcionales</title>
       <link>http://scferrada.github.io/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
       <description>
 
@@ -668,7 +666,6 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
       <title>IMGpedia at CLTM-CLEI</title>
       <link>http://scferrada.github.io/talk/clei-cltm18/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/talk/clei-cltm18/</guid>
       <description></description>
     </item>
@@ -677,7 +674,6 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
       <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
       <link>http://scferrada.github.io/publication/ferrada-simple-2018/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
@@ -686,7 +682,6 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
@@ -695,7 +690,6 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
       <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
@@ -746,56 +740,56 @@ Los datos tienen un cierto esquema para modelar clases y atributos que puede ser
 En &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34;&gt;este terminal&lt;/a&gt;, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?Target
 WHERE {
-    im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
+im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 3:&lt;/strong&gt; Resultados de la consulta a&lt;/center&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
-podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
+podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
 WHERE {
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?res a yago:Wikicat16th-centuryPaintings ;
-      dcterms:subject dbc:Paintings_of_the_Louvre ;
-      rdfs:label ?label .
-    FILTER(LANG(?label)=&amp;quot;en&amp;quot;)  }
-  ?img imo:associatedWith ?res ;
-      imo:fileURL ?url .  
+SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
+?res a yago:Wikicat16th-centuryPaintings ;
+  dcterms:subject dbc:Paintings_of_the_Louvre ;
+  rdfs:label ?label .
+FILTER(LANG(?label)=&amp;quot;en&amp;quot;)  }
+?img imo:associatedWith ?res ;
+  imo:fileURL ?url .  
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 4:&lt;/strong&gt; Resultados de la consulta b&lt;/center&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
-entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
+entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
 WHERE {
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
-  ?source imo:associatedWith ?sres ;
-          imo:similar ?target .
-  ?target imo:associatedWith ?tres ;
-          imo:fileURL ?urlt .
-  SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
-    ?tres dcterms:subject ?subject .
-    FILTER(CONTAINS(STR(?sub), “Museum”))} 
+SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
+?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
+?source imo:associatedWith ?sres ;
+      imo:similar ?target .
+?target imo:associatedWith ?tres ;
+      imo:fileURL ?urlt .
+SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
+?tres dcterms:subject ?subject .
+FILTER(CONTAINS(STR(?sub), “Museum”))} 
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scferrada.github.io/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;&lt;strong&gt;Figura 5:&lt;/strong&gt; Resultados de la consulta c&lt;/center&gt;&lt;/p&gt;
@@ -860,7 +854,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>IMGpedia at ISWC</title>
       <link>http://scferrada.github.io/talk/imgpediaiswc17/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
-      
       <guid>http://scferrada.github.io/talk/imgpediaiswc17/</guid>
       <description></description>
     </item>
@@ -869,7 +862,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
@@ -878,7 +870,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
       <link>http://scferrada.github.io/talk/mscdefense/</link>
       <pubDate>Fri, 07 Jul 2017 10:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/talk/mscdefense/</guid>
       <description></description>
     </item>
@@ -887,7 +878,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>AMW 2017 School - Poster Session</title>
       <link>http://scferrada.github.io/talk/amw17-poster/</link>
       <pubDate>Mon, 05 Jun 2017 17:00:00 -0200</pubDate>
-      
       <guid>http://scferrada.github.io/talk/amw17-poster/</guid>
       <description></description>
     </item>
@@ -896,7 +886,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
       <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
@@ -905,7 +894,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>Constitución Abierta</title>
       <link>http://scferrada.github.io/project/constitucion-abierta/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
       <description></description>
     </item>
@@ -914,7 +902,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>IMGpedia project</title>
       <link>http://scferrada.github.io/project/imgpedia-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://scferrada.github.io/project/imgpedia-project/</guid>
       <description></description>
     </item>
@@ -923,7 +910,6 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1 on Sebastián&#39;s academic website</title>
+    <title>1 | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/publication_types/1/</link>
-    <description>Recent content in 1 on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Mon, 21 May 2018 00:00:00 -0400</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 21 May 2018 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>1</title>
+      <link>http://scferrada.github.io/publication_types/1/</link>
+    </image>
     
     <item>
       <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
       <link>http://scferrada.github.io/publication/ferrada-simple-2018/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
@@ -34,7 +32,6 @@
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
@@ -43,7 +40,6 @@
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
       <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
@@ -52,7 +48,6 @@
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>

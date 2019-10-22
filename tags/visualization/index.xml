@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visualization on Sebastián&#39;s academic website</title>
+    <title>Visualization | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/tags/visualization/</link>
-    <description>Recent content in Visualization on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Visualization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Visualization</title>
+      <link>http://scferrada.github.io/tags/visualization/</link>
+    </image>
     
     <item>
       <title>Constitución Abierta</title>
       <link>http://scferrada.github.io/project/constitucion-abierta/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
-      <description>Visualizing the results of the Chilean constitutional process.</description>
+      <description></description>
     </item>
     
   </channel>

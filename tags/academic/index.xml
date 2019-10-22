@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Academic&#39; on Sebastián&#39;s academic website</title>
+    <title>Content tagged as &#39;Academic&#39; | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/tags/academic/</link>
-    <description>Recent content in Content tagged as &#39;Academic&#39; on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Content tagged as &#39;Academic&#39;</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/headers/bubbles-wide.jpg</url>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>http://scferrada.github.io/tags/academic/</link>
+    </image>
     
   </channel>
 </rss>

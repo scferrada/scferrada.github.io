@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</title>
+    <title>Recent &amp; Upcoming Talks | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>http://scferrada.github.io/talk/</link>
+    </image>
     
     <item>
       <title>IMGpedia at CLTM-CLEI</title>
       <link>http://scferrada.github.io/talk/clei-cltm18/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/talk/clei-cltm18/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>IMGpedia at ISWC</title>
       <link>http://scferrada.github.io/talk/imgpediaiswc17/</link>
       <pubDate>Mon, 23 Oct 2017 14:00:01 +0200</pubDate>
-      
       <guid>http://scferrada.github.io/talk/imgpediaiswc17/</guid>
       <description></description>
     </item>
@@ -34,7 +32,6 @@
       <title>IMGpedia: a Large-scale Knowledge-base to perform Visuo-semantic Queries over Wikimedia Commons Images</title>
       <link>http://scferrada.github.io/talk/mscdefense/</link>
       <pubDate>Fri, 07 Jul 2017 10:00:00 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/talk/mscdefense/</guid>
       <description></description>
     </item>
@@ -43,7 +40,6 @@
       <title>AMW 2017 School - Poster Session</title>
       <link>http://scferrada.github.io/talk/amw17-poster/</link>
       <pubDate>Mon, 05 Jun 2017 17:00:00 -0200</pubDate>
-      
       <guid>http://scferrada.github.io/talk/amw17-poster/</guid>
       <description></description>
     </item>

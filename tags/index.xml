@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Sebastián&#39;s academic website</title>
+    <title>Tags | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/tags/</link>
-    <description>Recent content in Tags on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Tags</title>
+      <link>http://scferrada.github.io/tags/</link>
+    </image>
     
     <item>
       <title>Database Normalization</title>
       <link>http://scferrada.github.io/tags/database-normalization/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/database-normalization/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>Databases</title>
       <link>http://scferrada.github.io/tags/databases/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/databases/</guid>
       <description></description>
     </item>
@@ -34,7 +32,6 @@
       <title>Normal Forms</title>
       <link>http://scferrada.github.io/tags/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/normal-forms/</guid>
       <description></description>
     </item>
@@ -43,7 +40,6 @@
       <title>Relational Model</title>
       <link>http://scferrada.github.io/tags/relational-model/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/relational-model/</guid>
       <description></description>
     </item>
@@ -52,7 +48,6 @@
       <title>Functional Dependencies</title>
       <link>http://scferrada.github.io/tags/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/functional-dependencies/</guid>
       <description></description>
     </item>
@@ -61,7 +56,6 @@
       <title>Relational Design</title>
       <link>http://scferrada.github.io/tags/relational-design/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/relational-design/</guid>
       <description></description>
     </item>
@@ -70,7 +64,6 @@
       <title>IMGpedia</title>
       <link>http://scferrada.github.io/tags/imgpedia/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/imgpedia/</guid>
       <description></description>
     </item>
@@ -79,7 +72,6 @@
       <title>Masters Thesis</title>
       <link>http://scferrada.github.io/tags/masters-thesis/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/masters-thesis/</guid>
       <description></description>
     </item>
@@ -88,7 +80,6 @@
       <title>Semantic Web</title>
       <link>http://scferrada.github.io/tags/semantic-web/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/semantic-web/</guid>
       <description></description>
     </item>
@@ -97,7 +88,6 @@
       <title>Visuo-semantic Queries</title>
       <link>http://scferrada.github.io/tags/visuo-semantic-queries/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/visuo-semantic-queries/</guid>
       <description></description>
     </item>
@@ -106,7 +96,6 @@
       <title>Web Image Retrieval</title>
       <link>http://scferrada.github.io/tags/web-image-retrieval/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/web-image-retrieval/</guid>
       <description></description>
     </item>
@@ -115,7 +104,6 @@
       <title>Multimedia</title>
       <link>http://scferrada.github.io/tags/multimedia/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/tags/multimedia/</guid>
       <description></description>
     </item>
@@ -124,7 +112,6 @@
       <title>SPARQL</title>
       <link>http://scferrada.github.io/tags/sparql/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/tags/sparql/</guid>
       <description></description>
     </item>
@@ -133,7 +120,6 @@
       <title>Wikidata</title>
       <link>http://scferrada.github.io/tags/wikidata/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      
       <guid>http://scferrada.github.io/tags/wikidata/</guid>
       <description></description>
     </item>
@@ -142,7 +128,6 @@
       <title>ISWC</title>
       <link>http://scferrada.github.io/tags/iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/iswc/</guid>
       <description></description>
     </item>
@@ -151,7 +136,6 @@
       <title>Linked Data</title>
       <link>http://scferrada.github.io/tags/linked-data/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/tags/linked-data/</guid>
       <description></description>
     </item>
@@ -160,16 +144,15 @@
       <title>Content tagged as &#39;Academic&#39;</title>
       <link>http://scferrada.github.io/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>http://scferrada.github.io/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
+      <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Visualization</title>
       <link>http://scferrada.github.io/tags/visualization/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://scferrada.github.io/tags/visualization/</guid>
       <description></description>
     </item>

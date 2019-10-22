@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/admin/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="old"
+                href="http://scferrada.github.io/old/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scferrada.github.io/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/database-normalization/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/databases/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/post/normal-forms/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/normal-forms/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/post/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/relational-model/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="old"
+                href="http://scferrada.github.io/old/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scferrada.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="old"
+                href="http://scferrada.github.io/old/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scferrada.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/functional-dependencies/</loc>
+    <lastmod>2018-10-29T13:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/post/functional-dependencies/</loc>
+    <lastmod>2018-10-29T13:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/relational-design/</loc>
+    <lastmod>2018-10-29T13:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/imgpedia/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/talk/clei-cltm18/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/masters-thesis/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/semantic-web/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/visuo-semantic-queries/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/web-image-retrieval/</loc>
+    <lastmod>2018-10-02T09:00:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication_types/1/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/ferrada-simple-2018/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/benjamin-bustos/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/nora-reyes/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication_types/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="old"
+                href="http://scferrada.github.io/old/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scferrada.github.io/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</loc>
+    <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/aidan-hogan/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/multimedia/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/ferrada-querying-2018/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/sparql/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/wikidata/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/post/imgpedia-iswc/</loc>
+    <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/iswc/</loc>
+    <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/linked-data/</loc>
+    <lastmod>2017-10-26T18:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/talk/imgpediaiswc17/</loc>
+    <lastmod>2017-10-23T14:00:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</loc>
+    <lastmod>2017-10-23T00:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/talk/mscdefense/</loc>
+    <lastmod>2017-07-07T10:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/talk/amw17-poster/</loc>
+    <lastmod>2017-06-05T17:00:00-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/ferrada-answering-2017/</loc>
+    <lastmod>2017-01-01T00:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/academic/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/talk/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/project/constitucion-abierta/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/project/imgpedia-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/tags/visualization/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</loc>
+    <lastmod>2016-01-01T00:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scferrada.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="old"
+                href="http://scferrada.github.io/old/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scferrada.github.io/categories/"
+                />
+  </url>
+  
+</urlset>

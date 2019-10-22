@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web Image Retrieval on Sebastián&#39;s academic website</title>
+    <title>Web Image Retrieval | Sebastián&#39;s academic website</title>
     <link>http://scferrada.github.io/tags/web-image-retrieval/</link>
-    <description>Recent content in Web Image Retrieval on Sebastián&#39;s academic website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Tue, 02 Oct 2018 09:00:01 -0300</lastBuildDate>
-    
-	<atom:link href="http://scferrada.github.io/tags/web-image-retrieval/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://scferrada.github.io/tags/web-image-retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <description>Web Image Retrieval</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 02 Oct 2018 09:00:01 -0300</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Web Image Retrieval</title>
+      <link>http://scferrada.github.io/tags/web-image-retrieval/</link>
+    </image>
     
     <item>
       <title>IMGpedia at CLTM-CLEI</title>
       <link>http://scferrada.github.io/talk/clei-cltm18/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      
       <guid>http://scferrada.github.io/talk/clei-cltm18/</guid>
       <description></description>
     </item>

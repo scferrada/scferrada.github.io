@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://scferrada.github.io/authors/admin/</loc>
+    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://scferrada.github.io/authors/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/database-normalization/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/databases/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -28,7 +30,6 @@
   <url>
     <loc>http://scferrada.github.io/tags/normal-forms/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -39,31 +40,21 @@
   <url>
     <loc>http://scferrada.github.io/tags/relational-model/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/</loc>
     <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://scferrada.github.io/authors/admin/</loc>
-    <lastmod>2018-10-29T14:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/functional-dependencies/</loc>
     <lastmod>2018-10-29T13:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -74,13 +65,11 @@
   <url>
     <loc>http://scferrada.github.io/tags/relational-design/</loc>
     <lastmod>2018-10-29T13:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/imgpedia/</loc>
     <lastmod>2018-10-02T09:00:01-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -91,31 +80,26 @@
   <url>
     <loc>http://scferrada.github.io/tags/masters-thesis/</loc>
     <lastmod>2018-10-02T09:00:01-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/semantic-web/</loc>
     <lastmod>2018-10-02T09:00:01-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/visuo-semantic-queries/</loc>
     <lastmod>2018-10-02T09:00:01-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/web-image-retrieval/</loc>
     <lastmod>2018-10-02T09:00:01-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/publication_types/1/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -126,19 +110,16 @@
   <url>
     <loc>http://scferrada.github.io/authors/benjamin-bustos/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/authors/nora-reyes/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/publication_types/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -149,25 +130,21 @@
   <url>
     <loc>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/authors/aidan-hogan/</loc>
     <lastmod>2018-04-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/multimedia/</loc>
     <lastmod>2018-04-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</loc>
     <lastmod>2018-04-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -178,13 +155,11 @@
   <url>
     <loc>http://scferrada.github.io/tags/sparql/</loc>
     <lastmod>2018-04-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/wikidata/</loc>
     <lastmod>2018-04-21T00:00:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -195,13 +170,11 @@
   <url>
     <loc>http://scferrada.github.io/tags/iswc/</loc>
     <lastmod>2017-10-26T18:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/linked-data/</loc>
     <lastmod>2017-10-26T18:43:23-03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -252,13 +225,11 @@
   <url>
     <loc>http://scferrada.github.io/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scferrada.github.io/tags/visualization/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -267,17 +238,7 @@
   </url>
   
   <url>
-    <loc>http://scferrada.github.io/author/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>http://scferrada.github.io/author/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://scferrada.github.io/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
