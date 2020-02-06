@@ -5,7 +5,7 @@
     <link>http://scferrada.github.io/tags/databases/</link>
       <atom:link href="http://scferrada.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
     <description>Databases</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Databases</title>
@@ -17,121 +17,100 @@
       <link>http://scferrada.github.io/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
       <guid>http://scferrada.github.io/post/normal-forms/</guid>
-      <description>
-
-&lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
+      <description>&lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
 de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías
 que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones
 que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables. Las formas normales fueron propuestas
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
-
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
-dependencia funcional en el modelo relacional. En &lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
-
+dependencia funcional en el modelo relacional. En 
+&lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt;
+ puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador
 por lo que se muestra en negrita y cursiva.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Pokemon&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;[Pikachu, Caterpie, Charmander, &amp;hellip;]&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;[Staryu, Goldeen, Starmie, &amp;hellip;]&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Gary&lt;/td&gt;
 &lt;td&gt;[Krabby, Nidoking, Arcanine, &amp;hellip;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 1:&lt;/strong&gt; Entrenadores y sus Pokémon &lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Como se puede adivinar, es al menos extraño el manejar listas de elementos en una base de datos relacional. El utilizar ese tipo de estructuras
 en un atributo de una tabla puede producir dificultades al momento de implementar la base de datos. ¿Las colecciones pueden tener un tamaño máximo?
 ¿Cómo busco, agrego, ordeno o elimino eficientemente un elemento de la colección?&lt;/p&gt;
-
 &lt;p&gt;¿Cómo se puede solucionar? La solución más ingenua, podría ser agregar más columnas, una para cada Pokémon atrapado. Esto supone nuevos problemas:
 ¿Cuántas columnas son suficientes? ¿Qué pasa con las columnas que no son utilizadas? ¿Cómo saber en cuál columna agregar la captura?&lt;/p&gt;
-
 &lt;p&gt;Por lo general, la solución a este tipo de problemas es utilizar las llaves de ambas entidades relacionadas. En el caso del ejemplo, serían
 tanto el nombre del entrenador como el del Pokémon. El resultado puede apreciarse en la Tabla 2. Como un entrenador puede tener varios Pokémon
 tanto el nombre del entrenador como el nombre del Pokémon son la llave de la tabla. (Efectivamente esto restringe que un mismo entrenador
 capture dos pokémon del mismo nombre. ¿Cómo solucionar esto?)&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pokemon&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Pokemon&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Pikachu&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Caterpie&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Charmander&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Staryu&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;&amp;hellip;&lt;/td&gt;
 &lt;td&gt;&amp;hellip;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 2:&lt;/strong&gt; Entrenadores y sus Pokémon, un valor por celda &lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Cuando tenemos una relación como la de la Tabla 2, decimos que cada atributo tiene valores atómicos, es decir, valores que no son colecciones
 (conjuntos, listas, etc.). Este tipo de relaciones están en &lt;strong&gt;Primera Forma Normal&lt;/strong&gt;.&lt;/p&gt;
-
 &lt;p&gt;Supongamos que ahora que tenemos más información sobre el entrenador, sobre el Pokémon capturado y sobre la captura en sí. Por ejemplo, queremos
 almacenar la ciudad de la que el entrenador proviene, la salud y tipo del Pokémon capturado y la fecha y hora de la captura. Si seguimos
 con lo que veníamos haciendo en la Tabla 2, podríamos proponer un esquema como el que se ve en la Tabla 3. Podemos ver que la llave sigue siendo
 el nombre del entrenador y el del pokémon, sin embargo, al agregar también la fecha de captura a la llave podemos admitir que un entrenador
 capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Origen&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pokemon&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Pokemon&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Tipo&lt;/th&gt;
 &lt;th&gt;HP&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Fecha Captura&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Fecha Captura&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
@@ -141,7 +120,6 @@ capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt
 &lt;td&gt;35&lt;/td&gt;
 &lt;td&gt;01-04-1997 10:20&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
@@ -150,7 +128,6 @@ capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt
 &lt;td&gt;45&lt;/td&gt;
 &lt;td&gt;02-04-1997 11:34&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
@@ -159,7 +136,6 @@ capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt
 &lt;td&gt;39&lt;/td&gt;
 &lt;td&gt;05-04-1997 19:12&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Ciudad Celeste&lt;/td&gt;
@@ -170,12 +146,9 @@ capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 3:&lt;/strong&gt; Entrenadores y sus Pokémon, con datos del entrenador, Pokémon y captura &lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;En el modelo de la Tabla 3, podemos encontrar varios problemas. Primero notamos que hay redundancia, pues cada vez que un entrenador capture
 un nuevo pokémon debemos repetir su ciudad de origen. Esto conlleva varias anomalías consigo, las cuales vamos a enumerar:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Anomalía de Actualización:&lt;/strong&gt; Si quisieramos modificar la ciudad de origen de un entrenador debemos asegurarnos de cambiarla correctamente
 en todas las filas que se refieren al entrenador. El no hacerlo, lleva a un estado inconsistente de la base de datos.&lt;/li&gt;
@@ -184,18 +157,15 @@ columna pokémon es parte de la llave y por lo tanto no admite valores nulos. Lo
 tipo si nadie lo ha capturado.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Anomalía de Borrado:&lt;/strong&gt; Si un entrenador decide liberar a todos sus pokémon capturados, ¿qué hacemos con él? ¿Borramos todos sus datos?&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;¿Cuál es el origen de estas anomalías? En este caso se debe a que hay atributos cuyo valor depende solo del entrenador. En este caso, la ciudad de
 origen depende del entrenador. Por otro lado, hay atributos que dependen solo del pokémon en cuestión, como el tipo. La salud del pokémon es un caso distinto,
-pues al contrario del tipo, no depende solo del pokemon del que se trata, sino que también depende del entrenador y de cuándo fue capturado&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+pues al contrario del tipo, no depende solo del pokemon del que se trata, sino que también depende del entrenador y de cuándo fue capturado&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 Cuando se define una llave en una tabla, se espera que todos los atributos no-primos dependan de todos los atributos de la llave en conjunto,
 no solo de una parte de ésta. Eso es lo que en este caso produce las anomalías: hay atributos no primos que no dependen funcionalmente de la llave
-completa, sino que de un subconjunto (propio&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;) de ésta.&lt;/p&gt;
-
+completa, sino que de un subconjunto (propio&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;) de ésta.&lt;/p&gt;
 &lt;p&gt;Entonces, la &lt;strong&gt;Segunda Forma Normal&lt;/strong&gt; (2NF) indica que un esquema está en primera forma normal y además, ningún atributo no primo depende funcionalmente de algún
 subconjunto propio de alguna de las llaves candidatas. También puede leerse como que todos los atributos no primos deben depender funcionalmente
 de todas las llaves candidatas &lt;strong&gt;completas&lt;/strong&gt;.&lt;/p&gt;
-
 &lt;p&gt;Nuestro esquema de Tabla 3 no cumple con la segunda forma normal. La única llave candidata (y por lo tanto la llave primaria) es &lt;em&gt;{Entrenador, Pokemon, Fecha}&lt;/em&gt;
 y tenemos las dependencias funcionales &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt; y &lt;em&gt;Pokémon&lt;/em&gt; $\rightarrow$ &lt;em&gt;Tipo&lt;/em&gt; que violan 2NF pues &lt;em&gt;Entrenador&lt;/em&gt; y &lt;em&gt;Pokemon&lt;/em&gt;
 son subconjuntos propios de la llave primaria.
@@ -203,73 +173,61 @@ son subconjuntos propios de la llave primaria.
 para los entrenadores, otra para las especies de pokémon y otra para las capturas. En las tablas 4, 5 y 6 podemos encontrar el resultado de la normalización.
 Bastó en este caso con tomar las dependencias funcionales &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt; y &lt;em&gt;Pokémon&lt;/em&gt; $\rightarrow$ &lt;em&gt;Tipo&lt;/em&gt; y extraerlas en tablas aparte. Finalmente,
 se agrega la tabla de capturas.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Origen&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Ciudad Celeste&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Gary&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 4:&lt;/strong&gt; Entrenadores y sus ciudades de origen&lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pokemon&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Pokemon&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;tipo&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Pikachu&lt;/td&gt;
 &lt;td&gt;Eléctrico&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Caterpie&lt;/td&gt;
 &lt;td&gt;Insecto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Staryu&lt;/td&gt;
 &lt;td&gt;Agua&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 5:&lt;/strong&gt; Especies de pokémon y sus tipos&lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pokemon&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Pokemon&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;HP&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Fecha Captura&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Fecha Captura&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
@@ -277,21 +235,18 @@ se agrega la tabla de capturas.&lt;/p&gt;
 &lt;td&gt;35&lt;/td&gt;
 &lt;td&gt;01-04-1997 10:20&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Caterpie&lt;/td&gt;
 &lt;td&gt;45&lt;/td&gt;
 &lt;td&gt;02-04-1997 11:34&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Charmander&lt;/td&gt;
 &lt;td&gt;39&lt;/td&gt;
 &lt;td&gt;05-04-1997 19:12&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Staryu&lt;/td&gt;
@@ -300,44 +255,37 @@ se agrega la tabla de capturas.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 6:&lt;/strong&gt; Entrenadores y sus pokémon&lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;El conjunto de las tablas 4, 5 y 6 cumple ahora con 2NF. Supongamos ahora que además del pueblo de origen del entrenador, queremos
 también saber la región de la que provienen, como se ve en la Tabla 7. En dicha tabla, es fácil notar que se cumple la dependencia funcional
 &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;. La existencia de esta dependencia facilita la aparición de las anomalías que discutimos anteriormente.
 Por ejemplo, si queremos modificar el pueblo de origen, tenemos que tomar en cuenta que la región tal vez también debería cambiar.
 La naturaleza del problema es distinta a la anterior. Acá no hay una dependencia parcial a una llave, sino que hay atributos no primos
 determinando funcionalmente a otros.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Entrenador&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Entrenador&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Origen&lt;/th&gt;
 &lt;th&gt;Región&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ash&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
 &lt;td&gt;Kanto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Ciudad Celeste&lt;/td&gt;
 &lt;td&gt;Kanto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Gary&lt;/td&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
 &lt;td&gt;Kanto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Professor Kukui&lt;/td&gt;
 &lt;td&gt;Hau&amp;rsquo;oli&lt;/td&gt;
@@ -345,66 +293,52 @@ determinando funcionalmente a otros.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 7:&lt;/strong&gt; Entrenadores y sus ciudades y regiones de origen&lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;La &lt;strong&gt;Tercera Forma Normal&lt;/strong&gt; (3NF) nos permite eliminar este tipo de anomalías. Un esquema está en 3NF sí está en segunda forma normal
 y ningún atributo no primo depende transitivamente de una llave candidata. La última condición también puede expresarse como que todos los
 atributos están determidados funcionalmente solo por las llaves candidatas y no por atributos no primos. En el caso de la Tabla 7
 tenemos la Región depende transitivamente de la llave: &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;, por lo tanto nuestra
 tabla no está en 3NF.&lt;/p&gt;
-
 &lt;p&gt;Para normalizar una tabla que no está en 3NF, se puede utilizar el siguiente algoritmo (aunque en la mayoría de los casos solo basta
 usar el sentido común):&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;INPUT: (R, F) R un esquema y F un conjunto de relaciones funcionales
 OUTPUT: El esquema normalizado
 F` := reducir(F)
 por cada X-&amp;gt;A en F`:
 	Crear esquema (X U A, X-&amp;gt;A)
 Si en los esquemas creados no está la llave de (R, F), agregarla	
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;En reducir, lo que se hace es eliminar dependencias funcionales redundantes y dejarlas de la forma $X \rightarrow A$ donde A es el conjunto
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;En reducir, lo que se hace es eliminar dependencias funcionales redundantes y dejarlas de la forma $X \rightarrow A$ donde A es el conjunto
 de todos los atributos que dependen funcionalmente de X. Finalmente, se agrega la llave en caso de ser necesario. En nuestro ejemplo, las
 dependencias funcionales son (1) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt;, (2) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt; y (3) &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;,
 entonces las tablas resultantes van a ser (Entrenador, Origen) y (Origen, Región) pues la (2), al ser transitiva de (1) y (3) se elimina. No es necesario
 agregar una tabla para la llave pues es simplemente Entrenador. La primera tabla puede apreciarse en Tabla 4 y la segunda en Tabla 8.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pueblo&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;&lt;strong&gt;Pueblo&lt;/strong&gt;&lt;/em&gt;&lt;/th&gt;
 &lt;th&gt;Región&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Pueblo Paleta&lt;/td&gt;
 &lt;td&gt;Kanto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Ciudad Celeste&lt;/td&gt;
 &lt;td&gt;Kanto&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Hau&amp;rsquo;oli&lt;/td&gt;
 &lt;td&gt;Alola&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 8:&lt;/strong&gt; Pueblos y las regiones a las que pertenecen &lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;¿Estamos listos entonces? Falta un poco, aunque muchas veces se considera que un esquema en 3NF está lo suficientemente normalizado,
 aún hay ciertas cosas que pueden surgir.&lt;/p&gt;
-
 &lt;p&gt;Supongamos ahora una tabla para guardar los duelos contra líderes de gimnasio. Vamos a suponer que un gimnasio puede tener solo un líder
 y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en la Tabla 9.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -415,7 +349,6 @@ y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en l
 &lt;th&gt;Ganador&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Brock&lt;/td&gt;
@@ -424,7 +357,6 @@ y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en l
 &lt;td&gt;03-04-1997&lt;/td&gt;
 &lt;td&gt;Brock&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Brock&lt;/td&gt;
 &lt;td&gt;Ash&lt;/td&gt;
@@ -432,7 +364,6 @@ y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en l
 &lt;td&gt;04-04-1997&lt;/td&gt;
 &lt;td&gt;Nadie&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Misty&lt;/td&gt;
 &lt;td&gt;Ash&lt;/td&gt;
@@ -442,21 +373,16 @@ y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en l
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;Tabla 9:&lt;/strong&gt; Registro de duelos en gimnasios &lt;/center&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Podemos inferir que una llave es esta tabla es {Lider, Entrenador, Fecha}, pero dadas las dependencias funcionales {Lider}$\rightarrow${Gimnasio} y {Gimnasio}$\rightarrow${Lider}
 tenemos que otra llave candidata es {Entrenador, Gimnasio, Fecha}. Dadas las definiciones anteriores, la Tabla 9 está en 3FN. Sin embargo, aún
 pueden surgir anomalías de edición: ¿Qué pasa si queremos cambiar el nombre del gimnasio? Es requerido cambiarlo en todas partes.
 ¿Entonces normalizar hasta 3NF no es suficiente? Pues hay una forma de normalización superior a 3NF que evita este tipo de problemas.&lt;/p&gt;
-
 &lt;p&gt;Un esquema está en &lt;strong&gt;Forma Normal de Boyce-Codd&lt;/strong&gt; (FNBC) si para cada una de sus dependencias funcionales $X\rightarrow Y$, $X$ es una superllave.
 Así de simple. En la Tabla 9, vemos que las dependencias funcionales entre Lider y Gimnasio violan el principio de Boyce-Codd y esto
 es lo que produce las anomalías. En general es extraño encontrar tablas que estén en 3FN y no en FNBC. Esto sucede cuando en una tabla 3FN
 existen llaves candidatas que se traslapan, es decir, que comparten atributos.&lt;/p&gt;
-
 &lt;p&gt;El algoritmo que se sigue para normalizar es el siguiente:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;Input: C ={(R0, F0)} # Esquema y dependencias iniciales
 Output: N # Esquema normalizado en FNBC
 
@@ -465,12 +391,9 @@ for (R, F) in C:
 		tomar X -&amp;gt; Y en F que viola FNBC
 		C = C U (R-X, F1) # F1 son las df sobre los atributos en R-X
 		C = C U (XY, F2)  # F2 son las df sobre los atributos en XY
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Entonces en el caso de la Tabla 9, tomamos una de las dependencias que viola FNBC, {lider}$\rightarrow${gimnasio} y separamos el esquema en dos
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Entonces en el caso de la Tabla 9, tomamos una de las dependencias que viola FNBC, {lider}$\rightarrow${gimnasio} y separamos el esquema en dos
 el primero con los atributos {lider, entrenador, fecha, ganador} y el otro con {lider, gimnasio}. Como ambas tablas resultantes quedaron en
 FNBC, el esquema ya está completamente normalizado.&lt;/p&gt;
-
 &lt;p&gt;Para cerrar, quiero mencionar dos cosas. La primera, es que existen la cuarta, quinta y sexta formas normales, las cuales tratan de reparar
 anomalías cada vez más difíciles de encontrar en el mundo real. La segunda, es que la existencia de estas reglas y definiciones para
 mejorar el diseño relacional se sugieren principalmente para evitar las anomalías, sin embargo, es posible que se esté desarrollando una aplicación
@@ -478,25 +401,23 @@ donde hayan otros elementos que sean más críticos que la normalización de las
 el dominio y requisitos de lo que se está haciendo antes de llegar y dejar todo en sexta forma normal. Hay escenarios en los que se
 prefiere tener redundancia para aumentar la eficiencia antes que tener que realizar joins entre miles de tablas. Hay escenarios en los que
 se prefiere lo contrario.&lt;/p&gt;
-
 &lt;h2 id=&#34;referencias&#34;&gt;Referencias&lt;/h2&gt;
-
 &lt;ol&gt;
 &lt;li&gt;Codd, Edgar F. &amp;ldquo;A relational model of data for large shared data banks.&amp;rdquo; Communications of the ACM 13.6 (1970): 377-387.&lt;/li&gt;
 &lt;li&gt;Codd, Edgar F. &amp;ldquo;Recent Investigations into Relational Data Base Systems.&amp;rdquo; IBM Research Report RJ1385 (April 23, 1974).&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
@@ -505,28 +426,21 @@ se prefiere lo contrario.&lt;/p&gt;
       <link>http://scferrada.github.io/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
       <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
-      <description>
-
-&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
+      <description>&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
 relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
 o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.&lt;/p&gt;
-
 &lt;h1 id=&#34;llaves&#34;&gt;Llaves&lt;/h1&gt;
-
 &lt;p&gt;En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada. Como en un conjunto no se permiten
 elementos repetidos es necesario que cada tupla tenga una forma de identificarse y diferenciarse de las otras. La forma de identificar
 tuplas es utilizando el concepto de llave:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Una llave es un conjunto de atributos de una relación, tal que ningún par de tuplas de la relación tiene los mismos valores en dichos
 atributos&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Por ejemplo, consideremos los datos de la Tabla 1. Una llave trivial para cualquier relación es el conjunto de todos los atributos. En
 este caso {vino, año, cepa, presentación}. Una llave más pequeña puede ser {vino, cepa} o {año, presentación} (considerando solo estos datos).
 Dicho lo anterior, es conveniente recalcar que las llaves no deben seleccionarse condicionadas a los datos, sino que considerando la semántica
 de las relaciones y atributos.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -536,7 +450,6 @@ de las relaciones y atributos.&lt;/p&gt;
 &lt;th&gt;presentación&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;130&lt;/td&gt;
@@ -544,14 +457,12 @@ de las relaciones y atributos.&lt;/p&gt;
 &lt;td&gt;Cabernet&lt;/td&gt;
 &lt;td&gt;750cc&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Clos de Paine&lt;/td&gt;
 &lt;td&gt;2014&lt;/td&gt;
 &lt;td&gt;Cabernet&lt;/td&gt;
 &lt;td&gt;750cc&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Santelena&lt;/td&gt;
 &lt;td&gt;2018&lt;/td&gt;
@@ -560,59 +471,44 @@ de las relaciones y atributos.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;Ahora vamos con un par de definiciones. Una &lt;strong&gt;superllave&lt;/strong&gt; es cualquier llave de una relación. Todas las mencionadas en el ejemplo son superllaves.
 Muchas veces se prefiere contar con una llave lo más pequeña posible, pues es necesario que podamos comparar rápidamente un par de tuplas
 para determinar si son idénticas o no. Para esto, introducimos la noción de &lt;strong&gt;llave candidata&lt;/strong&gt;. Una llave candidata es una superllave tal que
 ningún subconjunto propio de ella también sea superllave, es decir, es minimal. Por ejemplo {vino, año, cepa, presentación} es una superllave pero no una llave
 candidata, pues {vino, cepa} también es una superllave. Esta última tampoco es llave candidata porque {nombre} también es superllave.
 Finalmente, {nombre} si es llave candidata, debido a que no hay subconjuntos propios posibles que sean también llave.&lt;/p&gt;
-
 &lt;p&gt;Un atributo que pertenece a una llave candidata se llama atributo primo.&lt;/p&gt;
-
 &lt;p&gt;Para terminar, una &lt;strong&gt;llave primaria&lt;/strong&gt; es alguna de las llaves candidatas que se selecciona como la forma estándar de determinarla igualdad
 entre tuplas.&lt;/p&gt;
-
 &lt;p&gt;Es necesario notar en este punto, que una relación puede entonces tener más de una llave candidata y estas llaves pueden tener distinta
 cantidad de atributos. Consideremos el siguiente esquema para almacenar datos de personas:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Persona&lt;/strong&gt;(RUT, nombre, fecha_hora_nacimiento, RUT_padre, RUT_madre)&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Las llaves candidatas son {RUT} y {RUT_madre, fecha_hora_nacimiento}. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  Como podemos apreciar, la segunda llave es minimal en el sentido
+&lt;p&gt;Las llaves candidatas son {RUT} y {RUT_madre, fecha_hora_nacimiento}. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  Como podemos apreciar, la segunda llave es minimal en el sentido
 de que no hay un subconjunto de esos atributos que también sea llave, por lo que es una llave candidata a pesar de tener una cantidad de atributos
 más grande que {RUT}. Sin embargo, probablemente se prefiera utilizar simplemente el RUT como llave primaria porque en este caso es lo más
 &amp;ldquo;natural&amp;rdquo; además que siempre es mejor tener menos elementos que comparar.&lt;/p&gt;
-
 &lt;h1 id=&#34;dependencias-funcionales&#34;&gt;Dependencias Funcionales&lt;/h1&gt;
-
 &lt;p&gt;Dados dos conjuntos de atributos de un esquema relacional $X$ e $Y$, se dice que $Y$ depende funcionalmente de $X$ si para todo
-par de tuplas $t_1, t_2$ del esquema se cumple que si $t_1[X]=t_2[X]$ entonces $t_1[Y]=t_2[Y]$. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Es decir, para cada valor de $X$
+par de tuplas $t_1, t_2$ del esquema se cumple que si $t_1[X]=t_2[X]$ entonces $t_1[Y]=t_2[Y]$. &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Es decir, para cada valor de $X$
 hay un único valor de $Y$ posible. Cuando $X$ determina funcionalmente a Y se escribe $X \rightarrow Y$. Cuando $Y$ es un subconjunto de $X$ se dice que la dependencia funcional es trivial.&lt;/p&gt;
-
 &lt;p&gt;Conocer las dependencias funcionales de un esquema es importante para el diseño relacional, pues nos ayudan a determinar si las
 relaciones propuestas por un modelo pueden o no presentar anomalías.&lt;/p&gt;
-
 &lt;p&gt;Inicialmente, se sabe que una llave candidata determina funcionalmente a todos los atributos. Sin embargo, es posible que otros atributos
 se determinen entre ellos. Supongamos que contamos con la siguiente información de contacto:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Contacto&lt;/strong&gt;(RUT, email, dirección, comuna, región)&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Claramente el RUT e email son llaves candidatas y, por lo tanto, determinan funcionalmente a todo el resto de los atributos. Por otro lado
 también sabemos que una comuna se encuentra en una sola región y entonces dos contactos de la misma comuna van a estar necesariamente
 en la misma región. Entonces sabemos que {comuna} $\rightarrow$ {región}. Como los nombres de calles pueden repetirse entre comunas,
 podemos descartar la dependencia {dirección} $\rightarrow$ {comuna}.&lt;/p&gt;
-
 &lt;p&gt;Cuando un esquema cuenta con varias dependencias funcionales, podemos razonar lógicamente sobre ellas y concluir otras dependencias nuevas
 y coherentes con el esquema. Existe un conjunto de reglas de razonamiento que nos permite obtener el conjunto completo de dependencias funcionales
 de un esquema, a partir de un conjunto inicial. Estas reglas se conocen como los axiomas de Armstrong. Sea $(R, F)$ un esquema de relación $R$ y dependencias funcionales $F$.
 Se puede obtener el conjunto de todas las dependencias funcionales deducibles desde $F$, es decir, su clausura $F^+$ aplicando las siguientes reglas:&lt;/p&gt;
-
 &lt;p&gt;Sean $X$, $Y$, $Z$, $A$ y $B$ conjuntos de atributos de $R$:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Reflexión: Si $Y\subseteq X$, entonces $X\rightarrow Y$&lt;/li&gt;
 &lt;li&gt;Aumento: Si $X\rightarrow Y$, entonces $XZ\rightarrow YZ$ para cualquier $Z$&lt;/li&gt;
@@ -623,42 +519,36 @@ Se puede obtener el conjunto de todas las dependencias funcionales deducibles de
 &lt;li&gt;Autodeterminación: $X\rightarrow X$&lt;/li&gt;
 &lt;li&gt;Extensión: Si $X\rightarrow Y$, entonces $X\rightarrow XY$&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Los axiomas de Armstrong son especialmente útiles para encontrar las llaves candidatas de las relaciones, pues basta con encontrar
 aquellos conjuntos de atributos que determinan funcionalmente a todos los demás. Por ejemplo consideremos $R(A,B,C,D,E)$ y las siguientes
 dependencias:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;$A\rightarrow E$&lt;/li&gt;
 &lt;li&gt;$BC\rightarrow D$&lt;/li&gt;
 &lt;li&gt;$E\rightarrow B$&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Por transitividad, sabemos que $A\rightarrow B$ y por aumento que $AC\rightarrow CE$ y $AC\rightarrow BC$. Nuevamente la transitividad nos indica que
 $AC\rightarrow D$. Finalmente, uniendo todos los resultados, tenemos que $AC\rightarrow ABCDE$, por lo que
 $AC$ es la llave de $R$. Este proceso de aplicar reglas exhaustivamente a un conjunto de atributos para encontrar todos los otros que
 son determinados funcionalmente por ellos, se llama calcular la clausura de ese conjunto de atributos. En este caso $AC^+$.&lt;/p&gt;
-
 &lt;p&gt;Tal vez haya parecido un procedimiento antojadizo, pero la intuición detrás del éste es seleccionar los atributos que no aparecen
 en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt;/p&gt;
-
 &lt;h2 id=&#34;referencias&#34;&gt;Referencias&lt;/h2&gt;
-
 &lt;ol&gt;
 &lt;li&gt;Armstrong, William. Dependency Structures of Data Base Relationships, page 580-583. IFIP Congress, 1974.&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     

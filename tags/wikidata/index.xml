@@ -5,7 +5,7 @@
     <link>http://scferrada.github.io/tags/wikidata/</link>
       <atom:link href="http://scferrada.github.io/tags/wikidata/index.xml" rel="self" type="application/rss+xml" />
     <description>Wikidata</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 21 Apr 2018 00:00:00 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 21 Apr 2018 00:00:00 +0100</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Wikidata</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>

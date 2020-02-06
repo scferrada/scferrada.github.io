@@ -5,7 +5,7 @@
     <link>http://scferrada.github.io/authors/</link>
       <atom:link href="http://scferrada.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Authors</title>
@@ -17,23 +17,22 @@
       <link>http://scferrada.github.io/authors/admin/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
       <guid>http://scferrada.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m Sebastián Ferrada, a Doctoral Candidate at the Millenium Institute for Foundational Research on Data at Universidad de Chile.
-My research interests include Information Retrieval, Data Mining &amp;amp; Visualization, Multimedia Databases and Linked Data.
-I&amp;rsquo;m currently developing my PhD thesis regarding the combination of semantic and visual similarity queries using Semantic Web technologies, you can learn more by visiting the &lt;a href=&#34;http://imgpedia.dcc.uchile.cl&#34;&gt;IMGpedia project site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Besides research I really enjoy teaching.
-Currently I&amp;rsquo;m teaching the Relational Databases Course for undergrads and at the &lt;a href=&#34;https://www.dcc.uchile.cl/datos&#34;&gt; Data Science Diploma&lt;/a&gt;,  at the Department of Computer Science (&lt;a href=&#34;http://dcc.uchile.cl&#34;&gt;DCC&lt;/a&gt;) and
-I have worked as T.A. in many other areas and courses such as Algorithm Analysis and Programming Design Methodologies, you may find a complete list having a look at my &lt;a href=&#34;http://scferrada.github.io/pdf/cv.pdf&#34;&gt;resumé&lt;/a&gt;.
-I have also done some extracurricular volunteer teaching at &lt;a href=&#34;http://www.preumeduchile.cl/&#34;&gt;Preumed&lt;/a&gt;,
-&lt;a href=&#34;https://sites.google.com/a/capsocial.cl/capsocial/&#34;&gt;Capsocial&lt;/a&gt; and
-&lt;a href=&#34;http://escuela.ingenieria.uchile.cl/vida-estudiantil/127291/grupos-organizados&#34;&gt;Apoyo Escolar&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m Sebastián Ferrada, a Doctoral Candidate at the Millenium Institute for Foundational Research on Data at Universidad de Chile. 
+My research interests include Information Retrieval, Data Mining &amp;amp; Visualization, Multimedia Databases and Linked Data. 
+I&amp;rsquo;m currently developing my PhD thesis regarding the inclusion of similarity operators on SPARQL queries: it&amp;rsquo;s scalability, efficiency and use-cases.&lt;/p&gt;
+&lt;p&gt;Besides research I really enjoy teaching. 
+Currently I&amp;rsquo;m teaching the Relational Databases Course for undergrads and at the &lt;!-- raw HTML omitted --&gt; Data Science Diploma&lt;!-- raw HTML omitted --&gt;,  at the Department of Computer Science (&lt;!-- raw HTML omitted --&gt;DCC&lt;!-- raw HTML omitted --&gt;) and 
+I have worked as T.A. in many other areas and courses such as Algorithm Analysis and Programming Design Methodologies, you may find a complete list having a look at my &lt;!-- raw HTML omitted --&gt;resumé&lt;!-- raw HTML omitted --&gt;. 
+I have also done some extracurricular volunteer teaching at &lt;!-- raw HTML omitted --&gt;Preumed&lt;!-- raw HTML omitted --&gt;, 
+&lt;!-- raw HTML omitted --&gt;Capsocial&lt;!-- raw HTML omitted --&gt; and 
+&lt;!-- raw HTML omitted --&gt;Apoyo Escolar&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Benjamin Bustos</title>
       <link>http://scferrada.github.io/authors/benjamin-bustos/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/authors/benjamin-bustos/</guid>
       <description></description>
     </item>
@@ -41,7 +40,7 @@ I have also done some extracurricular volunteer teaching at &lt;a href=&#34;http
     <item>
       <title>Nora Reyes</title>
       <link>http://scferrada.github.io/authors/nora-reyes/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/authors/nora-reyes/</guid>
       <description></description>
     </item>
@@ -49,7 +48,7 @@ I have also done some extracurricular volunteer teaching at &lt;a href=&#34;http
     <item>
       <title>Sebastián Ferrada</title>
       <link>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</guid>
       <description></description>
     </item>
@@ -57,7 +56,7 @@ I have also done some extracurricular volunteer teaching at &lt;a href=&#34;http
     <item>
       <title>Aidan Hogan</title>
       <link>http://scferrada.github.io/authors/aidan-hogan/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/authors/aidan-hogan/</guid>
       <description></description>
     </item>
@@ -65,7 +64,7 @@ I have also done some extracurricular volunteer teaching at &lt;a href=&#34;http
     <item>
       <title>Nicolás Bravo</title>
       <link>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
       <guid>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</guid>
       <description></description>
     </item>

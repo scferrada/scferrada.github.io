@@ -5,12 +5,20 @@
     <link>http://scferrada.github.io/tags/semantic-web/</link>
       <atom:link href="http://scferrada.github.io/tags/semantic-web/index.xml" rel="self" type="application/rss+xml" />
     <description>Semantic Web</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 02 Oct 2018 09:00:01 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Feb 2020 12:00:00 +0000</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Semantic Web</title>
       <link>http://scferrada.github.io/tags/semantic-web/</link>
     </image>
+    
+    <item>
+      <title>Similarity Joins in SPARQL</title>
+      <link>http://scferrada.github.io/talk/insight-visit-20/</link>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <guid>http://scferrada.github.io/talk/insight-visit-20/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>IMGpedia at CLTM-CLEI</title>
