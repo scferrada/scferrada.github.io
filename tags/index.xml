@@ -5,7 +5,7 @@
     <link>http://scferrada.github.io/tags/</link>
       <atom:link href="http://scferrada.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Feb 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Feb 2020 12:00:00 -0300</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Tags</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Semantic Web</title>
       <link>http://scferrada.github.io/tags/semantic-web/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/tags/semantic-web/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Similarity Joins</title>
       <link>http://scferrada.github.io/tags/similarity-joins/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/tags/similarity-joins/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>SPARQL</title>
       <link>http://scferrada.github.io/tags/sparql/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/tags/sparql/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>Web Image Retrieval</title>
       <link>http://scferrada.github.io/tags/web-image-retrieval/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/tags/web-image-retrieval/</guid>
       <description></description>
     </item>
@@ -119,7 +119,7 @@
     <item>
       <title>Multimedia</title>
       <link>http://scferrada.github.io/tags/multimedia/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       <guid>http://scferrada.github.io/tags/multimedia/</guid>
       <description></description>
     </item>
@@ -127,7 +127,7 @@
     <item>
       <title>Wikidata</title>
       <link>http://scferrada.github.io/tags/wikidata/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       <guid>http://scferrada.github.io/tags/wikidata/</guid>
       <description></description>
     </item>

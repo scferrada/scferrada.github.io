@@ -5,7 +5,7 @@
     <link>http://scferrada.github.io/tags/sparql/</link>
       <atom:link href="http://scferrada.github.io/tags/sparql/index.xml" rel="self" type="application/rss+xml" />
     <description>SPARQL</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Feb 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Feb 2020 12:00:00 -0300</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>SPARQL</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Similarity Joins in SPARQL</title>
       <link>http://scferrada.github.io/talk/insight-visit-20/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/talk/insight-visit-20/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
       <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
@@ -47,7 +47,7 @@
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
       <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
       <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>

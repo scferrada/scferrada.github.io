@@ -5,12 +5,36 @@
     <link>http://scferrada.github.io/authors/</link>
       <atom:link href="http://scferrada.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 24 Feb 2020 00:00:00 -0300</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Authors</title>
       <link>http://scferrada.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>Benjamin Bustos</title>
+      <link>http://scferrada.github.io/authors/benjamin-bustos/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/authors/benjamin-bustos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nora Reyes</title>
+      <link>http://scferrada.github.io/authors/nora-reyes/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/authors/nora-reyes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sebastián Ferrada</title>
+      <link>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -30,33 +54,9 @@ I have also done some extracurricular volunteer teaching at &lt;!-- raw HTML omi
     </item>
     
     <item>
-      <title>Benjamin Bustos</title>
-      <link>http://scferrada.github.io/authors/benjamin-bustos/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
-      <guid>http://scferrada.github.io/authors/benjamin-bustos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nora Reyes</title>
-      <link>http://scferrada.github.io/authors/nora-reyes/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
-      <guid>http://scferrada.github.io/authors/nora-reyes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sebastián Ferrada</title>
-      <link>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0100</pubDate>
-      <guid>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Aidan Hogan</title>
       <link>http://scferrada.github.io/authors/aidan-hogan/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       <guid>http://scferrada.github.io/authors/aidan-hogan/</guid>
       <description></description>
     </item>
@@ -64,7 +64,7 @@ I have also done some extracurricular volunteer teaching at &lt;!-- raw HTML omi
     <item>
       <title>Nicolás Bravo</title>
       <link>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
       <guid>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</guid>
       <description></description>
     </item>

@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="IMGpedia is a linked dataset that provides a public SPARQL endpoint where users can answer queries that combine the visual similarity of images from Wikimedia Commons and semantic information from existing knowledge-bases. Our demo will show example queries that capture the potential of the current data stored in IMGpedia. We also plan to discuss potential use-cases for the dataset and ways in which we can improve the quality of the information it captures and the expressiveness of the queries.">
+  <meta name="description" content="Similarity join is a key operation in metric databases. It retrieves all pairs of elements that are similar. Solving such a problem usually requires comparing every pair of objects of the datasets, even when indexing and ad hoc algorithms are used. We propose a simple and efficient algorithm for the computation of the approximated k nearest neighbor self-similarity join. This algorithm computes Θ(n3∕2) distances and it is empirically shown that it reaches an empirical precision of 46% in real-world datasets. We provide a comparison to other common techniques such as Quickjoin and Locality-Sensitive Hashing and argue that our proposal has a better execution time and average precision.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://scferrada.github.io/publication/ferrada-answering-2017/">
+  <link rel="alternate" hreflang="en-us" href="http://scferrada.github.io/publication/ferrada-simple-2020/">
 
   
 
@@ -254,7 +254,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://scferrada.github.io/publication/ferrada-answering-2017/">
+  <link rel="canonical" href="http://scferrada.github.io/publication/ferrada-simple-2020/">
 
   
   
@@ -270,15 +270,15 @@
   <meta property="twitter:creator" content="@ferradest">
   
   <meta property="og:site_name" content="Sebastián&#39;s academic website">
-  <meta property="og:url" content="http://scferrada.github.io/publication/ferrada-answering-2017/">
-  <meta property="og:title" content="Answering Visuo-Semantic Queries with IMGpedia. | Sebastián&#39;s academic website">
-  <meta property="og:description" content="IMGpedia is a linked dataset that provides a public SPARQL endpoint where users can answer queries that combine the visual similarity of images from Wikimedia Commons and semantic information from existing knowledge-bases. Our demo will show example queries that capture the potential of the current data stored in IMGpedia. We also plan to discuss potential use-cases for the dataset and ways in which we can improve the quality of the information it captures and the expressiveness of the queries."><meta property="og:image" content="http://scferrada.github.io/img/yo.jpg">
+  <meta property="og:url" content="http://scferrada.github.io/publication/ferrada-simple-2020/">
+  <meta property="og:title" content="An efficient algorithm for approximated self-similarity joins in metric spaces | Sebastián&#39;s academic website">
+  <meta property="og:description" content="Similarity join is a key operation in metric databases. It retrieves all pairs of elements that are similar. Solving such a problem usually requires comparing every pair of objects of the datasets, even when indexing and ad hoc algorithms are used. We propose a simple and efficient algorithm for the computation of the approximated k nearest neighbor self-similarity join. This algorithm computes Θ(n3∕2) distances and it is empirically shown that it reaches an empirical precision of 46% in real-world datasets. We provide a comparison to other common techniques such as Quickjoin and Locality-Sensitive Hashing and argue that our proposal has a better execution time and average precision."><meta property="og:image" content="http://scferrada.github.io/img/yo.jpg">
   <meta property="twitter:image" content="http://scferrada.github.io/img/yo.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-01-01T00:00:00-03:00">
+      <meta property="article:published_time" content="2020-02-24T00:00:00-03:00">
     
-    <meta property="article:modified_time" content="2017-01-01T00:00:00-03:00">
+    <meta property="article:modified_time" content="2020-02-24T00:00:00-03:00">
   
 
   
@@ -302,12 +302,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://scferrada.github.io/publication/ferrada-answering-2017/"
+    "@id": "http://scferrada.github.io/publication/ferrada-simple-2020/"
   },
-  "headline": "Answering Visuo-Semantic Queries with IMGpedia.",
+  "headline": "An efficient algorithm for approximated self-similarity joins in metric spaces",
   
-  "datePublished": "2017-01-01T00:00:00-03:00",
-  "dateModified": "2017-01-01T00:00:00-03:00",
+  "datePublished": "2020-02-24T00:00:00-03:00",
+  "dateModified": "2020-02-24T00:00:00-03:00",
   
   "author": {
     "@type": "Person",
@@ -322,7 +322,7 @@
       "url": "img/http://scferrada.github.io/"
     }
   },
-  "description": "IMGpedia is a linked dataset that provides a public SPARQL endpoint where users can answer queries that combine the visual similarity of images from Wikimedia Commons and semantic information from existing knowledge-bases. Our demo will show example queries that capture the potential of the current data stored in IMGpedia. We also plan to discuss potential use-cases for the dataset and ways in which we can improve the quality of the information it captures and the expressiveness of the queries."
+  "description": "Similarity join is a key operation in metric databases. It retrieves all pairs of elements that are similar. Solving such a problem usually requires comparing every pair of objects of the datasets, even when indexing and ad hoc algorithms are used. We propose a simple and efficient algorithm for the computation of the approximated k nearest neighbor self-similarity join. This algorithm computes Θ(n3∕2) distances and it is empirically shown that it reaches an empirical precision of 46% in real-world datasets. We provide a comparison to other common techniques such as Quickjoin and Locality-Sensitive Hashing and argue that our proposal has a better execution time and average precision."
 }
 </script>
 
@@ -370,7 +370,7 @@
 
 
 
-  <title>Answering Visuo-Semantic Queries with IMGpedia. | Sebastián&#39;s academic website</title>
+  <title>An efficient algorithm for approximated self-similarity joins in metric spaces | Sebastián&#39;s academic website</title>
 
 </head>
 
@@ -690,7 +690,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Answering Visuo-Semantic Queries with IMGpedia.</h1>
+  <h1>An efficient algorithm for approximated self-similarity joins in metric spaces</h1>
 
   
 
@@ -710,7 +710,7 @@
 
 
   
-  <span><a href="/authors/sebasti%C3%A1n-ferrada/">Sebastián Ferrada</a></span>, <span><a href="/authors/benjamin-bustos/">Benjamin Bustos</a></span>, <span><a href="/authors/aidan-hogan/">Aidan Hogan</a></span>
+  <span><a href="/authors/sebasti%C3%A1n-ferrada/">Sebastián Ferrada</a></span>, <span><a href="/authors/benjamin-bustos/">Benjamin Bustos</a></span>, <span><a href="/authors/nora-reyes/">Nora Reyes</a></span>
 
   </div>
   
@@ -722,7 +722,7 @@
     
       
     
-    January 2017
+    February 2020
   </span>
   
 
@@ -770,37 +770,15 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/pdf/imgpediaISWC17demo.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.sciencedirect.com/science/article/pii/S0306437920300211" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/scferrada/imgpedia" target="_blank" rel="noopener">
-  Code
-</a>
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="http://imgpedia.dcc.uchile.cl/dumps/" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/imgpedia-project/">
-    Project
-  </a>
-  
 
 
 
@@ -824,7 +802,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">IMGpedia is a linked dataset that provides a public SPARQL endpoint where users can answer queries that combine the visual similarity of images from Wikimedia Commons and semantic information from existing knowledge-bases. Our demo will show example queries that capture the potential of the current data stored in IMGpedia. We also plan to discuss potential use-cases for the dataset and ways in which we can improve the quality of the information it captures and the expressiveness of the queries.</p>
+    <p class="pub-abstract">Similarity join is a key operation in metric databases. It retrieves all pairs of elements that are similar. Solving such a problem usually requires comparing every pair of objects of the datasets, even when indexing and ad hoc algorithms are used. We propose a simple and efficient algorithm for the computation of the approximated k nearest neighbor self-similarity join. This algorithm computes Θ(n3∕2) distances and it is empirically shown that it reaches an empirical precision of 46% in real-world datasets. We provide a comparison to other common techniques such as Quickjoin and Locality-Sensitive Hashing and argue that our proposal has a better execution time and average precision.</p>
     
 
     
@@ -836,8 +814,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#2">
+              Journal article
             </a>
             
           </div>
@@ -854,7 +832,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>International Semantic Web Conference (Posters, Demos &amp; Industry Tracks)</em></div>
+          <div class="col-12 col-md-9"><em>Information Systems</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -871,18 +849,6 @@
 
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tags/imgpedia/">IMGpedia</a>
-  
-  <a class="badge badge-light" href="/tags/multimedia/">Multimedia</a>
-  
-  <a class="badge badge-light" href="/tags/sparql/">SPARQL</a>
-  
-  <a class="badge badge-light" href="/tags/visuo-semantic-queries/">Visuo-semantic Queries</a>
-  
-</div>
 
 
 
@@ -936,17 +902,6 @@
 
 
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/ferrada-imgpedia-2016/">IMGpedia: Enriching the Web of Data with Image Content Analysis.</a></li>
-      
-      <li><a href="/project/imgpedia-project/">IMGpedia project</a></li>
-      
-    </ul>
-  </div>
   
 
 
