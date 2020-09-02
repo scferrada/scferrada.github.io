@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Functional Dependencies | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/tag/functional-dependencies/</link>
-      <atom:link href="http://scferrada.github.io/tag/functional-dependencies/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/tag/functional-dependencies/</link>
+      <atom:link href="http://www.sferrada.com/tag/functional-dependencies/index.xml" rel="self" type="application/rss+xml" />
     <description>Functional Dependencies</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 13:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Functional Dependencies</title>
-      <link>http://scferrada.github.io/tag/functional-dependencies/</link>
+      <link>http://www.sferrada.com/tag/functional-dependencies/</link>
     </image>
     
     <item>
       <title>Llaves y Dependencias Funcionales</title>
-      <link>http://scferrada.github.io/post/functional-dependencies/</link>
+      <link>http://www.sferrada.com/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
+      <guid>http://www.sferrada.com/post/functional-dependencies/</guid>
       <description>&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
 relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
 o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.&lt;/p&gt;

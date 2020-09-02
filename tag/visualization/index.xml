@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/tag/visualization/</link>
-      <atom:link href="http://scferrada.github.io/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/tag/visualization/</link>
+      <atom:link href="http://www.sferrada.com/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Visualization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Visualization</title>
-      <link>http://scferrada.github.io/tag/visualization/</link>
+      <link>http://www.sferrada.com/tag/visualization/</link>
     </image>
     
     <item>
       <title>Constitución Abierta</title>
-      <link>http://scferrada.github.io/project/constitucion-abierta/</link>
+      <link>http://www.sferrada.com/project/constitucion-abierta/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://scferrada.github.io/project/constitucion-abierta/</guid>
+      <guid>http://www.sferrada.com/project/constitucion-abierta/</guid>
       <description></description>
     </item>
     

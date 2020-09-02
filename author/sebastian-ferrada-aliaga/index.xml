@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sebastián Ferrada Aliaga | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/author/sebastian-ferrada-aliaga/</link>
-      <atom:link href="http://scferrada.github.io/author/sebastian-ferrada-aliaga/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/author/sebastian-ferrada-aliaga/</link>
+      <atom:link href="http://www.sferrada.com/author/sebastian-ferrada-aliaga/index.xml" rel="self" type="application/rss+xml" />
     <description>Sebastián Ferrada Aliaga</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Sebastián Ferrada Aliaga</title>
-      <link>http://scferrada.github.io/author/sebastian-ferrada-aliaga/</link>
+      <link>http://www.sferrada.com/author/sebastian-ferrada-aliaga/</link>
     </image>
     
     <item>
       <title>Formas Pokenormales</title>
-      <link>http://scferrada.github.io/post/normal-forms/</link>
+      <link>http://www.sferrada.com/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/normal-forms/</guid>
+      <guid>http://www.sferrada.com/post/normal-forms/</guid>
       <description>&lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
 de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías
 que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones
@@ -24,7 +24,7 @@ que todas las tablas de un esquema deben cumplir para así garantizar ciertas pr
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
 dependencia funcional en el modelo relacional. En 
-&lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+&lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador
@@ -438,9 +438,9 @@ se prefiere lo contrario.&lt;/p&gt;
     
     <item>
       <title>Llaves y Dependencias Funcionales</title>
-      <link>http://scferrada.github.io/post/functional-dependencies/</link>
+      <link>http://www.sferrada.com/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
+      <guid>http://www.sferrada.com/post/functional-dependencies/</guid>
       <description>&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
 relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
 o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.&lt;/p&gt;
@@ -569,9 +569,9 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
     
     <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
+      <link>http://www.sferrada.com/post/imgpedia-iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
+      <guid>http://www.sferrada.com/post/imgpedia-iswc/</guid>
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
 fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
@@ -602,7 +602,7 @@ el
 tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos que si dos vectores están cerca, es por que son
 similares. Esta decisión de tomar los &lt;em&gt;k&lt;/em&gt; vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
 al respecto al final del post.&lt;/p&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 1:** Similitud entre imágenes&lt;/center&gt;
 &lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
 Para esto, usamos un 
@@ -613,7 +613,7 @@ decir que la imagen está asociada a la entidad de alguna forma u otra. En la Fi
 si una imagen aparece en la 
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el 
 &lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 2:** Obtener contexto de la imagen&lt;/center&gt;
 &lt;p&gt;Finalmente, publicamos todo en formato 
 &lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de 
@@ -630,7 +630,7 @@ WHERE {
     im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 3:** Resultados de la consulta a&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
@@ -647,7 +647,7 @@ WHERE {
       imo:fileURL ?url .  
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 4:** Resultados de la consulta b&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
@@ -666,13 +666,13 @@ WHERE {
     FILTER(CONTAINS(STR(?sub), “Museum”))} 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 5:** Resultados de la consulta c&lt;/center&gt;
 &lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
 a Viena a presentarlo, puedes encontrar las diapositivas 
-&lt;a href=&#34;http://scferrada.github.io/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
+&lt;a href=&#34;http://www.sferrada.com/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
 de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster 
-&lt;a href=&#34;http://scferrada.github.io/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
+&lt;a href=&#34;http://www.sferrada.com/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
 Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
 y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:&lt;/p&gt;
 &lt;ul&gt;
@@ -687,7 +687,7 @@ para nuestros propósitos. Muchos piensan que enlazar con otras bases de conocim
 y darle mayor expresividad a las consultas de IMGpedia.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;¡Gracias a todos los que nos fueron a ver al stand!&lt;/p&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 6:** Sesión de pósters&lt;/center&gt;
 &lt;p&gt;Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
 ¡
@@ -705,7 +705,7 @@ por la
 &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro
 de investigación de la Web Semántica&lt;/a&gt;, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
 para Jorge Pérez).&lt;/p&gt;
-&lt;img src=&#34;http://scferrada.github.io/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 7:** Aidan y yo recibiendo el premio a mejor paper de estudiante&lt;/center&gt;
 &lt;p&gt;Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
 Sergio Aguilera por ayudarme tanto con la mantención del servidor; a Camila Faúndez por el trabajo enlazando las imágenes a sus respectivos

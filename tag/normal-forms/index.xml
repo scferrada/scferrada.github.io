@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Normal Forms | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/tag/normal-forms/</link>
-      <atom:link href="http://scferrada.github.io/tag/normal-forms/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/tag/normal-forms/</link>
+      <atom:link href="http://www.sferrada.com/tag/normal-forms/index.xml" rel="self" type="application/rss+xml" />
     <description>Normal Forms</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Normal Forms</title>
-      <link>http://scferrada.github.io/tag/normal-forms/</link>
+      <link>http://www.sferrada.com/tag/normal-forms/</link>
     </image>
     
     <item>
       <title>Formas Pokenormales</title>
-      <link>http://scferrada.github.io/post/normal-forms/</link>
+      <link>http://www.sferrada.com/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/normal-forms/</guid>
+      <guid>http://www.sferrada.com/post/normal-forms/</guid>
       <description>&lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
 de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías
 que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones
@@ -24,7 +24,7 @@ que todas las tablas de un esquema deben cumplir para así garantizar ciertas pr
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
 dependencia funcional en el modelo relacional. En 
-&lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+&lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador

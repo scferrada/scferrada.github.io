@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/categories/</link>
-      <atom:link href="http://scferrada.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/categories/</link>
+      <atom:link href="http://www.sferrada.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Categories</title>
-      <link>http://scferrada.github.io/categories/</link>
+      <link>http://www.sferrada.com/categories/</link>
     </image>
     
   </channel>

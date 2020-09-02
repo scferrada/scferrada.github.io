@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visuo-semantic Queries | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/tag/visuo-semantic-queries/</link>
-      <atom:link href="http://scferrada.github.io/tag/visuo-semantic-queries/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/tag/visuo-semantic-queries/</link>
+      <atom:link href="http://www.sferrada.com/tag/visuo-semantic-queries/index.xml" rel="self" type="application/rss+xml" />
     <description>Visuo-semantic Queries</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Tue, 02 Oct 2018 09:00:01 -0300</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Visuo-semantic Queries</title>
-      <link>http://scferrada.github.io/tag/visuo-semantic-queries/</link>
+      <link>http://www.sferrada.com/tag/visuo-semantic-queries/</link>
     </image>
     
     <item>
       <title>IMGpedia at CLTM-CLEI</title>
-      <link>http://scferrada.github.io/talk/clei-cltm18/</link>
+      <link>http://www.sferrada.com/talk/clei-cltm18/</link>
       <pubDate>Tue, 02 Oct 2018 09:00:01 -0300</pubDate>
-      <guid>http://scferrada.github.io/talk/clei-cltm18/</guid>
+      <guid>http://www.sferrada.com/talk/clei-cltm18/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
-      <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
+      <link>http://www.sferrada.com/publication/ferrada-querying-2018/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
+      <guid>http://www.sferrada.com/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
-      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
+      <link>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
+      <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
-      <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
+      <link>http://www.sferrada.com/publication/ferrada-answering-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
+      <guid>http://www.sferrada.com/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
-      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
+      <link>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
+      <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>
     
