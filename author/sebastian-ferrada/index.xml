@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastián Ferrada | Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/author/sebastian-ferrada/</link>
+      <atom:link href="http://scferrada.github.io/author/sebastian-ferrada/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sebastián Ferrada</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Sebastián Ferrada</title>
+      <link>http://scferrada.github.io/author/sebastian-ferrada/</link>
+    </image>
+    
+    <item>
+      <title>Extending SPARQL with Similarity Joins</title>
+      <link>http://scferrada.github.io/publication/ferrada-simjoins-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-simjoins-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>
+      <link>http://scferrada.github.io/publication/ferrada-simple-2020/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-simple-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
+      <link>http://scferrada.github.io/publication/ferrada-simple-2018/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-simple-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Querying Wikimedia Images using Wikidata Facts</title>
+      <link>http://scferrada.github.io/publication/ferrada-querying-2018/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-querying-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
+      <link>http://scferrada.github.io/publication/ferrada-answering-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-answering-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
+      <link>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-imgpedia-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

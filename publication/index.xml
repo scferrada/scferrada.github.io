@@ -5,12 +5,20 @@
     <link>http://scferrada.github.io/publication/</link>
       <atom:link href="http://scferrada.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 24 Feb 2020 00:00:00 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Publications</title>
       <link>http://scferrada.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Extending SPARQL with Similarity Joins</title>
+      <link>http://scferrada.github.io/publication/ferrada-simjoins-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-simjoins-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>

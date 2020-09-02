@@ -5,69 +5,12 @@
     <link>http://scferrada.github.io/authors/</link>
       <atom:link href="http://scferrada.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 24 Feb 2020 00:00:00 -0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
     <image>
       <url>http://scferrada.github.io/img/yo.jpg</url>
       <title>Authors</title>
       <link>http://scferrada.github.io/authors/</link>
     </image>
-    
-    <item>
-      <title>Benjamin Bustos</title>
-      <link>http://scferrada.github.io/authors/benjamin-bustos/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/authors/benjamin-bustos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nora Reyes</title>
-      <link>http://scferrada.github.io/authors/nora-reyes/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/authors/nora-reyes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sebastián Ferrada</title>
-      <link>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/authors/sebasti%C3%A1n-ferrada/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://scferrada.github.io/authors/admin/</link>
-      <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m Sebastián Ferrada, a Doctoral Candidate at the Millenium Institute for Foundational Research on Data at Universidad de Chile. 
-My research interests include Information Retrieval, Data Mining &amp;amp; Visualization, Multimedia Databases and Linked Data. 
-I&amp;rsquo;m currently developing my PhD thesis regarding the inclusion of similarity operators on SPARQL queries: it&amp;rsquo;s scalability, efficiency and use-cases.&lt;/p&gt;
-&lt;p&gt;Besides research I really enjoy teaching. 
-Currently I&amp;rsquo;m teaching the Relational Databases Course for undergrads and at the &lt;!-- raw HTML omitted --&gt; Data Science Diploma&lt;!-- raw HTML omitted --&gt;,  at the Department of Computer Science (&lt;!-- raw HTML omitted --&gt;DCC&lt;!-- raw HTML omitted --&gt;) and 
-I have worked as T.A. in many other areas and courses such as Algorithm Analysis and Programming Design Methodologies, you may find a complete list having a look at my &lt;!-- raw HTML omitted --&gt;resumé&lt;!-- raw HTML omitted --&gt;. 
-I have also done some extracurricular volunteer teaching at &lt;!-- raw HTML omitted --&gt;Preumed&lt;!-- raw HTML omitted --&gt;, 
-&lt;!-- raw HTML omitted --&gt;Capsocial&lt;!-- raw HTML omitted --&gt; and 
-&lt;!-- raw HTML omitted --&gt;Apoyo Escolar&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Aidan Hogan</title>
-      <link>http://scferrada.github.io/authors/aidan-hogan/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      <guid>http://scferrada.github.io/authors/aidan-hogan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nicolás Bravo</title>
-      <link>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
-      <guid>http://scferrada.github.io/authors/nicol%C3%A1s-bravo/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

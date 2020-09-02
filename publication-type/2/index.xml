@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/publication-type/2/</link>
+      <atom:link href="http://scferrada.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 24 Feb 2020 00:00:00 -0300</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>2</title>
+      <link>http://scferrada.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>
+      <link>http://scferrada.github.io/publication/ferrada-simple-2020/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>http://scferrada.github.io/publication/ferrada-simple-2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

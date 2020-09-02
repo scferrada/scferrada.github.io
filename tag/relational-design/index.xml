@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Relational Design | Sebastián&#39;s academic website</title>
+    <link>http://scferrada.github.io/tag/relational-design/</link>
+      <atom:link href="http://scferrada.github.io/tag/relational-design/index.xml" rel="self" type="application/rss+xml" />
+    <description>Relational Design</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 13:43:23 -0300</lastBuildDate>
+    <image>
+      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <title>Relational Design</title>
+      <link>http://scferrada.github.io/tag/relational-design/</link>
+    </image>
+    
+    <item>
+      <title>Llaves y Dependencias Funcionales</title>
+      <link>http://scferrada.github.io/post/functional-dependencies/</link>
+      <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
+      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
+      <description>&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
+relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
+o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.&lt;/p&gt;
+&lt;h1 id=&#34;llaves&#34;&gt;Llaves&lt;/h1&gt;
+&lt;p&gt;En el modelo relacional trabajamos con conjuntos de tuplas que se almacenan en una relación dada. Como en un conjunto no se permiten
+elementos repetidos es necesario que cada tupla tenga una forma de identificarse y diferenciarse de las otras. La forma de identificar
+tuplas es utilizando el concepto de llave:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Una llave es un conjunto de atributos de una relación, tal que ningún par de tuplas de la relación tiene los mismos valores en dichos
+atributos&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por ejemplo, consideremos los datos de la Tabla 1. Una llave trivial para cualquier relación es el conjunto de todos los atributos. En
+este caso {vino, año, cepa, presentación}. Una llave más pequeña puede ser {vino, cepa} o {año, presentación} (considerando solo estos datos).
+Dicho lo anterior, es conveniente recalcar que las llaves no deben seleccionarse condicionadas a los datos, sino que considerando la semántica
+de las relaciones y atributos.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Vino&lt;/th&gt;
+&lt;th&gt;año&lt;/th&gt;
+&lt;th&gt;cepa&lt;/th&gt;
+&lt;th&gt;presentación&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;130&lt;/td&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;Cabernet&lt;/td&gt;
+&lt;td&gt;750cc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Clos de Paine&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;Cabernet&lt;/td&gt;
+&lt;td&gt;750cc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Santelena&lt;/td&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;Sauvignon Blanc&lt;/td&gt;
+&lt;td&gt;2000cc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Ahora vamos con un par de definiciones. Una &lt;strong&gt;superllave&lt;/strong&gt; es cualquier llave de una relación. Todas las mencionadas en el ejemplo son superllaves.
+Muchas veces se prefiere contar con una llave lo más pequeña posible, pues es necesario que podamos comparar rápidamente un par de tuplas
+para determinar si son idénticas o no. Para esto, introducimos la noción de &lt;strong&gt;llave candidata&lt;/strong&gt;. Una llave candidata es una superllave tal que
+ningún subconjunto propio de ella también sea superllave, es decir, es minimal. Por ejemplo {vino, año, cepa, presentación} es una superllave pero no una llave
+candidata, pues {vino, cepa} también es una superllave. Esta última tampoco es llave candidata porque {nombre} también es superllave.
+Finalmente, {nombre} si es llave candidata, debido a que no hay subconjuntos propios posibles que sean también llave.&lt;/p&gt;
+&lt;p&gt;Un atributo que pertenece a una llave candidata se llama atributo primo.&lt;/p&gt;
+&lt;p&gt;Para terminar, una &lt;strong&gt;llave primaria&lt;/strong&gt; es alguna de las llaves candidatas que se selecciona como la forma estándar de determinarla igualdad
+entre tuplas.&lt;/p&gt;
+&lt;p&gt;Es necesario notar en este punto, que una relación puede entonces tener más de una llave candidata y estas llaves pueden tener distinta
+cantidad de atributos. Consideremos el siguiente esquema para almacenar datos de personas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Persona&lt;/strong&gt;(RUT, nombre, fecha_hora_nacimiento, RUT_padre, RUT_madre)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Las llaves candidatas son {RUT} y {RUT_madre, fecha_hora_nacimiento}. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  Como podemos apreciar, la segunda llave es minimal en el sentido
+de que no hay un subconjunto de esos atributos que también sea llave, por lo que es una llave candidata a pesar de tener una cantidad de atributos
+más grande que {RUT}. Sin embargo, probablemente se prefiera utilizar simplemente el RUT como llave primaria porque en este caso es lo más
+&amp;ldquo;natural&amp;rdquo; además que siempre es mejor tener menos elementos que comparar.&lt;/p&gt;
+&lt;h1 id=&#34;dependencias-funcionales&#34;&gt;Dependencias Funcionales&lt;/h1&gt;
+&lt;p&gt;Dados dos conjuntos de atributos de un esquema relacional $X$ e $Y$, se dice que $Y$ depende funcionalmente de $X$ si para todo
+par de tuplas $t_1, t_2$ del esquema se cumple que si $t_1[X]=t_2[X]$ entonces $t_1[Y]=t_2[Y]$. &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Es decir, para cada valor de $X$
+hay un único valor de $Y$ posible. Cuando $X$ determina funcionalmente a Y se escribe $X \rightarrow Y$. Cuando $Y$ es un subconjunto de $X$ se dice que la dependencia funcional es trivial.&lt;/p&gt;
+&lt;p&gt;Conocer las dependencias funcionales de un esquema es importante para el diseño relacional, pues nos ayudan a determinar si las
+relaciones propuestas por un modelo pueden o no presentar anomalías.&lt;/p&gt;
+&lt;p&gt;Inicialmente, se sabe que una llave candidata determina funcionalmente a todos los atributos. Sin embargo, es posible que otros atributos
+se determinen entre ellos. Supongamos que contamos con la siguiente información de contacto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Contacto&lt;/strong&gt;(RUT, email, dirección, comuna, región)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Claramente el RUT e email son llaves candidatas y, por lo tanto, determinan funcionalmente a todo el resto de los atributos. Por otro lado
+también sabemos que una comuna se encuentra en una sola región y entonces dos contactos de la misma comuna van a estar necesariamente
+en la misma región. Entonces sabemos que {comuna} $\rightarrow$ {región}. Como los nombres de calles pueden repetirse entre comunas,
+podemos descartar la dependencia {dirección} $\rightarrow$ {comuna}.&lt;/p&gt;
+&lt;p&gt;Cuando un esquema cuenta con varias dependencias funcionales, podemos razonar lógicamente sobre ellas y concluir otras dependencias nuevas
+y coherentes con el esquema. Existe un conjunto de reglas de razonamiento que nos permite obtener el conjunto completo de dependencias funcionales
+de un esquema, a partir de un conjunto inicial. Estas reglas se conocen como los axiomas de Armstrong. Sea $(R, F)$ un esquema de relación $R$ y dependencias funcionales $F$.
+Se puede obtener el conjunto de todas las dependencias funcionales deducibles desde $F$, es decir, su clausura $F^+$ aplicando las siguientes reglas:&lt;/p&gt;
+&lt;p&gt;Sean $X$, $Y$, $Z$, $A$ y $B$ conjuntos de atributos de $R$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reflexión: Si $Y\subseteq X$, entonces $X\rightarrow Y$&lt;/li&gt;
+&lt;li&gt;Aumento: Si $X\rightarrow Y$, entonces $XZ\rightarrow YZ$ para cualquier $Z$&lt;/li&gt;
+&lt;li&gt;Transitividad: Si $X\rightarrow Y$ e $Y\rightarrow Z$, entonces $X\rightarrow Z$&lt;/li&gt;
+&lt;li&gt;Descomposición: Si $X\rightarrow YZ$, entonces $X\rightarrow Y$ y $X\rightarrow Z$&lt;/li&gt;
+&lt;li&gt;Composición: Si $X\rightarrow Y$ y $A\rightarrow B$, entonces $XA\rightarrow YB$&lt;/li&gt;
+&lt;li&gt;Pseudo transitividad: Si $X\rightarrow Y$ y $YZ\rightarrow A$, entonces $XZ\rightarrow A$&lt;/li&gt;
+&lt;li&gt;Autodeterminación: $X\rightarrow X$&lt;/li&gt;
+&lt;li&gt;Extensión: Si $X\rightarrow Y$, entonces $X\rightarrow XY$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Los axiomas de Armstrong son especialmente útiles para encontrar las llaves candidatas de las relaciones, pues basta con encontrar
+aquellos conjuntos de atributos que determinan funcionalmente a todos los demás. Por ejemplo consideremos $R(A,B,C,D,E)$ y las siguientes
+dependencias:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$A\rightarrow E$&lt;/li&gt;
+&lt;li&gt;$BC\rightarrow D$&lt;/li&gt;
+&lt;li&gt;$E\rightarrow B$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por transitividad, sabemos que $A\rightarrow B$ y por aumento que $AC\rightarrow CE$ y $AC\rightarrow BC$. Nuevamente la transitividad nos indica que
+$AC\rightarrow D$. Finalmente, uniendo todos los resultados, tenemos que $AC\rightarrow ABCDE$, por lo que
+$AC$ es la llave de $R$. Este proceso de aplicar reglas exhaustivamente a un conjunto de atributos para encontrar todos los otros que
+son determinados funcionalmente por ellos, se llama calcular la clausura de ese conjunto de atributos. En este caso $AC^+$.&lt;/p&gt;
+&lt;p&gt;Tal vez haya parecido un procedimiento antojadizo, pero la intuición detrás del éste es seleccionar los atributos que no aparecen
+en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt;/p&gt;
+&lt;h2 id=&#34;referencias&#34;&gt;Referencias&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Armstrong, William. Dependency Structures of Data Base Relationships, page 580-583. IFIP Congress, 1974.&lt;/li&gt;
+&lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
