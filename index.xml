@@ -5,7 +5,7 @@
     <link>http://www.sferrada.com/</link>
       <atom:link href="http://www.sferrada.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Sebastián&#39;s academic website</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
     <image>
       <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Sebastián&#39;s academic website</title>
@@ -29,6 +29,14 @@
     </item>
     
     <item>
+      <title>Extending  SPARQL with Similarity Joins</title>
+      <link>http://www.sferrada.com/talk/iswc2020/</link>
+      <pubDate>Tue, 11 Feb 2020 15:00:00 -0300</pubDate>
+      <guid>http://www.sferrada.com/talk/iswc2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Similarity Joins in SPARQL</title>
       <link>http://www.sferrada.com/talk/insight-visit-20/</link>
       <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
@@ -47,8 +55,7 @@ que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados u
 que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables. Las formas normales fueron propuestas
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
-dependencia funcional en el modelo relacional. En 
-&lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+dependencia funcional en el modelo relacional. En &lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador
@@ -623,8 +630,7 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
 fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
-En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en 
-&lt;a href=&#34;https://iswc2017.semanticweb.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISWC 2017&lt;/a&gt; en Viena, Austria.&lt;/p&gt;
+En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en &lt;a href=&#34;https://iswc2017.semanticweb.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISWC 2017&lt;/a&gt; en Viena, Austria.&lt;/p&gt;
 &lt;p&gt;La idea que motiva el trabajo es incluir fuertemente el análisis de contenido multimedia en la Web de Datos, tomando
 en cuenta que la información multimedia es parte fundamental para la experiencia de los usuarios en la Web. IMGpedia
 nos permitiría poder hacer consultas de similitud visual entre imágenes, obtener imágenes que cumplan un cierto predicado
@@ -635,17 +641,13 @@ la siguiente consulta: &lt;em&gt;dada una imagen de la catedral de Cusco, obtene
 &lt;li&gt;Obtener las imágenes para procesarlas localmente.&lt;/li&gt;
 &lt;li&gt;Calcular los descriptores visuales (vectores de características) de las imágenes.&lt;/li&gt;
 &lt;li&gt;Obtener estáticamente relaciones de similitud entre las imágenes.&lt;/li&gt;
-&lt;li&gt;Enlazar las imágenes con otras fuentes de información (
-&lt;a href=&#34;http://dbpedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBpedia&lt;/a&gt;, 
-&lt;a href=&#34;https://www.wikidata.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikidata&lt;/a&gt;, 
-&lt;a href=&#34;http://freebase.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Freebase&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Enlazar las imágenes con otras fuentes de información (&lt;a href=&#34;http://dbpedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBpedia&lt;/a&gt;, &lt;a href=&#34;https://www.wikidata.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikidata&lt;/a&gt;, &lt;a href=&#34;http://freebase.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Freebase&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;Publicar todo como RDF, a través de un terminal SPARQL.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Descargar los 14,7 millones de imágenes nos tomó 40 días con múltiples conexiones. El tamaño total de las imágenes es de
 22 Terabytes. Una vez descargadas, calculamos los descriptores visuales, en particular calculamos histogramas de grises,
 histogramas de la orientación de los bordes y un descriptor basado en color. Puedes encontrar más detalles sobre los descriptores y código visitando
-el 
-&lt;a href=&#34;https://github.com/scferrada/imgpedia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; del proyecto (en inglés).&lt;/p&gt;
+el &lt;a href=&#34;https://github.com/scferrada/imgpedia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; del proyecto (en inglés).&lt;/p&gt;
 &lt;p&gt;Como se puede ver en la Figura 1, nuestro objetivo es enlazar las imágenes que sean visualmente similares. Para hacer esto,
 tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos que si dos vectores están cerca, es por que son
 similares. Esta decisión de tomar los &lt;em&gt;k&lt;/em&gt; vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
@@ -653,23 +655,16 @@ al respecto al final del post.&lt;/p&gt;
 &lt;img src=&#34;http://www.sferrada.com/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 1:** Similitud entre imágenes&lt;/center&gt;
 &lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
-Para esto, usamos un 
-&lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
+Para esto, usamos un &lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
 de modo que la imagen aparece en la wiki. Entonces enlazamos la imagen con el recurso de DBpedia relacionado al articulo de Wikipedia correspondiente.
 Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la que está relacionada, pero sí podemos
 decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
-si una imagen aparece en la 
-&lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el 
-&lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
+si una imagen aparece en la &lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el &lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
 &lt;img src=&#34;http://www.sferrada.com/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 2:** Obtener contexto de la imagen&lt;/center&gt;
-&lt;p&gt;Finalmente, publicamos todo en formato 
-&lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de 
-&lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPARQL&lt;/a&gt;.
-Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado 
-&lt;a href=&#34;http://imgpedia.dcc.uchile.cl/ontology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aquí&lt;/a&gt;
-En 
-&lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este terminal&lt;/a&gt;, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
+&lt;p&gt;Finalmente, publicamos todo en formato &lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de &lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPARQL&lt;/a&gt;.
+Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/ontology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aquí&lt;/a&gt;
+En &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este terminal&lt;/a&gt;, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/li&gt;
 &lt;/ul&gt;
@@ -717,10 +712,8 @@ WHERE {
 &lt;img src=&#34;http://www.sferrada.com/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 5:** Resultados de la consulta c&lt;/center&gt;
 &lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
-a Viena a presentarlo, puedes encontrar las diapositivas 
-&lt;a href=&#34;http://www.sferrada.com/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
-de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster 
-&lt;a href=&#34;http://www.sferrada.com/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
+a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;http://www.sferrada.com/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
+de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster &lt;a href=&#34;http://www.sferrada.com/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
 Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
 y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:&lt;/p&gt;
 &lt;ul&gt;
@@ -738,27 +731,22 @@ y darle mayor expresividad a las consultas de IMGpedia.&lt;/li&gt;
 &lt;img src=&#34;http://www.sferrada.com/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 6:** Sesión de pósters&lt;/center&gt;
 &lt;p&gt;Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
-¡
-&lt;a href=&#34;https://iswc2017.semanticweb.org/program/awards/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMGpedia ganó dos premios&lt;/a&gt;! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
+¡&lt;a href=&#34;https://iswc2017.semanticweb.org/program/awards/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMGpedia ganó dos premios&lt;/a&gt;! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
 Este reconocimiento significa mucho para mi y para mi carrera de científico, ¡vaya forma de comenzar! Y más aún, porque los otros nominados
 son varios estudiantes de doctorado de centros y universidades reconocidos a nivel mundial, como la Universidad de Standford.
 Más aún cuando mi trabajo es una tesis de magíster, es increíble que haya competido contra otros trabajos de tan alto nivel.
-Además este premio, como el 
-&lt;a href=&#34;https://iswc2017.semanticweb.org/paper-359/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mejor paper de estudiantes del track de investigación de ISWC&lt;/a&gt; es un claro mensaje de que
+Además este premio, como el &lt;a href=&#34;https://iswc2017.semanticweb.org/paper-359/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mejor paper de estudiantes del track de investigación de ISWC&lt;/a&gt; es un claro mensaje de que
 tenemos que seguir trabajando en multimedia, no podemos seguir dejando estos datos de lado.
 Ahora queda seguir trabajando y mejorando IMGpedia, para que se convierta en la base de conocimiento estándar para las imágenes de la Web.&lt;/p&gt;
 &lt;p&gt;Quiero destacar también el nivel de ciencia que se desarrolla en los institutos y centros de investigación chilenos financiados
-por la 
-&lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iniciativa Científica Milenio&lt;/a&gt;, en particular en el Núcleo Milenio 
-&lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro
+por la &lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iniciativa Científica Milenio&lt;/a&gt;, en particular en el Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro
 de investigación de la Web Semántica&lt;/a&gt;, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
 para Jorge Pérez).&lt;/p&gt;
 &lt;img src=&#34;http://www.sferrada.com/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 7:** Aidan y yo recibiendo el premio a mejor paper de estudiante&lt;/center&gt;
 &lt;p&gt;Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
 Sergio Aguilera por ayudarme tanto con la mantención del servidor; a Camila Faúndez por el trabajo enlazando las imágenes a sus respectivos
-artículos; al Núcleo Milenio 
-&lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro de Investigación de la Web Semántica&lt;/a&gt;, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.&lt;/p&gt;
+artículos; al Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro de Investigación de la Web Semántica&lt;/a&gt;, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Sobre los 10 vecinos más cercanos&lt;/em&gt;: Es cierto que al tomar esta decisión suceden dos cosas indeseables. Primero, es posible que
 se pierdan relaciones de similitud relevantes, es decir que el 11mo, 12mo, etc. sean muy similares también. Segundo,

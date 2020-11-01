@@ -5,7 +5,7 @@
     <link>http://www.sferrada.com/tag/databases/</link>
       <atom:link href="http://www.sferrada.com/tag/databases/index.xml" rel="self" type="application/rss+xml" />
     <description>Databases</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
       <url>http://www.sferrada.com/img/yo.jpg</url>
       <title>Databases</title>
@@ -23,8 +23,7 @@ que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados u
 que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables. Las formas normales fueron propuestas
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
-dependencia funcional en el modelo relacional. En 
-&lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+dependencia funcional en el modelo relacional. En &lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>and Aidan Hogan | Sebastián&#39;s academic website</title>
+    <link>http://www.sferrada.com/author/and-aidan-hogan/</link>
+      <atom:link href="http://www.sferrada.com/author/and-aidan-hogan/index.xml" rel="self" type="application/rss+xml" />
+    <description>and Aidan Hogan</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://www.sferrada.com/img/yo.jpg</url>
+      <title>and Aidan Hogan</title>
+      <link>http://www.sferrada.com/author/and-aidan-hogan/</link>
+    </image>
+    
+    <item>
+      <title>Extending SPARQL with Similarity Joins</title>
+      <link>http://www.sferrada.com/publication/ferrada-simjoins-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      <guid>http://www.sferrada.com/publication/ferrada-simjoins-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
+      <link>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

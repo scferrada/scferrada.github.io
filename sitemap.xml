@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>http://www.sferrada.com/author/aidan-hogan/</loc>
+    <loc>http://www.sferrada.com/author/and-aidan-hogan/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
@@ -83,17 +83,22 @@
   </url>
   
   <url>
-    <loc>http://www.sferrada.com/tag/semantic-web/</loc>
-    <lastmod>2020-02-06T12:00:00-03:00</lastmod>
+    <loc>http://www.sferrada.com/talk/iswc2020/</loc>
+    <lastmod>2020-02-11T15:00:00-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sferrada.com/talk/insight-visit-20/</loc>
-    <lastmod>2020-02-06T12:00:00-03:00</lastmod>
+    <loc>http://www.sferrada.com/tag/semantic-web/</loc>
+    <lastmod>2020-02-11T15:00:00-03:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.sferrada.com/tag/web-image-retrieval/</loc>
+    <lastmod>2020-02-11T15:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.sferrada.com/talk/insight-visit-20/</loc>
     <lastmod>2020-02-06T12:00:00-03:00</lastmod>
   </url>
   
@@ -170,6 +175,11 @@
   <url>
     <loc>http://www.sferrada.com/publication/ferrada-simple-2018/</loc>
     <lastmod>2018-05-21T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.sferrada.com/author/aidan-hogan/</loc>
+    <lastmod>2018-04-21T00:00:00-04:00</lastmod>
   </url>
   
   <url>
