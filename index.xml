@@ -5,12 +5,20 @@
     <link>http://www.sferrada.com/</link>
       <atom:link href="http://www.sferrada.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Sebastián&#39;s academic website</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Tue, 20 Apr 2021 15:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.sferrada.com/img/yo.jpg</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Sebastián&#39;s academic website</title>
       <link>http://www.sferrada.com/</link>
     </image>
+    
+    <item>
+      <title>Similarity-based SPARQL Operators</title>
+      <link>http://www.sferrada.com/talk/similarity-based-sparql-operators/</link>
+      <pubDate>Tue, 20 Apr 2021 15:00:00 +0000</pubDate>
+      <guid>http://www.sferrada.com/talk/similarity-based-sparql-operators/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Extending SPARQL with Similarity Joins</title>
