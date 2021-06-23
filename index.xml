@@ -23,7 +23,7 @@
     <item>
       <title>Extending SPARQL with Similarity Joins</title>
       <link>http://www.sferrada.com/publication/ferrada-simjoins-2020/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simjoins-2020/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>
       <link>http://www.sferrada.com/publication/ferrada-simple-2020/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simple-2020/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>Extending  SPARQL with Similarity Joins</title>
       <link>http://www.sferrada.com/talk/iswc2020/</link>
-      <pubDate>Tue, 11 Feb 2020 15:00:00 -0300</pubDate>
+      <pubDate>Tue, 11 Feb 2020 15:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/talk/iswc2020/</guid>
       <description></description>
     </item>
@@ -47,7 +47,7 @@
     <item>
       <title>Similarity Joins in SPARQL</title>
       <link>http://www.sferrada.com/talk/insight-visit-20/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 -0300</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/talk/insight-visit-20/</guid>
       <description></description>
     </item>
@@ -617,7 +617,7 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
     <item>
       <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
       <link>http://www.sferrada.com/publication/ferrada-simple-2018/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
@@ -625,7 +625,7 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://www.sferrada.com/publication/ferrada-querying-2018/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
@@ -777,7 +777,7 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     <item>
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
@@ -801,7 +801,7 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     <item>
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
       <link>http://www.sferrada.com/publication/ferrada-answering-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
@@ -825,7 +825,7 @@ futuro utilizar una consulta por rango, utilizando estrategias de indexamiento y
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
       <link>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>

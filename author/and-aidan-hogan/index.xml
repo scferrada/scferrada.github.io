@@ -5,7 +5,7 @@
     <link>http://www.sferrada.com/author/and-aidan-hogan/</link>
       <atom:link href="http://www.sferrada.com/author/and-aidan-hogan/index.xml" rel="self" type="application/rss+xml" />
     <description>and Aidan Hogan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Mon, 23 Oct 2017 00:00:00 -0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Mon, 23 Oct 2017 00:00:00 +0200</lastBuildDate>
     <image>
       <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>and Aidan Hogan</title>
@@ -15,7 +15,7 @@
     <item>
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>

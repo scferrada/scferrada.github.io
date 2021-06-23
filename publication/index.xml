@@ -5,7 +5,7 @@
     <link>http://www.sferrada.com/publication/</link>
       <atom:link href="http://www.sferrada.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0200</lastBuildDate>
     <image>
       <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Extending SPARQL with Similarity Joins</title>
       <link>http://www.sferrada.com/publication/ferrada-simjoins-2020/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simjoins-2020/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>
       <link>http://www.sferrada.com/publication/ferrada-simple-2020/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simple-2020/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
       <link>http://www.sferrada.com/publication/ferrada-simple-2018/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://www.sferrada.com/publication/ferrada-querying-2018/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>
@@ -47,7 +47,7 @@
     <item>
       <title>IMGpedia: a linked dataset with content-based analysis of Wikimedia images</title>
       <link>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 -0300</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2017/</guid>
       <description></description>
     </item>
@@ -55,7 +55,7 @@
     <item>
       <title>Answering Visuo-Semantic Queries with IMGpedia.</title>
       <link>http://www.sferrada.com/publication/ferrada-answering-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0300</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-answering-2017/</guid>
       <description></description>
     </item>
@@ -63,7 +63,7 @@
     <item>
       <title>IMGpedia: Enriching the Web of Data with Image Content Analysis.</title>
       <link>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 -0300</pubDate>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-imgpedia-2016/</guid>
       <description></description>
     </item>
