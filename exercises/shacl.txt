@@ -1,0 +1,17 @@
+Go to https://www.ida.liu.se/~robke04/SHACLTutorial/
+Data graph is on the left pane, shapes graph in the right one.
+
+Exercise 1 (5 min):
+-Using Data 1 and Shapes 1,  fix the shape graph to validate the data
+-Add rules to validate the datatypes for foaf:givenName, foaf:familyName and foaf:name as xsd:string.
+-(Advanced) Do the same but with just one property shape, using sh:alternativePath
+
+Exercise 2 (10 min)
+-Using Data 2 and Shapes 2, add a constraint to ensure that each laurate has at least one dbo:affiliation to some dbo:University
+-Add another shape to verify that the values of dbp:dateOfBirth and foaf:birthday are the same for all laureates
+-(Advanced) Use qualified shapes to verify that at least one dbo:affiliation to a dbo:University, but allowing other affiliations as well
+
+Exercise 3 (10 min)
+-Using Data 3 and Shapes 3, create property shapes that validate foaf:name, foaf:givenName and foaf:familyName with regular expressions using sh:pattern. Names should not be allowed to be shorter than two characters and must not contain underscores or numbers.
+-Add a constraint that requires all laureate awards to have a nobel:motivation that is a string of 10 characters or more. Allow only one motivation per language tag.
+-Add a constraint, so that universities are located in country:Germany, country:Japan or country:France. What does the report says?
