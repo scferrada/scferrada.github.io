@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/authors/admin/</link>
-      <atom:link href="http://scferrada.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
-    <description>Sebastián&#39;s academic website</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <title>Sebastián Ferrada Aliaga | Sebastián&#39;s academic website</title>
+    <link>http://www.sferrada.com/authors/admin/</link>
+      <atom:link href="http://www.sferrada.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sebastián Ferrada Aliaga</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
-      <title>Sebastián&#39;s academic website</title>
-      <link>http://scferrada.github.io/authors/admin/</link>
+      <url>http://www.sferrada.com/authors/admin/avatar_hub45cae5958639cf17619b5c5231b94c9_25163_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Sebastián Ferrada Aliaga</title>
+      <link>http://www.sferrada.com/authors/admin/</link>
     </image>
     
     <item>
       <title>Formas Pokenormales</title>
-      <link>http://scferrada.github.io/post/normal-forms/</link>
+      <link>http://www.sferrada.com/post/normal-forms/</link>
       <pubDate>Mon, 29 Oct 2018 14:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/normal-forms/</guid>
+      <guid>http://www.sferrada.com/post/normal-forms/</guid>
       <description>&lt;p&gt;Al diseñar las relaciones que deben formar parte de un esquema relacional de bases de datos hay ciertos aspectos que se deben considerar
 de forma que se asegure que al agregar los datos en el esquema estos no presenten anomalías. En este artículo, voy a discutir distintas anomalías
 que pueden presentarse en esquemas relacionales y cómo pueden ser erradicados utilizando formas normales. Las formas normales son condiciones
 que todas las tablas de un esquema deben cumplir para así garantizar ciertas propiedades deseables. Las formas normales fueron propuestas
 principalmente por Edgar F. Codd durante los 70s.&lt;/p&gt;
 &lt;p&gt;Para entender de mejor forma las condiciones que se requieren en cada forma normal, es recomendable que conozcas lo que es una llave y una
-dependencia funcional en el modelo relacional. En 
-&lt;a href=&#34;http://scferrada.github.io/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt;
- puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
+dependencia funcional en el modelo relacional. En &lt;a href=&#34;http://www.sferrada.com/post/functionaldependencies/&#34;&gt;este post&lt;/a&gt; puedes encontrar definiciones y ejemplos también.&lt;/p&gt;
 &lt;p&gt;Vamos a guiar la explicación a través de una base de datos que mantiene el registro de los Pokémon que son capturados por los distintos
 entrenadores. En la Tabla 1, se muestra una forma sobre cómo organizar nuestros datos. La tabla contiene una columna con el identificador
 del entrenador y la segunda contiene una lista con las criaturas capturadas por dicho entrenador. La llave de la tabla es el nombre del entrenador
 por lo que se muestra en negrita y cursiva.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -52,7 +51,8 @@ por lo que se muestra en negrita y cursiva.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;/center&gt;
+&lt;center&gt;&lt;b&gt;Tabla 1&lt;/b&gt;: Entrenadores y sus Pokémon &lt;/center&gt;
 &lt;p&gt;Como se puede adivinar, es al menos extraño el manejar listas de elementos en una base de datos relacional. El utilizar ese tipo de estructuras
 en un atributo de una tabla puede producir dificultades al momento de implementar la base de datos. ¿Las colecciones pueden tener un tamaño máximo?
 ¿Cómo busco, agrego, ordeno o elimino eficientemente un elemento de la colección?&lt;/p&gt;
@@ -62,6 +62,7 @@ en un atributo de una tabla puede producir dificultades al momento de implementa
 tanto el nombre del entrenador como el del Pokémon. El resultado puede apreciarse en la Tabla 2. Como un entrenador puede tener varios Pokémon
 tanto el nombre del entrenador como el nombre del Pokémon son la llave de la tabla. (Efectivamente esto restringe que un mismo entrenador
 capture dos pokémon del mismo nombre. ¿Cómo solucionar esto?)&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -92,7 +93,8 @@ capture dos pokémon del mismo nombre. ¿Cómo solucionar esto?)&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;/center&gt;
+&lt;center&gt;&lt;b&gt;Tabla 2:&lt;/b&gt; Entrenadores y sus Pokémon, un valor por celda &lt;/center&gt;
 &lt;p&gt;Cuando tenemos una relación como la de la Tabla 2, decimos que cada atributo tiene valores atómicos, es decir, valores que no son colecciones
 (conjuntos, listas, etc.). Este tipo de relaciones están en &lt;strong&gt;Primera Forma Normal&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Supongamos que ahora que tenemos más información sobre el entrenador, sobre el Pokémon capturado y sobre la captura en sí. Por ejemplo, queremos
@@ -100,6 +102,7 @@ almacenar la ciudad de la que el entrenador proviene, la salud y tipo del Pokém
 con lo que veníamos haciendo en la Tabla 2, podríamos proponer un esquema como el que se ve en la Tabla 3. Podemos ver que la llave sigue siendo
 el nombre del entrenador y el del pokémon, sin embargo, al agregar también la fecha de captura a la llave podemos admitir que un entrenador
 capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -146,7 +149,8 @@ capture más de un pokémon de la misma especie en momentos diferentes.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 3:&lt;/strong&gt; Entrenadores y sus Pokémon, con datos del entrenador, Pokémon y captura&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;En el modelo de la Tabla 3, podemos encontrar varios problemas. Primero notamos que hay redundancia, pues cada vez que un entrenador capture
 un nuevo pokémon debemos repetir su ciudad de origen. Esto conlleva varias anomalías consigo, las cuales vamos a enumerar:&lt;/p&gt;
 &lt;ul&gt;
@@ -173,6 +177,7 @@ son subconjuntos propios de la llave primaria.
 para los entrenadores, otra para las especies de pokémon y otra para las capturas. En las tablas 4, 5 y 6 podemos encontrar el resultado de la normalización.
 Bastó en este caso con tomar las dependencias funcionales &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt; y &lt;em&gt;Pokémon&lt;/em&gt; $\rightarrow$ &lt;em&gt;Tipo&lt;/em&gt; y extraerlas en tablas aparte. Finalmente,
 se agrega la tabla de capturas.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -195,7 +200,7 @@ se agrega la tabla de capturas.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 4:&lt;/strong&gt; Entrenadores y sus ciudades de origen&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -218,7 +223,7 @@ se agrega la tabla de capturas.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 5:&lt;/strong&gt; Especies de pokémon y sus tipos&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -255,13 +260,15 @@ se agrega la tabla de capturas.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 6:&lt;/strong&gt; Entrenadores y sus pokémon&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;El conjunto de las tablas 4, 5 y 6 cumple ahora con 2NF. Supongamos ahora que además del pueblo de origen del entrenador, queremos
 también saber la región de la que provienen, como se ve en la Tabla 7. En dicha tabla, es fácil notar que se cumple la dependencia funcional
 &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;. La existencia de esta dependencia facilita la aparición de las anomalías que discutimos anteriormente.
 Por ejemplo, si queremos modificar el pueblo de origen, tenemos que tomar en cuenta que la región tal vez también debería cambiar.
 La naturaleza del problema es distinta a la anterior. Acá no hay una dependencia parcial a una llave, sino que hay atributos no primos
 determinando funcionalmente a otros.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -293,7 +300,8 @@ determinando funcionalmente a otros.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 7:&lt;/strong&gt; Entrenadores y sus ciudades y regiones de origen&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;La &lt;strong&gt;Tercera Forma Normal&lt;/strong&gt; (3NF) nos permite eliminar este tipo de anomalías. Un esquema está en 3NF sí está en segunda forma normal
 y ningún atributo no primo depende transitivamente de una llave candidata. La última condición también puede expresarse como que todos los
 atributos están determidados funcionalmente solo por las llaves candidatas y no por atributos no primos. En el caso de la Tabla 7
@@ -301,7 +309,7 @@ tenemos la Región depende transitivamente de la llave: &lt;em&gt;Entrenador&lt;
 tabla no está en 3NF.&lt;/p&gt;
 &lt;p&gt;Para normalizar una tabla que no está en 3NF, se puede utilizar el siguiente algoritmo (aunque en la mayoría de los casos solo basta
 usar el sentido común):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;INPUT: (R, F) R un esquema y F un conjunto de relaciones funcionales
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INPUT: (R, F) R un esquema y F un conjunto de relaciones funcionales
 OUTPUT: El esquema normalizado
 F` := reducir(F)
 por cada X-&amp;gt;A en F`:
@@ -312,6 +320,7 @@ de todos los atributos que dependen funcionalmente de X. Finalmente, se agrega l
 dependencias funcionales son (1) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt;, (2) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt; y (3) &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;,
 entonces las tablas resultantes van a ser (Entrenador, Origen) y (Origen, Región) pues la (2), al ser transitiva de (1) y (3) se elimina. No es necesario
 agregar una tabla para la llave pues es simplemente Entrenador. La primera tabla puede apreciarse en Tabla 4 y la segunda en Tabla 8.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -334,11 +343,13 @@ agregar una tabla para la llave pues es simplemente Entrenador. La primera tabla
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Tabla 8:&lt;/strong&gt; Pueblos y las regiones a las que pertenecen&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;¿Estamos listos entonces? Falta un poco, aunque muchas veces se considera que un esquema en 3NF está lo suficientemente normalizado,
 aún hay ciertas cosas que pueden surgir.&lt;/p&gt;
 &lt;p&gt;Supongamos ahora una tabla para guardar los duelos contra líderes de gimnasio. Vamos a suponer que un gimnasio puede tener solo un líder
 y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en la Tabla 9.&lt;/p&gt;
+&lt;center&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -373,8 +384,9 @@ y que ese líder pertenece solo a un gimnasio. Podemos ver datos de ejemplo en l
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Podemos inferir que una llave es esta tabla es {Lider, Entrenador, Fecha}, pero dadas las dependencias funcionales {Lider}$\rightarrow${Gimnasio} y {Gimnasio}$\rightarrow${Lider}
+&lt;p&gt;&lt;strong&gt;Tabla 9:&lt;/strong&gt; Registro de duelos en gimnasios&lt;/p&gt;
+&lt;/center&gt;
+&lt;p&gt;Podemos inferir que una llave es esta tabla es $\set{Lider, Entrenador, Fecha}$, pero dadas las dependencias funcionales {Lider}$\rightarrow${Gimnasio} y {Gimnasio}$\rightarrow${Lider}
 tenemos que otra llave candidata es {Entrenador, Gimnasio, Fecha}. Dadas las definiciones anteriores, la Tabla 9 está en 3FN. Sin embargo, aún
 pueden surgir anomalías de edición: ¿Qué pasa si queremos cambiar el nombre del gimnasio? Es requerido cambiarlo en todas partes.
 ¿Entonces normalizar hasta 3NF no es suficiente? Pues hay una forma de normalización superior a 3NF que evita este tipo de problemas.&lt;/p&gt;
@@ -383,7 +395,7 @@ Así de simple. En la Tabla 9, vemos que las dependencias funcionales entre Lide
 es lo que produce las anomalías. En general es extraño encontrar tablas que estén en 3FN y no en FNBC. Esto sucede cuando en una tabla 3FN
 existen llaves candidatas que se traslapan, es decir, que comparten atributos.&lt;/p&gt;
 &lt;p&gt;El algoritmo que se sigue para normalizar es el siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: C ={(R0, F0)} # Esquema y dependencias iniciales
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: C ={(R0, F0)} # Esquema y dependencias iniciales
 Output: N # Esquema normalizado en FNBC
 
 for (R, F) in C:
@@ -407,25 +419,25 @@ se prefiere lo contrario.&lt;/p&gt;
 &lt;li&gt;Codd, Edgar F. &amp;ldquo;Recent Investigations into Relational Data Base Systems.&amp;rdquo; IBM Research Report RJ1385 (April 23, 1974).&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Llaves y Dependencias Funcionales</title>
-      <link>http://scferrada.github.io/post/functional-dependencies/</link>
+      <link>http://www.sferrada.com/post/functional-dependencies/</link>
       <pubDate>Mon, 29 Oct 2018 13:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/functional-dependencies/</guid>
+      <guid>http://www.sferrada.com/post/functional-dependencies/</guid>
       <description>&lt;p&gt;Este post provee de una introducción al concepto de llaves y dependencias funcionales en el campo de la teoría de las bases de datos
 relacionales. Está guiado por ejemplos, pero se presentan también algunas de las formalidades matemáticas. Si encuentras algún error
 o hay algo que no se logra entender muy bien, por favor deja un comentario debajo.&lt;/p&gt;
@@ -538,31 +550,29 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
 &lt;li&gt;Armstrong, William. Dependency Structures of Data Base Relationships, page 580-583. IFIP Congress, 1974.&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>IMGpedia, la importancia de incluir multimedia en la Web de Datos</title>
-      <link>http://scferrada.github.io/post/imgpedia-iswc/</link>
+      <link>http://www.sferrada.com/post/imgpedia-iswc/</link>
       <pubDate>Thu, 26 Oct 2017 18:43:23 -0300</pubDate>
-      <guid>http://scferrada.github.io/post/imgpedia-iswc/</guid>
+      <guid>http://www.sferrada.com/post/imgpedia-iswc/</guid>
       <description>&lt;p&gt;IMGpedia es una base de datos enlazados que extrae características visuales a las imágenes de Wikimedia Commons y
 que provee enlaces a DBpedia al contexto de la imagen, permitiendo así realizar consultas visuo-semánticas. IMGpedia
 fue mi tesis de magíster guiada por Benjamin Bustos y Aidan Hogan. Muy probablemente será mi tesis de doctorado también.
-En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en 
-&lt;a href=&#34;https://iswc2017.semanticweb.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISWC 2017&lt;/a&gt;
- en Viena, Austria.&lt;/p&gt;
+En este post les voy a contar de qué se trata IMGpedia y mi experiencia compartiendo este trabajo en &lt;a href=&#34;https://iswc2017.semanticweb.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISWC 2017&lt;/a&gt; en Viena, Austria.&lt;/p&gt;
 &lt;p&gt;La idea que motiva el trabajo es incluir fuertemente el análisis de contenido multimedia en la Web de Datos, tomando
 en cuenta que la información multimedia es parte fundamental para la experiencia de los usuarios en la Web. IMGpedia
 nos permitiría poder hacer consultas de similitud visual entre imágenes, obtener imágenes que cumplan un cierto predicado
@@ -573,78 +583,60 @@ la siguiente consulta: &lt;em&gt;dada una imagen de la catedral de Cusco, obtene
 &lt;li&gt;Obtener las imágenes para procesarlas localmente.&lt;/li&gt;
 &lt;li&gt;Calcular los descriptores visuales (vectores de características) de las imágenes.&lt;/li&gt;
 &lt;li&gt;Obtener estáticamente relaciones de similitud entre las imágenes.&lt;/li&gt;
-&lt;li&gt;Enlazar las imágenes con otras fuentes de información (
-&lt;a href=&#34;http://dbpedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBpedia&lt;/a&gt;
-, 
-&lt;a href=&#34;https://www.wikidata.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikidata&lt;/a&gt;
-, 
-&lt;a href=&#34;http://freebase.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Freebase&lt;/a&gt;
-).&lt;/li&gt;
+&lt;li&gt;Enlazar las imágenes con otras fuentes de información (&lt;a href=&#34;http://dbpedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBpedia&lt;/a&gt;, &lt;a href=&#34;https://www.wikidata.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikidata&lt;/a&gt;, &lt;a href=&#34;http://freebase.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Freebase&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;Publicar todo como RDF, a través de un terminal SPARQL.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Descargar los 14,7 millones de imágenes nos tomó 40 días con múltiples conexiones. El tamaño total de las imágenes es de
 22 Terabytes. Una vez descargadas, calculamos los descriptores visuales, en particular calculamos histogramas de grises,
 histogramas de la orientación de los bordes y un descriptor basado en color. Puedes encontrar más detalles sobre los descriptores y código visitando
-el 
-&lt;a href=&#34;https://github.com/scferrada/imgpedia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;
- del proyecto (en inglés).&lt;/p&gt;
+el &lt;a href=&#34;https://github.com/scferrada/imgpedia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; del proyecto (en inglés).&lt;/p&gt;
 &lt;p&gt;Como se puede ver en la Figura 1, nuestro objetivo es enlazar las imágenes que sean visualmente similares. Para hacer esto,
 tomamos un descriptor y encontramos sus 10 vecinos más cercanos, pues asumimos que si dos vectores están cerca, es por que son
 similares. Esta decisión de tomar los &lt;em&gt;k&lt;/em&gt; vecinos más cercanos ha generado mucha discusión, pero si están interesados, hay una reflexión
 al respecto al final del post.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/similarity.PNG&#34; alt=&#34;Figura 1: Similitud entre imágenes&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 1:** Similitud entre imágenes&lt;/center&gt;
 &lt;p&gt;Luego, necesitamos obtener contexto de la imagen: saber qué es, cómo se llama lo que aparece en ella o con qué está relacionada.
-Para esto, usamos un 
-&lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dump&lt;/a&gt;
- de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
+Para esto, usamos un &lt;a href=&#34;https://dumps.wikimedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dump&lt;/a&gt; de la Wikipedia en inglés para reunir los pares &lt;code&gt;(nombre_img, nombre_wiki)&lt;/code&gt;
 de modo que la imagen aparece en la wiki. Entonces enlazamos la imagen con el recurso de DBpedia relacionado al articulo de Wikipedia correspondiente.
 Por ahora, nada nos asegura que la imagen realmente contenga a la entidad con la que está relacionada, pero sí podemos
 decir que la imagen está asociada a la entidad de alguna forma u otra. En la Figura 2 se muestra lo que se pretende hacer, por ejemplo
-si una imagen aparece en la 
-&lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;
-, entonces enlazamos la imagen con el 
-&lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;
-.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Finalmente, publicamos todo en formato 
-&lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDF&lt;/a&gt;
- que puede ser consultado a través de un terminal público de 
-&lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPARQL&lt;/a&gt;
-.
-Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado 
-&lt;a href=&#34;http://imgpedia.dcc.uchile.cl/ontology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aquí&lt;/a&gt;
-
-En 
-&lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este terminal&lt;/a&gt;
-, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
+si una imagen aparece en la &lt;a href=&#34;http://en.wikipedia.org/wiki/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki de Quentin Tarantino&lt;/a&gt;, entonces enlazamos la imagen con el &lt;a href=&#34;http://dbpedia.org/resource/Quentin_Tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recurso de Tarantino en DBpedia&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/context.PNG&#34; alt=&#34;Figura 2: Obtener contexto de la imagen&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 2:** Obtener contexto de la imagen&lt;/center&gt;
+&lt;p&gt;Finalmente, publicamos todo en formato &lt;a href=&#34;https://www.w3.org/2001/sw/wiki/RDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDF&lt;/a&gt; que puede ser consultado a través de un terminal público de &lt;a href=&#34;https://www.w3.org/TR/sparql11-query/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPARQL&lt;/a&gt;.
+Los datos tienen un cierto esquema para modelar clases y atributos que puede ser encontrado &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/ontology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aquí&lt;/a&gt;
+En &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este terminal&lt;/a&gt;, podemos hacer por ejemplo las siguientes consultas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?Target
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?Target
 WHERE {
     im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 3:** Resultados de la consulta a&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
 podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
 WHERE {
   SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
     ?res a yago:Wikicat16th-centuryPaintings ;
       dcterms:subject dbc:Paintings_of_the_Louvre ;
       rdfs:label ?label .
-    FILTER(LANG(?label)=&amp;quot;en&amp;quot;)  }
+    FILTER(LANG(?label)=&amp;#34;en&amp;#34;)  }
   ?img imo:associatedWith ?res ;
       imo:fileURL ?url .  
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 4:** Resultados de la consulta b&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
 entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
 WHERE {
   SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
     ?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
@@ -656,14 +648,11 @@ WHERE {
     ?tres dcterms:subject ?subject .
     FILTER(CONTAINS(STR(?sub), “Museum”))} 
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 5:** Resultados de la consulta c&lt;/center&gt;
 &lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
-a Viena a presentarlo, puedes encontrar las diapositivas 
-&lt;a href=&#34;http://scferrada.github.io/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;
-. También participamos en la sesión
-de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster 
-&lt;a href=&#34;http://scferrada.github.io/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;
-.
+a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;http://www.sferrada.com/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión
+de pósters, donde recibimos feedback y preguntas muy interesantes, puedes ver el póster &lt;a href=&#34;http://www.sferrada.com/pdf/imgpediaISWCposter.pdf&#34;&gt;aquí&lt;/a&gt;.
 Tanto la presentación como la sesión de pósters fueron una gran oportunidad para validar nuestro trabajo, para saber cómo mejorarlo
 y para saber qué cree la comunidad que sería útil agregar. En resumen, dejo algunos puntos:&lt;/p&gt;
 &lt;ul&gt;
@@ -678,33 +667,25 @@ para nuestros propósitos. Muchos piensan que enlazar con otras bases de conocim
 y darle mayor expresividad a las consultas de IMGpedia.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;¡Gracias a todos los que nos fueron a ver al stand!&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/posteriswc17.jpg&#34; alt=&#34;Figura 6: Sesión de pósters&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 6:** Sesión de pósters&lt;/center&gt;
 &lt;p&gt;Para terminar con esta historia, el último día de conferencia anuncian a los ganadores de los mejores papers publicados en la conferencia.
-¡
-&lt;a href=&#34;https://iswc2017.semanticweb.org/program/awards/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMGpedia ganó dos premios&lt;/a&gt;
-! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
+¡&lt;a href=&#34;https://iswc2017.semanticweb.org/program/awards/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMGpedia ganó dos premios&lt;/a&gt;! Ganamos el premio al mejor póster y el premio al mejor paper de estudiante en el track de recursos (junto con BiOnIC).
 Este reconocimiento significa mucho para mi y para mi carrera de científico, ¡vaya forma de comenzar! Y más aún, porque los otros nominados
 son varios estudiantes de doctorado de centros y universidades reconocidos a nivel mundial, como la Universidad de Standford.
 Más aún cuando mi trabajo es una tesis de magíster, es increíble que haya competido contra otros trabajos de tan alto nivel.
-Además este premio, como el 
-&lt;a href=&#34;https://iswc2017.semanticweb.org/paper-359/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mejor paper de estudiantes del track de investigación de ISWC&lt;/a&gt;
- es un claro mensaje de que
+Además este premio, como el &lt;a href=&#34;https://iswc2017.semanticweb.org/paper-359/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mejor paper de estudiantes del track de investigación de ISWC&lt;/a&gt; es un claro mensaje de que
 tenemos que seguir trabajando en multimedia, no podemos seguir dejando estos datos de lado.
 Ahora queda seguir trabajando y mejorando IMGpedia, para que se convierta en la base de conocimiento estándar para las imágenes de la Web.&lt;/p&gt;
 &lt;p&gt;Quiero destacar también el nivel de ciencia que se desarrolla en los institutos y centros de investigación chilenos financiados
-por la 
-&lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iniciativa Científica Milenio&lt;/a&gt;
-, en particular en el Núcleo Milenio 
-&lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro
-de investigación de la Web Semántica&lt;/a&gt;
-, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
+por la &lt;a href=&#34;http://www.iniciativamilenio.cl/en/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iniciativa Científica Milenio&lt;/a&gt;, en particular en el Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro
+de investigación de la Web Semántica&lt;/a&gt;, que en total nos llevamos 3 premios en ISWC (los dos de IMGpedia y el premio a mejor paper de investigación
 para Jorge Pérez).&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;img src=&#34;http://www.sferrada.com/img/awards.jpg&#34; alt=&#34;Figura 7: Aidan y yo recibiendo el premio a mejor paper de estudiante&#34; width=&#34;90%&#34;/&gt;
+&lt;center&gt;**Figura 7:** Aidan y yo recibiendo el premio a mejor paper de estudiante&lt;/center&gt;
 &lt;p&gt;Solo me falta agradecer a todos los que hicieron este (arduo) trabajo posible, en especial a mis profesores guía, Benjamin y Aidan; a
 Sergio Aguilera por ayudarme tanto con la mantención del servidor; a Camila Faúndez por el trabajo enlazando las imágenes a sus respectivos
-artículos; al Núcleo Milenio 
-&lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro de Investigación de la Web Semántica&lt;/a&gt;
-, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.&lt;/p&gt;
+artículos; al Núcleo Milenio &lt;a href=&#34;http://ciws.cl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centro de Investigación de la Web Semántica&lt;/a&gt;, por su apoyo financiero y académico; y a toda mi familia y amigos por su constante apoyo, motivación y cariño.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Sobre los 10 vecinos más cercanos&lt;/em&gt;: Es cierto que al tomar esta decisión suceden dos cosas indeseables. Primero, es posible que
 se pierdan relaciones de similitud relevantes, es decir que el 11mo, 12mo, etc. sean muy similares también. Segundo,

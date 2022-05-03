@@ -5,9 +5,9 @@
     <link>http://www.sferrada.com/tag/databases/</link>
       <atom:link href="http://www.sferrada.com/tag/databases/index.xml" rel="self" type="application/rss+xml" />
     <description>Databases</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 29 Oct 2018 14:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Databases</title>
       <link>http://www.sferrada.com/tag/databases/</link>
     </image>
@@ -309,14 +309,13 @@ tenemos la Región depende transitivamente de la llave: &lt;em&gt;Entrenador&lt;
 tabla no está en 3NF.&lt;/p&gt;
 &lt;p&gt;Para normalizar una tabla que no está en 3NF, se puede utilizar el siguiente algoritmo (aunque en la mayoría de los casos solo basta
 usar el sentido común):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;INPUT: (R, F) R un esquema y F un conjunto de relaciones funcionales
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INPUT: (R, F) R un esquema y F un conjunto de relaciones funcionales
 OUTPUT: El esquema normalizado
 F` := reducir(F)
 por cada X-&amp;gt;A en F`:
 	Crear esquema (X U A, X-&amp;gt;A)
 Si en los esquemas creados no está la llave de (R, F), agregarla	
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En reducir, lo que se hace es eliminar dependencias funcionales redundantes y dejarlas de la forma $X \rightarrow A$ donde A es el conjunto
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;En reducir, lo que se hace es eliminar dependencias funcionales redundantes y dejarlas de la forma $X \rightarrow A$ donde A es el conjunto
 de todos los atributos que dependen funcionalmente de X. Finalmente, se agrega la llave en caso de ser necesario. En nuestro ejemplo, las
 dependencias funcionales son (1) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Origen&lt;/em&gt;, (2) &lt;em&gt;Entrenador&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt; y (3) &lt;em&gt;Origen&lt;/em&gt; $\rightarrow$ &lt;em&gt;Región&lt;/em&gt;,
 entonces las tablas resultantes van a ser (Entrenador, Origen) y (Origen, Región) pues la (2), al ser transitiva de (1) y (3) se elimina. No es necesario
@@ -396,7 +395,7 @@ Así de simple. En la Tabla 9, vemos que las dependencias funcionales entre Lide
 es lo que produce las anomalías. En general es extraño encontrar tablas que estén en 3FN y no en FNBC. Esto sucede cuando en una tabla 3FN
 existen llaves candidatas que se traslapan, es decir, que comparten atributos.&lt;/p&gt;
 &lt;p&gt;El algoritmo que se sigue para normalizar es el siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: C ={(R0, F0)} # Esquema y dependencias iniciales
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: C ={(R0, F0)} # Esquema y dependencias iniciales
 Output: N # Esquema normalizado en FNBC
 
 for (R, F) in C:
@@ -404,8 +403,7 @@ for (R, F) in C:
 		tomar X -&amp;gt; Y en F que viola FNBC
 		C = C U (R-X, F1) # F1 son las df sobre los atributos en R-X
 		C = C U (XY, F2)  # F2 son las df sobre los atributos en XY
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Entonces en el caso de la Tabla 9, tomamos una de las dependencias que viola FNBC, {lider}$\rightarrow${gimnasio} y separamos el esquema en dos
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Entonces en el caso de la Tabla 9, tomamos una de las dependencias que viola FNBC, {lider}$\rightarrow${gimnasio} y separamos el esquema en dos
 el primero con los atributos {lider, entrenador, fecha, ganador} y el otro con {lider, gimnasio}. Como ambas tablas resultantes quedaron en
 FNBC, el esquema ya está completamente normalizado.&lt;/p&gt;
 &lt;p&gt;Para cerrar, quiero mencionar dos cosas. La primera, es que existen la cuarta, quinta y sexta formas normales, las cuales tratan de reparar
@@ -421,17 +419,17 @@ se prefiere lo contrario.&lt;/p&gt;
 &lt;li&gt;Codd, Edgar F. &amp;ldquo;Recent Investigations into Relational Data Base Systems.&amp;rdquo; IBM Research Report RJ1385 (April 23, 1974).&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Esta diferencia ocurre pues un pokémon es una especie y una instancia a la vez: todos los Pikachu son eléctricos, pero cada uno tiene un HP distinto. La forma de diferenciar dos Pikachu distintos, es por el entrenador que los capturó.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Un subconjunto propio es un subconjunto con cardinalidad estrictamente menor que el conjunto original, es decir $R\subsetneq S$&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -552,17 +550,17 @@ en el lado derecho de las dependencias para comenzar. En este caso $A$ y $C$.&lt
 &lt;li&gt;Armstrong, William. Dependency Structures of Data Base Relationships, page 580-583. IFIP Congress, 1974.&lt;/li&gt;
 &lt;li&gt;Ramakrishnan, Raghu, and Johannes Gehrke. Database management systems. McGraw Hill, 2000.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;{RUT_padre, fecha_hora_nacimiento} no se considera, pues puede suceder que un hombre tenga hijos con dos mujeres distintas que por coincidencia nacieron el mismo día y a la misma hora.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$ &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;En este artículo se considera que si $t$ es una tupla y $X$ es un conjunto atributos, la operación $t[X]$ corresponde a la proyección de los atributos $X$ de la tupla $t$, es decir $\pi_X(t)$&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

@@ -5,9 +5,9 @@
     <link>http://www.sferrada.com/tag/linked-data/</link>
       <atom:link href="http://www.sferrada.com/tag/linked-data/index.xml" rel="self" type="application/rss+xml" />
     <description>Linked Data</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Thu, 26 Oct 2017 18:43:23 -0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2017 18:43:23 -0300</lastBuildDate>
     <image>
-      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Linked Data</title>
       <link>http://www.sferrada.com/tag/linked-data/</link>
     </image>
@@ -58,35 +58,33 @@ En &lt;a href=&#34;http://imgpedia.dcc.uchile.cl/sparql&#34; target=&#34;_blank&
 &lt;ul&gt;
 &lt;li&gt;Obtener todas las imágenes similares a la foto de Hopsten Marktplatz:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?Target
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?Target
 WHERE {
     im:Hopsten_Marktplatz_3.jpg imo:similar ?Target .
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://www.sferrada.com/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q1.PNG&#34; alt=&#34;Figura 3: Resultados de la consulta a&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 3:** Resultados de la consulta a&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Obtener imágenes de las pinturas hechas el siglo XVI, que están en exposición en el Louvre (ojo que también
 podemos obtener otros datos como el nombre de la pintura, quién la pintó, etc.):&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?url ?label
 WHERE {
   SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
     ?res a yago:Wikicat16th-centuryPaintings ;
       dcterms:subject dbc:Paintings_of_the_Louvre ;
       rdfs:label ?label .
-    FILTER(LANG(?label)=&amp;quot;en&amp;quot;)  }
+    FILTER(LANG(?label)=&amp;#34;en&amp;#34;)  }
   ?img imo:associatedWith ?res ;
       imo:fileURL ?url .  
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://www.sferrada.com/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q2.PNG&#34; alt=&#34;Figura 4: Resultados de la consulta b&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 4:** Resultados de la consulta b&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Finalmente podemos combinar ambos tipos de preguntas en una consulta que llamamos &lt;em&gt;visuo-semántica&lt;/em&gt;, por ejemplo
 entre todas las imágenes de catedrales europeas, obtener imágenes similares que sean museos:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT DISTINCT ?source ?target
 WHERE {
   SERVICE &amp;lt;https://dbpedia.org/sparql&amp;gt; {
     ?sres dcterms:subject/skos:broader* dbc:Roman_Catholic_cathedrals_in_Europe } 
@@ -98,8 +96,7 @@ WHERE {
     ?tres dcterms:subject ?subject .
     FILTER(CONTAINS(STR(?sub), “Museum”))} 
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://www.sferrada.com/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&#34;http://www.sferrada.com/img/q3.PNG&#34; alt=&#34;Figura 5: Resultados de la consulta c&#34; width=&#34;90%&#34;/&gt;
 &lt;center&gt;**Figura 5:** Resultados de la consulta c&lt;/center&gt;
 &lt;p&gt;Tras mi defensa del Magister, este trabajo fue aceptado en el track de recursos de la 16ta Conferencia Internacional de la Web Semántica (ISWC) y viajé
 a Viena a presentarlo, puedes encontrar las diapositivas &lt;a href=&#34;http://www.sferrada.com/pptx/iswc2017.pptx&#34;&gt;aquí&lt;/a&gt;. También participamos en la sesión

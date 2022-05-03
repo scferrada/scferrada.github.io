@@ -5,9 +5,9 @@
     <link>http://www.sferrada.com/tag/wikidata/</link>
       <atom:link href="http://www.sferrada.com/tag/wikidata/index.xml" rel="self" type="application/rss+xml" />
     <description>Wikidata</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Wikidata</title>
       <link>http://www.sferrada.com/tag/wikidata/</link>
     </image>
@@ -15,7 +15,7 @@
     <item>
       <title>Extending SPARQL with Similarity Joins</title>
       <link>http://www.sferrada.com/publication/ferrada-simjoins-2020/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0200</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-simjoins-2020/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Querying Wikimedia Images using Wikidata Facts</title>
       <link>http://www.sferrada.com/publication/ferrada-querying-2018/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
       <guid>http://www.sferrada.com/publication/ferrada-querying-2018/</guid>
       <description></description>
     </item>

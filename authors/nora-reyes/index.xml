@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nora Reyes | Sebastián&#39;s academic website</title>
-    <link>http://scferrada.github.io/authors/nora-reyes/</link>
-      <atom:link href="http://scferrada.github.io/authors/nora-reyes/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.sferrada.com/authors/nora-reyes/</link>
+      <atom:link href="http://www.sferrada.com/authors/nora-reyes/index.xml" rel="self" type="application/rss+xml" />
     <description>Nora Reyes</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 24 Feb 2020 00:00:00 -0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://scferrada.github.io/img/yo.jpg</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Nora Reyes</title>
-      <link>http://scferrada.github.io/authors/nora-reyes/</link>
+      <link>http://www.sferrada.com/authors/nora-reyes/</link>
     </image>
     
     <item>
-      <title>An efficient algorithm for approximated self-similarity joins in metric spaces</title>
-      <link>http://scferrada.github.io/publication/ferrada-simple-2020/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 -0300</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-simple-2020/</guid>
+      <title>An Efficient Algorithm for Approximated Self-similarity Joins in Metric Spaces</title>
+      <link>http://www.sferrada.com/publication/ferrada-simple-2020/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.sferrada.com/publication/ferrada-simple-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Simple, Efficient, Parallelizable Algorithm for Approximated Nearest Neighbors.</title>
-      <link>http://scferrada.github.io/publication/ferrada-simple-2018/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 -0400</pubDate>
-      <guid>http://scferrada.github.io/publication/ferrada-simple-2018/</guid>
+      <link>http://www.sferrada.com/publication/ferrada-simple-2018/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.sferrada.com/publication/ferrada-simple-2018/</guid>
       <description></description>
     </item>
     

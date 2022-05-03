@@ -5,9 +5,9 @@
     <link>http://www.sferrada.com/talk/</link>
       <atom:link href="http://www.sferrada.com/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://www.sferrada.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>http://www.sferrada.com/talk/</link>
     </image>
@@ -23,7 +23,7 @@
     <item>
       <title>Extending  SPARQL with Similarity Joins</title>
       <link>http://www.sferrada.com/talk/iswc2020/</link>
-      <pubDate>Tue, 11 Feb 2020 15:00:00 +0100</pubDate>
+      <pubDate>Tue, 11 Feb 2020 15:00:00 +0000</pubDate>
       <guid>http://www.sferrada.com/talk/iswc2020/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>Similarity Joins in SPARQL</title>
       <link>http://www.sferrada.com/talk/insight-visit-20/</link>
-      <pubDate>Thu, 06 Feb 2020 12:00:00 +0100</pubDate>
+      <pubDate>Thu, 06 Feb 2020 12:00:00 +0000</pubDate>
       <guid>http://www.sferrada.com/talk/insight-visit-20/</guid>
       <description></description>
     </item>
