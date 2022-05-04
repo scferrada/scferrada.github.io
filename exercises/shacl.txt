@@ -15,3 +15,5 @@ Exercise 3 (10 min)
 -Using Data 3 and Shapes 3, create property shapes that validate foaf:name, foaf:givenName and foaf:familyName with regular expressions using sh:pattern. Names should not be allowed to be shorter than two characters and must not contain underscores or numbers.
 -Add a constraint that requires all laureate awards to have a nobel:motivation that is a string of 10 characters or more. Allow only one motivation per language tag.
 -Add a constraint, so that universities are located in country:Germany, country:Japan or country:France. What does the report says?
+
+Link to queuing system: https://www.camedin.com/live/866047caae4b4312b4afa3571733dca8
