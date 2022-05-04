@@ -1,0 +1,13 @@
+Go to the EU-Knowledge Graph Question Answering Service: https://qa.linkedopendata.eu/
+
+Explore some of the suggested questions.
+
+Try to get some faxt by writing questions, e.g., what is the inflation rate of Greece?
+
+Get information on project executed in Sweden
+
+Try to get some filtered data, e.g, projects with a given budget, countries with a given population
+
+Try to get some comparative data, e.g, the country with the highest inflation
+
+Link to queuing system: https://www.camedin.com/live/866047caae4b4312b4afa3571733dca8
