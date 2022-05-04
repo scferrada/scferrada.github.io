@@ -18,3 +18,4 @@ Exercise 3 (10 min)
 
 Link to queuing system: https://www.camedin.com/live/866047caae4b4312b4afa3571733dca8
 Link to regular expressions online: http://regex101.com/ 
+Link to the slides: http://sferrada.com/pptx/SHACL.pptx 
